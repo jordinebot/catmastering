@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>CatMastering</title>
+		<meta name="description" content="Mastering"/>
+		<meta name="keywords" content="mastering, masterització, catmastering, Juanjo Muñoz, manresa, gossos"/>
+	
+		<!-- Facebook tags -->
+		<meta property="og:url"         content="http://www.catmastering.cat/"/>
+		<meta property="og:type"        content="website"/>
+		<meta property="og:title"       content="CatMastering"/>
+		<meta property="og:description" content="Estudi de màstering | Estudio de mastering | Mastering studio | Manresa (Barcelona)"/>
+		<meta property="og:image"       content="http://www.catmastering.cat/fotos/CatMastering02.jpg"/>
+	
+		<link rel="stylesheet" type="text/css" href="estils.css">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	
+		<style type="text/css">
+			body { background: #000000; text-align: center; font-family: HelveticaNeue-UltraLight; color: white;}
+			a { color: white; text-decoration: none; margin-left: 0.5em; margin-right: 0.5em; }
+			a:hover { color:grey; }
+			#logo {width: 25em; height: auto; margin: 5em auto;}
+		</style>
+	
+		<script>
+			var idioma = navigator.userLanguage || navigator.language;
+			var idioma2 = idioma.substring(0,2);
+			var pagina_inici = 'catmastering_en.html';
+			if (idioma2 == 'ca') {pagina_inici = 'catmastering_ca.html';}
+			if (idioma2 == 'es') {pagina_inici = 'catmastering_es.html';}
+		</script>
+	
+	</head>
+	
+	<body onLoad="document.location.href=pagina_inici">
+		<img id="logo" src="logos/CatMastering.svg" alt="CatMastering logo">
+		<nav>
+			<a href="catmastering_ca_ca.html">català</a>
+			<a href="catmastering_ca_es.html">castellano</a>
+			<a href="catmastering_ca_en.html">english</a>
+		</nav>
+	</body>
+</html>

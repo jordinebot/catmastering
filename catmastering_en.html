@@ -1,0 +1,3904 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>CatMastering</title>
+		<meta name="description" content="Mastering studio"/>
+		<meta name="keywords" content="mastering, Juanjo Muñoz, studio, cd master, apple digital masters"/>
+
+		<link rel="stylesheet" type="text/css" href="estils.css">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+		<script type="text/javascript" src="javascript.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	</head>
+
+	<body id="inici" onload="inicialitzacions()">
+
+		<header>
+			<a href="#inici" id="alogo"><img id="logo" src="logos/CatMastering.svg" alt="CatMastering logo" onclick="corregirOpacitatLogo()"></a>
+			<div id="menus">
+				<nav id="menu">
+					<a href="#estudi">studio</a>
+					<a href="#equip">equipment</a>
+					<a href="#contacte">contact</a>
+					<a href="#credits">credits</a>
+				</nav>
+				<div id="social">
+					<a href="https://www.facebook.com/CatMastering" target="_blank"><img src="logos/Facebook-White.svg" alt="Facebook"></a>
+					<a href="https://twitter.com/catmastering" target="_blank"><img src="logos/Twitter-White.svg" alt="Twitter"></a>
+					<a href="https://instagram.com/catmastering" target="_blank"><img src="logos/Instagram-White.svg" alt="Instagram"></a>
+				</div>
+				<nav id="idioma">
+					<a href="catmastering_ca.html">ca</a>
+					<a href="catmastering_es.html">es</a>
+				</nav>
+			</div>
+		</header>
+
+		<div id="videoPresentacio">
+			<video controls loop autoplay muted>
+				<source src="videos/Catmastering.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div id="fotos" onclick="clickFoto()">
+			<img src="fotos/CatMastering13.jpg" alt="CatMastering" id="primeraFoto">
+			<img src="fotos/CatMastering03.jpg" alt="CatMastering, Juanjo Muñoz">
+			<img src="fotos/CatMastering04.jpg" alt="CatMastering">
+			<img src="fotos/CatMastering05.jpg" alt="CatMastering">
+			<img src="fotos/CatMastering06.jpg" alt="CatMastering, Juanjo Muñoz">
+			<img src="fotos/CatMastering08.jpg" alt="CatMastering">
+			<img src="fotos/CatMastering11.jpg" alt="CatMastering">
+			<img src="fotos/CatMastering12.jpg" alt="CatMastering">
+		</div>
+
+		<div id="controlFotos">
+			<img id="controlAnterior" src="logos/controlAnterior.svg" alt="anterior" onclick="fotoAnterior()">
+			<img id="controlPausa" src="logos/controlPausa.svg" alt="pausa" onclick="fotoPausa()">
+			<img id="controlPlay" src="logos/controlPlay.svg" alt="play" onclick="fotoPlay()">
+			<img id="controlSeguent" src="logos/controlSeguent.svg" alt="següent" onclick="fotoSeguent()">
+		</div>
+
+		<article id="estudi">
+			<h2>CatMastering</h2>
+			<hr>
+			<h3>audio mastering studio</h3>
+			<div id="logos">
+				<a href="http://catmastering.cat" target="_blank">
+					<img id="logoCatM" src="logos/CatM.svg" alt="CatMastering logo">
+				</a>
+				<a href="https://www.apple.com/apple-music/apple-digital-masters/" target="_blank">
+					<img id="logoAppleDigitalMasters" src="logos/AppleDigitalMasters.svg" alt="Apple Digital Masters logo">
+				</a>
+			</div>
+			<p><a href="http://catmastering.cat" target="_blank">CatMastering</a> | <a href="https://www.apple.com/apple-music/apple-digital-masters/" target="_blank">Apple Digital Masters</a> | Official Provider</p>
+		</article>
+
+		<article id="equip">
+			<h2>Technical equipment</h2>
+			<hr>
+			<h3>ATC, Manley, Sontec, Dangerous Music, Maselec, etc</h3>
+		</article>
+
+		<article id="contacte">
+			<h2>CatMastering</h2>
+			<h3>Juanjo Muñoz</h3>
+			<img id="fotoContacte" src="fotos/CatMastering09.jpg" alt="CatMastering, Juanjo Muñoz" onclick="ampliacioFoto(this);">
+			<div id="dadesContacte">
+				<p><a href="mailto:juanjo@catmastering.cat?subject=Web%20contact">juanjo@catmastering.cat</a></p>
+				<p><a href="mailto:catmastering@gmail.com?subject=Web%20contact">catmastering@gmail.com</a></p>
+				<p><a href="http://www.catmastering.cat">www.catmastering.cat</a></p>
+				<p><a href="https://www.google.es/maps/place/+Manresa,+Barcelona/@41.7254218,1.823902,18z/data=!3m1!1e3!4m2!3m1!1s0x12a4580b635fe501:0xf45e351a3e16df1a" target="_blank">Manresa ( Barcelona, SPAIN )</a></p>
+				<div id="socialContacte">
+					<a href="https://www.facebook.com/CatMastering" target="_blank"><img src="logos/Facebook-Black.svg" alt="Facebook"></a>
+					<a href="https://twitter.com/catmastering" target="_blank"><img src="logos/Twitter-Black.svg" alt="Twitter"></a>
+					<a href="https://instagram.com/catmastering" target="_blank"><img src="logos/Instagram-Black.svg" alt="Instagram"></a>
+				</div>
+			</div>
+		</article>
+
+		<article id="credits">
+
+			<h2>Credits</h2>
+			<hr>
+			<h3><img src="logos/botoLlista.svg" id="botoLlistat" alt="List" onclick="clickBotoLlistat();">Some work mastered by Juanjo Muñoz at CatMastering</h3>
+
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Km0-LesCosesQueSom.jpg" alt="Km.0, Les Coses Que Son"/>
+				<figcaption>
+					<p class="artista">Km.0</p>
+					<p class="album">Les Coses Que Son</p>
+					<p class="any">2023-10-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Puput-Puput.jpg" alt="Puput"/>
+				<figcaption>
+					<p class="artista">Puput</p>
+					<p class="album">Puput</p>
+					<p class="any">2023-10-10</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EmanMunia-DiaADia.jpg" alt="Eman Munia, Día a día"/>
+				<figcaption>
+					<p class="artista">Eman Munia</p>
+					<p class="album">Día a día</p>
+					<p class="any">2023-10-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaGravetatDeCoulomb-L'EfecteDoppler.jpg" alt="La Gravetat de Coulomb, L'Efecte Doppler"/>
+				<figcaption>
+					<p class="artista">La Gravetat de Coulomb</p>
+					<p class="album">L'Efecte Doppler</p>
+					<p class="any">2023-10-02</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaNinaParacaidas-SimulacroDeIncendio.jpg" alt="La Niña Paracaídas, Simulacro De Incendio"/>
+				<figcaption>
+					<p class="artista">La Niña Paracaídas</p>
+					<p class="album">Simulacro De Incendio</p>
+					<p class="any">2023-09-22</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GorkaGaray-ThirdMoonOfJupiter.jpg" alt="Gorka Garay, Third Moon Of Jupiter"/>
+				<figcaption>
+					<p class="artista">Gorka Garay</p>
+					<p class="album">Third Moon Of Jupiter</p>
+					<p class="any">2023-09-14</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AlbaMarba-MysticaIntrospectiva.jpg" alt="Alba Marbà, Mystica introspectiva, Acústic songs of love"/>
+				<figcaption>
+					<p class="artista">Alba Marbà</p>
+					<p class="album">Mystica introspectiva (Acústic songs of love)</p>
+					<p class="any">2023-08-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Ramoneta-Ramoneta.jpg" alt="Ramoneta, Joan Gené Huguet"/>
+				<figcaption>
+					<p class="artista">Ramoneta</p>
+					<p class="album">Ramoneta</p>
+					<p class="any">2023-05-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MariePratt-Vivint.jpg" alt="Marie Pratt, Vivint!"/>
+				<figcaption>
+					<p class="artista">Marie Pratt</p>
+					<p class="album">Vivint!</p>
+					<p class="any">2023-04-21</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RoserMonforteTrio-LandscapeSongs.jpg" alt="Roser Monforte Trio, Roser Monforte, Jordi Pallarés, Pau Mainé,Landscape Songs"/>
+				<figcaption>
+					<p class="artista">Roser Monforte Trio</p>
+					<p class="album">Landscape Songs</p>
+					<p class="any">2023-04-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PelDeGall-ForcesD'Atraccio.jpg" alt="Pèl de Gall, Forces d'atracció"/>
+				<figcaption>
+					<p class="artista">Pèl de Gall</p>
+					<p class="album">Forces d'atracció</p>
+					<p class="any">2023-04-14</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AlbaMarba-Dona'MLaMusica.jpg" alt="Alba Marbà, Dona'm la música"/>
+				<figcaption>
+					<p class="artista">Alba Marbà</p>
+					<p class="album">Dona'm la música</p>
+					<p class="any">2023-04-12</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Suasi-PecesD'Antiquari.jpg" alt="Suasi, Peces d'antiquari"/>
+				<figcaption>
+					<p class="artista">Suasi</p>
+					<p class="album">Peces d'antiquari</p>
+					<p class="any">2023-03-31</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MarionaEscoda-D'UnaAltraManera.jpg" alt="Mariona Escoda, D'una altra manera"/>
+				<figcaption>
+					<p class="artista">Mariona Escoda</p>
+					<p class="album">D'una altra manera</p>
+					<p class="any">2023-03-31</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/L'Illa-CanconsDelPelut.jpg" alt="L'Illa, Cançons Del Pelut"/>
+				<figcaption>
+					<p class="artista">L'Illa</p>
+					<p class="album">Cançons Del Pelut</p>
+					<p class="any">2023-03-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OriolCors-VaCaureUnLlamp.jpg" alt="Oriol Cors, Va Caure Un Llamp"/>
+				<figcaption>
+					<p class="artista">Oriol Cors</p>
+					<p class="album">Va Caure Un Llamp</p>
+					<p class="any">2022-12-15</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheSlingshots-BreakOut.jpg" alt="The Slingshots, Break out!"/>
+				<figcaption>
+					<p class="artista">The Slingshots</p>
+					<p class="album">Break out!</p>
+					<p class="any">2022-11-07</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Kaliza-Kimera.jpg" alt="Kaliza, Kimera"/>
+				<figcaption>
+					<p class="artista">Kaliza</p>
+					<p class="album">Kimera</p>
+					<p class="any">2022-10-21</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Julivert-ATamarit.jpg" alt="Julivert, A Tamarit!"/>
+				<figcaption>
+					<p class="artista">Julivert</p>
+					<p class="album">A Tamarit!</p>
+					<p class="any">2022-09-27</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DocAndFriends-DocIsBackInTown.jpg" alt="Doc and friends, Doc is back in town"/>
+				<figcaption>
+					<p class="artista">Doc and friends</p>
+					<p class="album">Doc is back in town</p>
+					<p class="any">2022-09-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EduardGener-SwingDeComarques.jpg" alt="Eduard Gener, Swing de comarques"/>
+				<figcaption>
+					<p class="artista">Eduard Gener</p>
+					<p class="album">Swing de comarques</p>
+					<p class="any">2022-09-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RetornoVenoso-Limfa.jpg" alt="Retorno Venoso, Limfa"/>
+				<figcaption>
+					<p class="artista">Retorno Venoso</p>
+					<p class="album">Limfa</p>
+					<p class="any">2022-08-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaRaiz-EntrePoetasYPresos.jpg" alt="La Raíz, Entre poetas y presos"/>
+				<figcaption>
+					<p class="artista">La Raíz</p>
+					<p class="album">Entre poetas y presos (Vinyl)</p>
+					<p class="any">2022-07</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MarcelPich-MarcelPichCantaGuillemD'Efak.jpg" alt="Marcel Pich, Marcel Pich canta Guillem d'Efak, En directe a l'Alguer"/>
+				<figcaption>
+					<p class="artista">Marcel Pich</p>
+					<p class="album">Marcel Pich canta Guillem d'Efak (En directe a l'Alguer)</p>
+					<p class="any">2022-06-01</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Catfolkin-BonVent.jpg" alt="Catfolkin, Bon Vent"/>
+				<figcaption>
+					<p class="artista">Catfolkin</p>
+					<p class="album">Bon Vent</p>
+					<p class="any">2022-05-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/BenMarcus-Reflexion.jpg" alt="Ben Marcus, Reflexión"/>
+				<figcaption>
+					<p class="artista">Ben Marcus</p>
+					<p class="album">Reflexión</p>
+					<p class="any">2022-05-06</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JuliaBlum-SobreLaMarxa.jpg" alt="Júlia Blum, Sobre La Marxa"/>
+				<figcaption>
+					<p class="artista">Júlia Blum</p>
+					<p class="album">Sobre La Marxa</p>
+					<p class="any">2022-04-29</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Verbaline-ChooseToBeFreeI.jpg" alt="Verbaline, Choose To Be Free, Choose To Be Free I"/>
+				<figcaption>
+					<p class="artista">Verbaline</p>
+					<p class="album">Choose To Be Free I</p>
+					<p class="any">2022-04-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Verbaline-ChooseToBeFreeII.jpg" alt="Verbaline, Choose To Be Free, Choose To Be Free II"/>
+				<figcaption>
+					<p class="artista">Verbaline</p>
+					<p class="album">Choose To Be Free II</p>
+					<p class="any">2022-04-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaMulata-Maixat!.jpg" alt="La Mulata, Maixat!"/>
+				<figcaption>
+					<p class="artista">La Mulata</p>
+					<p class="album">Maixat!</p>
+					<p class="any">2022-04-22</p>
+				</figcaption>
+			</figure>
+						
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Cactus-ModeAvio.jpg" alt="Cactus, Mode avió"/>
+				<figcaption>
+					<p class="artista">Cactus</p>
+					<p class="album">Mode avió</p>
+					<p class="any">2022-04-08</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EntreDAltres-ProjecteM.jpg" alt="Entre d'altres, Projecte M"/>
+				<figcaption>
+					<p class="artista">Entre d'altres</p>
+					<p class="album">Projecte M</p>
+					<p class="any">2022-04-02</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Seikos-Estival.jpg" alt="Seikos, Estival"/>
+				<figcaption>
+					<p class="artista">Seikos</p>
+					<p class="album">Estival</p>
+					<p class="any">2022-03-25</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GalaNell-CuandoAnochece.jpg" alt="Gala Nell, Cuando Anochece"/>
+				<figcaption>
+					<p class="artista">Gala Nell</p>
+					<p class="album">Cuando Anochece</p>
+					<p class="any">2022-03-25</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/KotLape-TodoLoBueno.jpg" alt="Kòt Lapè, Todo lo bueno"/>
+				<figcaption>
+					<p class="artista">Kòt Lapè</p>
+					<p class="album">Todo lo bueno</p>
+					<p class="any">2022-03-18</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/9Zenit-FinalD'Estiu.jpg" alt="9Zenit, Final D'Estiu"/>
+				<figcaption>
+					<p class="artista">9Zenit</p>
+					<p class="album">Final D'Estiu</p>
+					<p class="any">2022-03-10</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/VicMirallas-DirectoEnApolo.jpg" alt="Vic Mirallas, Directo en Apolo"/>
+				<figcaption>
+					<p class="artista">Vic Mirallas</p>
+					<p class="album">Directo en Apolo</p>
+					<p class="any">2022-02-25</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Pupil%C2%B7les-TotIRes.jpg" alt="Pupil·les, Tot i res"/>
+				<figcaption>
+					<p class="artista">Pupil·les</p>
+					<p class="album">Tot i res</p>
+					<p class="any">2022-02-10</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PauBoigues-LaSega.jpg" alt="Pau Boigües, La Sega"/>
+				<figcaption>
+					<p class="artista">Pau Boigües</p>
+					<p class="album">La Sega</p>
+					<p class="any">2022-01-10</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SamueleArba-NiEnLOrNiEnLAmorNiEnElCel.jpg" alt="Samuele Arba, Ni En L'Or Ni En L'Amor Ni En El Cel"/>
+				<figcaption>
+					<p class="artista">Samuele Arba</p>
+					<p class="album">Ni En L'Or Ni En L'Amor Ni En El Cel</p>
+					<p class="any">2021-12-25</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JuliBarrero-Liquid.jpg" alt="Juli Barrero, Líquid"/>
+				<figcaption>
+					<p class="artista">Juli Barrero</p>
+					<p class="album">Líquid</p>
+					<p class="any">2021-12-06</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/FerreteriaRosario-FerreteriaRosario.jpg" alt="Ferretería Rosario"/>
+				<figcaption>
+					<p class="artista">Ferretería Rosario</p>
+					<p class="album">Ferretería Rosario</p>
+					<p class="any">2021-12-02</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaiaIndika-VivirEsMuchoMas.jpg" alt="Laia Indika, Vivir es mucho más"/>
+				<figcaption>
+					<p class="artista">Laia Indika</p>
+					<p class="album">Vivir es mucho más</p>
+					<p class="any">2021-11-19</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaFumiga-FotoSintesi.jpg" alt="La Fúmiga, Fotosíntesi"/>
+				<figcaption>
+					<p class="artista">La Fúmiga</p>
+					<p class="album">Fotosíntesi</p>
+					<p class="any">2021-11-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JoanReig-Bagatzem.jpg" alt="Joan Reig, Bagatzem"/>
+				<figcaption>
+					<p class="artista">Joan Reig</p>
+					<p class="album">Bagatzem</p>
+					<p class="any">2021-10-15</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Falsterbo-AdeuPaf.jpg" alt="Falsterbo, Adéu Paf"/>
+				<figcaption>
+					<p class="artista">Falsterbo</p>
+					<p class="album">Adéu, Paf</p>
+					<p class="any">2021-10-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JuniorMackenzie-NowThatWeAreDead.jpg" alt="Junior Mackenzie, Now That We Are Dead, Juan Fortea"/>
+				<figcaption>
+					<p class="artista">Junior Mackenzie</p>
+					<p class="album">Now That We Are Dead</p>
+					<p class="any">2021-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Texate-Adormidera.jpg" alt="Texate, Adormidera"/>
+				<figcaption>
+					<p class="artista">Texate</p>
+					<p class="album">Adormidera</p>
+					<p class="any">2021-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Sargantanah-Guruma.jpg" alt="Sargantanah, Guruma"/>
+				<figcaption>
+					<p class="artista">Sargantanah</p>
+					<p class="album">Guruma</p>
+					<p class="any">2021-09-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CapitaSolench.jpg" alt="Capità Solench, Ignasi Sánchez"/>
+				<figcaption>
+					<p class="artista">Capità Solench</p>
+					<p class="album">Capità Solench</p>
+					<p class="any">2021-09-01</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RobinSecret-SomiantUnAltreCel.jpg" alt="Robin Secret, Somiant un altre cel"/>
+				<figcaption>
+					<p class="artista">Robin Secret</p>
+					<p class="album">Somiant un altre cel</p>
+					<p class="any">2021-08-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Nebulossa-PoliedricaDeMi.jpg" alt="Nebulossa, Poliédrica de mi"/>
+				<figcaption>
+					<p class="artista">Nebulossa</p>
+					<p class="album">Poliédrica de mi</p>
+					<p class="any">2021-05-26</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Vernal-Vernal.jpg" alt="Vernal, Aire fred, Massa Tard, Vull ballar, Lluís Sánchez Sitjà, Isaac Pizarro Contrera, Joan Mercadé Cuadrat, Marc Górriz Blanch, Lluís Surroca Prunera"/>
+				<figcaption>
+					<p class="artista">Vernal</p>
+					<p class="album">Vernal</p>
+					<p class="any">2021-05-14</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SrRamirez-QueNosBailenLoQuitao.jpg" alt="Sr. Ramírez, Señor Ramírez, Sergi Ramírez, Que nos bailen lo quitao, Todo es tan incierto, Desnudos al amanecer, Por ti"/>
+				<figcaption>
+					<p class="artista">Sr. Ramírez</p>
+					<p class="album">Que nos bailen lo quitao</p>
+					<p class="any">2021-05-07</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GermaNegre-PicantsObscenesAmorIPenes.jpg" alt="Germà Negre, Picants, obscenes, amor i penes"/>
+				<figcaption>
+					<p class="artista">Germà Negre</p>
+					<p class="album">Picants, obscenes, amor i penes</p>
+					<p class="any">2021-05-06</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/INuits-EmRebello.jpg" alt="I-nuits, Em Rebel·lo"/>
+				<figcaption>
+					<p class="artista">I-nuits</p>
+					<p class="album">Em Rebel·lo</p>
+					<p class="any">2021-05-06</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AlisonDarwin-FiccionYRealidad.jpg" alt="Alison Darwin, Ficción y realidad"/>
+				<figcaption>
+					<p class="artista">Alison Darwin</p>
+					<p class="album">Ficción y realidad</p>
+					<p class="any">2021-04-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EduardGener-EnyoroElTeuAmorTanDolc.jpg" alt="Eduard Gener, Enyoro el teu amor tan dolç"/>
+				<figcaption>
+					<p class="artista">Eduard Gener</p>
+					<p class="album">Enyoro el teu amor tan dolç</p>
+					<p class="any">2021-04-06</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Zoo-Llepolies.jpg" alt="Zoo, Marala, Taktel, Llepolies"/>
+				<figcaption>
+					<p class="artista">Zoo</p>
+					<p class="album">Llepolies</p>
+					<p class="any">2021-03-26</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EbriKnight-Carrer.jpg" alt="Ebri Knight, Carrer"/>
+				<figcaption>
+					<p class="artista">Ebri Knight</p>
+					<p class="album">Carrer</p>
+					<p class="any">2021-03-12</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/BrianCaffrey-RoomToFly.jpg" alt="Brian Caffrey, Room to fly"/>
+				<figcaption>
+					<p class="artista">Brian Caffrey</p>
+					<p class="album">Room to fly</p>
+					<p class="any">2021-02-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaSkaBrass-Mirela.jpg" alt="La Ska Brass, Mírela"/>
+				<figcaption>
+					<p class="artista">La Ska Brass</p>
+					<p class="album">Mírela</p>
+					<p class="any">2021-01-24</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CozmicJet-WhatchaGonnaDo.jpg" alt="Cozmic Jet, Whatcha gonna do?, The Station"/>
+				<figcaption>
+					<p class="artista">Cozmic Jet</p>
+					<p class="album">Whatcha gonna do?</p>
+					<p class="any">2021-01-15</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Emar-SegundoBigBang.jpg" alt="Emar, Ambar, Segundo Big Bang"/>
+				<figcaption>
+					<p class="artista">Emar</p>
+					<p class="album">Segundo Big Bang</p>
+					<p class="any">2020-11-22</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Emar-Ambar.jpg" alt="Emar, Ambar, Roger Batllori"/>
+				<figcaption>
+					<p class="artista">Emar</p>
+					<p class="album">Ambar</p>
+					<p class="any">2020-11-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EricVinaixa-LaMesBonicaHistoria.jpg" alt="Èric Vinaixa, La més bonica història"/>
+				<figcaption>
+					<p class="artista">Èric Vinaixa</p>
+					<p class="album">La més bonica història</p>
+					<p class="any">2020-11-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Malfet-AOrillasDeUnIdeal.jpg" alt="Malfet, A Orillas De Un Ideal"/>
+				<figcaption>
+					<p class="artista">Malfet</p>
+					<p class="album">A Orillas De Un Ideal</p>
+					<p class="any">2020-10-08</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Emar-LoQueMeDejasDentro.jpg" alt="Emar, Ambar, Lo que me dejas dentro"/>
+				<figcaption>
+					<p class="artista">Emar</p>
+					<p class="album">Lo que me dejas dentro</p>
+					<p class="any">2020-09-25</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Suasi-QueTriomfiL'Amor.jpg" alt="Suasi, Pep Suasi, Que triomfi l'amor"/>
+				<figcaption>
+					<p class="artista">Suasi</p>
+					<p class="album">Que triomfi l'amor</p>
+					<p class="any">2020-09-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Idea-Som.jpg" alt="Idea, Som, Gerard Heredia, Albert García, Ítaca Band"/>
+				<figcaption>
+					<p class="artista">Idea</p>
+					<p class="album">Som feat. Albert García (Ítaca Band)</p>
+					<p class="any">2020-09-03</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Setembre-SotaElSostreDeCristall.jpg" alt="Setembre, Sota el sostre de cristall, Joan Pérez, Jordi Alba, Ferran Gil, Joanjo"/>
+				<figcaption>
+					<p class="artista">Setembre</p>
+					<p class="album">Sota el sostre de cristall</p>
+					<p class="any">2020-05-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Ekko-Desbocados.jpg" alt="Ekko, Desbocados"/>
+				<figcaption>
+					<p class="artista">Ekko</p>
+					<p class="album">Desbocados</p>
+					<p class="any">2020-05-08</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Falcon&Firkin-SantSilvestre.jpg" alt="Falcon & Firkin, Sant Silvestre"/>
+				<figcaption>
+					<p class="artista">Falcon & Firkin</p>
+					<p class="album">Sant Silvestre</p>
+					<p class="any">2020-04-17</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Allez!-Salvatge.jpg" alt="Allez!, Salvatge"/>
+				<figcaption>
+					<p class="artista">Allez!</p>
+					<p class="album">Salvatge</p>
+					<p class="any">2020-04-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LizzyLaLarga-LizzyLaLarga.jpg" alt="Lizzy La Larga"/>
+				<figcaption>
+					<p class="artista">Lizzy La Larga</p>
+					<p class="album">Lizzy La Larga</p>
+					<p class="any">2020-03-27</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Glaucs-TotEsPossible.jpg" alt="Glaucs, Tot és possible, Jofre Bardagí, Àlex Rexach, José Luís Vadillo, Àngel Valentí"/>
+				<figcaption>
+					<p class="artista">Glaucs</p>
+					<p class="album">Tot és possible</p>
+					<p class="any">2020-03-17</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Roige-Ingravid.jpg" alt="Roigé, Roger Canals, Ingràvid"/>
+				<figcaption>
+					<p class="artista">Roigé</p>
+					<p class="album">Ingràvid</p>
+					<p class="any">2020-02-28</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PelDeGall-ASaVostraSalut.jpg" alt="Pèl De Gall, A Sa Vostra Salut"/>
+				<figcaption>
+					<p class="artista">Pèl De Gall</p>
+					<p class="album">A Sa Vostra Salut</p>
+					<p class="any">2020-02-07</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Ushanka-DeZero.jpg" alt="Ushanka, De zero"/>
+				<figcaption>
+					<p class="artista">Ushanka</p>
+					<p class="album">De zero</p>
+					<p class="any">2020-01-24</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tresportrece-MaquinaYEspiral.jpg" alt="Tresportrece, Máquina y espiral"/>
+				<figcaption>
+					<p class="artista">Tresportrece</p>
+					<p class="album">Máquina y espiral</p>
+					<p class="any">2020</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ElCanal-Descodificado.jpg" alt="El Canal, Descodificado"/>
+				<figcaption>
+					<p class="artista">El Canal</p>
+					<p class="album">Descodificado</p>
+					<p class="any">2019</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Gaspa-ChasingBrightLight.jpg" alt="Gaspa, Chasing bright light, Àlex Gaspa"/>
+				<figcaption>
+					<p class="artista">Gaspa</p>
+					<p class="album">Chasing bright light</p>
+					<p class="any">2019-12-13</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SotaElFirmament.jpg" alt="Sota el firmament, A Joan Salvat-Papasseit, Àlex Carmona"/>
+				<figcaption>
+					<p class="artista">Àlex Carmona</p>
+					<p class="album">Sota el firmament (A Joan Salvat-Papasseit)</p>
+					<p class="any">2019-11-29</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Rehenes-AranazosBajoLaPiel.jpg" alt="Rehenes, Arañazos bajo la piel"/>
+				<figcaption>
+					<p class="artista">Rehenes</p>
+					<p class="album">Arañazos bajo la piel</p>
+					<p class="any">2019-11-08</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ChapaosALaNueva-PoesiaDeGaraje.jpg" alt="Chapaos a la nueva, Poesía de garaje, Victor Patrocchi Hita, Alba García Mut, Alba Luz, Jaime Muñiz Sallés, Jaimetron, Oscar Cerezo García, Raúl Jiménez Calado, RJuana"/>
+				<figcaption>
+					<p class="artista">Chapaos a la nueva</p>
+					<p class="album">Poesía de garaje</p>
+					<p class="any">2019-10-11</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SalvaRacero-Immortals-2019-10-04.jpg" alt="Salva Racero, Immortals"/>
+				<figcaption>
+					<p class="artista">Salva Racero</p>
+					<p class="album">Immortals</p>
+					<p class="any">2019-10-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/L'Espurna-AKontraKorrent-EP-2019-09-16.jpg" alt="L'Espurna, A Kontra Korrent"/>
+				<figcaption>
+					<p class="artista">L'Espurna</p>
+					<p class="album">A Kontra Korrent</p>
+					<p class="any">2019-09-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Awakate-Awakate.jpg" alt="Awakate"/>
+				<figcaption>
+					<p class="artista">Awakate</p>
+					<p class="album">Awakate</p>
+					<p class="any">2019-09-11</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/VirtutsHomologues-Resilience.jpg" alt="Virtuts Homòlogues, Resilience"/>
+				<figcaption>
+					<p class="artista">Virtuts Homòlogues</p>
+					<p class="album">Resilience</p>
+					<p class="any">2019-06-21</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EnricNavarro-MilCosesPerdudes-2019-06-14-Album.jpg" alt="Enric Navarro, Mil coses perdudes"/>
+				<figcaption>
+					<p class="artista">Enric Navarro</p>
+					<p class="album">Mil coses perdudes</p>
+					<p class="any">2019-06-14</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ToniXucla-ShenNuIAltresTresorsAmagats-2019-05-17-Album.jpg" alt="Toni Xuclà, Shen Nü, Shen Nü i altres tresors amagats"/>
+				<figcaption>
+					<p class="artista">Toni Xuclà</p>
+					<p class="album">Shen Nü i altres tresors amagats</p>
+					<p class="any">2019-05-17</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JofreBardagi-Hamburg.jpg" alt="Jofre Bardagí, Hamburg, El ramat"/>
+				<figcaption>
+					<p class="artista">Jofre Bardagí</p>
+					<p class="album">Hamburg</p>
+					<p class="any">2019-05-02</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Pupilles-Rimmel-2019-04-30-EP.jpg" alt="Pupil·les, Rímmel"/>
+				<figcaption>
+					<p class="artista">Pupil·les</p>
+					<p class="album">Rímmel</p>
+					<p class="any">2019-04-30</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaMulata-TropicDelMediterrani.jpg" alt="La Mulata, Tròpic del Mediterrani"/>
+				<figcaption>
+					<p class="artista">La Mulata</p>
+					<p class="album">Tròpic del Mediterrani</p>
+					<p class="any">2019-04-26</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SalvaRacero-Vaig-2019-04-26-EP.jpg" alt="Salva Racero, Vaig"/>
+				<figcaption>
+					<p class="artista">Salva Racero</p>
+					<p class="album">Vaig</p>
+					<p class="any">2019-04-26</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Walkin'Roots-Boots-2019-04-16-EP.jpg" alt="Walkin' Roots, Boots"/>
+				<figcaption>
+					<p class="artista">Walkin' Roots</p>
+					<p class="album">Boots</p>
+					<p class="any">2019-04-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AlisonDarwin-FindYourFreedom-2019-04-09-EP.jpg" alt="Alison Darwin, Find Your Freedom"/>
+				<figcaption>
+					<p class="artista">Alison Darwin</p>
+					<p class="album">Find Your Freedom</p>
+					<p class="any">2019-04-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CrisJuanico-Viu.jpg" alt="Cris Juanico, Viu"/>
+				<figcaption>
+					<p class="artista">Cris Juanico</p>
+					<p class="album">Viu</p>
+					<p class="any">2019-04-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EbriKnight-LaVozDormida-2019-04-01-EP.jpg" alt="Ebri Knight, La voz dormida"/>
+				<figcaption>
+					<p class="artista">Ebri Knight</p>
+					<p class="album">La voz dormida</p>
+					<p class="any">2019-04-01</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GhostTrip-Pesadillas.jpg" alt="Ghost Trip, Nadia Elgabu, Nacho Fisac, Victor Altimiras, Adrià Vives, Pere Moll, Pesadillas, malos tiempos y todos sus amigos, Poema"/>
+				<figcaption>
+					<p class="artista">Ghost Trip</p>
+					<p class="album">Pesadillas, malos tiempos y todos sus amigos</p>
+					<p class="any">2019-03-29</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Fina-Inconformista-2019-03-22-Album.jpg" alt="Fina, #Inconformista, Inconformista"/>
+				<figcaption>
+					<p class="artista">Fina</p>
+					<p class="album">#Inconformista</p>
+					<p class="any">2019-03-22</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tesa-Rural-2019-03-22-Album.jpg" alt="Tesa, Rural"/>
+				<figcaption>
+					<p class="artista">Tesa</p>
+					<p class="album">Rural</p>
+					<p class="any">2019-03-22</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ElTioLaCareta-GritaRebelate-2019-03-15-Album.jpg" alt="El Tio La Careta, Grita, Rebélate"/>
+				<figcaption>
+					<p class="artista">El Tio La Careta</p>
+					<p class="album">Grita - Rebélate</p>
+					<p class="any">2019-03-15</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheTargarians-CridaAmbMi.jpg" alt="The Targarians, Crida amb mi!"/>
+				<figcaption>
+					<p class="artista">The Targarians</p>
+					<p class="album">Crida amb mi!</p>
+					<p class="any">2019-03-01</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaxNBusto-Poliedric-2019-02-15-Album.jpg" alt="Lax'n'busto, Polièdric"/>
+				<figcaption>
+					<p class="artista">Lax'n'busto</p>
+					<p class="album">Polièdric</p>
+					<p class="any">2019-02-15</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Pares-JaNoHoVolemTot-2019-02-08-Album.jpg" alt="Pares, Ja no ho volem tot"/>
+				<figcaption>
+					<p class="artista">Pares</p>
+					<p class="album">Ja no ho volem tot</p>
+					<p class="any">2019-02-08</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Moonlit-DesastreNatural.jpg" alt="Moonlit, Desastre Natural, Mar Torrijos, Dani Maria, Gerard González, Arnau Moody"/>
+				<figcaption>
+					<p class="artista">Moonlit</p>
+					<p class="album">Desastre Natural</p>
+					<p class="any">2019-01-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LosTitiriterosDeBinefar-JaujaCancionesYJuegosDelPaisSonado-2019-01-05-Album.jpg" alt="Los Titiriteros de Binéfar, Jauja, Canciones y juegos del país soñado"/>
+				<figcaption>
+					<p class="artista">Los Titiriteros de Binéfar</p>
+					<p class="album">Jauja, Canciones y juegos del país soñado</p>
+					<p class="any">2019-01-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Gossos-ParaulesQueNoSEsborren-2018-11-30.jpg" alt="Gossos, Paraules que no s'esborren, imatges que no s'en van"/>
+				<figcaption>
+					<p class="artista">Gossos</p>
+					<p class="album">Paraules que no s'esborren, imatges que no s'en van</p>
+					<p class="any">2018-11-30</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Roser-Diva'sDisco.jpg" alt="Roser, Roser Murillo, Marc Martin, Diva's Disco"/>
+				<figcaption>
+					<p class="artista">Roser</p>
+					<p class="album">Diva's Disco</p>
+					<p class="any">2018-11-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PinturaMusicadaAntoniMiro-2018-10-15-Album.jpg" alt="Pintura Musicada, Antoni Miró, Júlia, Pau Alabajos, Lu Rois, Miquel Gil, Cesk Freixas, Mireia Vives, Borja Penalba, Mara Aranda, Feliu Ventura, El Diluvi, Francesc Anyó, Pepa Alòs"/>
+				<figcaption>
+					<p class="artista">Pintura Musicada Antoni Miró</p>
+					<p class="album">Júlia, Pau Alabajos, Lu Rois, Miquel Gil, Cesk Freixas, Mireia Vives, Borja Penalba, Mara Aranda, Feliu Ventura, El Diluvi, Francesc Anyó, Pepa Alòs</p>
+					<p class="any">2018-10-15</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Cronopios-LaSonoraCreacio20181102album.jpg" alt="Cronopios, La sonora creació"/>
+				<figcaption>
+					<p class="artista">Cronopios</p>
+					<p class="album">La Sonora Creació</p>
+					<p class="any">2018-10-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AKontraKorrent-LaNostraSentencia-2018-09-27-Single.jpg" alt="A Kontra Korrent, La Nostra Sentència"/>
+				<figcaption>
+					<p class="artista">A Kontra Korrent</p>
+					<p class="album">La Nostra Sentència</p>
+					<p class="any">2018-09-27</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MisterJones-DeNaufragiosYDeseos-2018-09-22.jpg" alt="Mister Jones, De naufragios y deseos"/>
+				<figcaption>
+					<p class="artista">Mister Jones</p>
+					<p class="album">De naufragios y deseos</p>
+					<p class="any">2018-09-22</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ElSenyorPeix-BallemElMon.jpg" alt="El Senyor Peix, Ballem el món"/>
+				<figcaption>
+					<p class="artista">El Senyor Peix</p>
+					<p class="album">Ballem el món</p>
+					<p class="any">2018-06-15</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Destemps-MentidesPerFardar.jpg" alt="Destemps, Destemps rock, Mentides per fardar, Arnau Nadeu, Adrià Casòliva, Quim Surià, Ferran Nadeu"/>
+				<figcaption>
+					<p class="artista">Destemps</p>
+					<p class="album">Mentides per fardar</p>
+					<p class="any">2018-06-08</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PERANOIA-SoloTemazos-2018.jpg" alt="Peranoia, Sólo temazos"/>
+				<figcaption>
+					<p class="artista">Peranoia</p>
+					<p class="album">Sólo temazos</p>
+					<p class="any">2018-05-18</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Austral-TeoriaDeLEvolucio.jpg" alt="Avstral, Austral, Teoria de l'evolució, La cintura de la Paula, Marc Teixidó, Guillem Prats, Adrià Garcia, Marta Solà, Gerard Català"/>
+				<figcaption>
+					<p class="artista">Avstral</p>
+					<p class="album">Teoria de l'evolució</p>
+					<p class="any">2018-05-18</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ElTioLaCareta-Grita-2018-04-25-EP.jpg" alt="El Tio La Careta, Grita"/>
+				<figcaption>
+					<p class="artista">El Tio La Careta</p>
+					<p class="album">Grita</p>
+					<p class="any">2018-04-25</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Setrill-Senders-20180515.jpg" alt="Setrill, Senders"/>
+				<figcaption>
+					<p class="artista">Setrill</p>
+					<p class="album">Senders</p>
+					<p class="any">2018-04-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GermaNegre-MoltDePorcIPocaSalsitxa-2018-04-23.jpg" alt="Germà Negre, Molt De Porc I Poca Salsitxa"/>
+				<figcaption>
+					<p class="artista">Germà Negre</p>
+					<p class="album">Molt De Porc I Poca Salsitxa</p>
+					<p class="any">2018-04-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/BrigadaMoreneta-ConstruintLaBase-2018-04-17-EP.jpg" alt="Brigada Moreneta, Construïnt la base"/>
+				<figcaption>
+					<p class="artista">Brigada Moreneta</p>
+					<p class="album">Construïnt la base</p>
+					<p class="any">2018-04-17</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LluisMolina-MyOwnPace-2018.jpg" alt="Lluís Molina, My own pace"/>
+				<figcaption>
+					<p class="artista">Lluís Molina</p>
+					<p class="album">My own pace</p>
+					<p class="any">2018-04-14</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JoanReig-20180413EP.jpg" alt="Joan Reig"/>
+				<figcaption>
+					<p class="artista">Joan Reig</p>
+					<p class="album">EP</p>
+					<p class="any">2018-04-13</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Cactus-Cactus-2018-04-13-Album.jpg" alt="Cactus"/>
+				<figcaption>
+					<p class="artista">Cactus</p>
+					<p class="album">Cactus</p>
+					<p class="any">2018-04-13</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Cuits-AiresDeNorte-2018.jpg" alt="Cuits, Aires del norte"/>
+				<figcaption>
+					<p class="artista">Cuits</p>
+					<p class="album">Aires del norte (feat. Pupil·les, Ekko & Madamme Mustash)</p>
+					<p class="any">2018-04-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EAM-ElFocQueNoSApaga-2018.jpg" alt="EAM, Exèrcit d'Alliberament Musical, El foc que no s'apaga"/>
+				<figcaption>
+					<p class="artista">EAM (Exèrcit d'Alliberament Musical)</p>
+					<p class="album">El foc que no s'apaga</p>
+					<p class="any">2018-04-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/WalkinRoots-Old-EP-2018.jpg" alt="Walkin' Roots, Old"/>
+				<figcaption>
+					<p class="artista">Walkin' Roots</p>
+					<p class="album">Old</p>
+					<p class="any">2018-04-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Ginesta-Neix-2018.jpg" alt="Ginestà, Neix"/>
+				<figcaption>
+					<p class="artista">Ginestà</p>
+					<p class="album">Neix</p>
+					<p class="any">2018-03-30</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Icarians-Laberints-2018-EP.jpg" alt="Icarians, Laberints"/>
+				<figcaption>
+					<p class="artista">Icarians</p>
+					<p class="album">Laberints</p>
+					<p class="any">2018-03-30</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OvellaXao-CantCorral-2018.jpg" alt="Ovella Xao, Cant Corral"/>
+				<figcaption>
+					<p class="artista">Ovella Xao</p>
+					<p class="album">Cant corral</p>
+					<p class="any">2018-03-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Falcon%26Firkin-Bressagio-2018.jpg" alt="Falcon & Firkin, Bressagio"/>
+				<figcaption>
+					<p class="artista">Falcon & Firkin</p>
+					<p class="album">Bressagio</p>
+					<p class="any">2018-03-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Ginesta%26Gemma-Polo-Bruixes-2018-single.jpg" alt="Ginestà, Gemma Polo, Ginestà ft. Gemma Polo, Bruixes"/>
+				<figcaption>
+					<p class="artista">Ginestà ft. Gemma Polo</p>
+					<p class="album">Bruixes</p>
+					<p class="any">2018-03-14</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Catfolkin-QueNoS'Aturi.jpg" alt="Catfolkin, Que no s'aturi"/>
+				<figcaption>
+					<p class="artista">Catfolkin</p>
+					<p class="album">Que no s'aturi</p>
+					<p class="any">2018-03-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Guardafuegos-MientrasTodoCambia-2018-02-16-EP.jpg" alt="Guardafuegos, Mientras todo cambia"/>
+				<figcaption>
+					<p class="artista">Guardafuegos</p>
+					<p class="album">Mientras todo cambia</p>
+					<p class="any">2018-02-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/KonsumoRespeto-LosPrimerosDiasDeLaLeySeca-EP.jpg" alt="Konsumo Respeto, Los primeros días de la ley seca"/>
+				<figcaption>
+					<p class="artista">Konsumo Respeto</p>
+					<p class="album">Los primeros días de la ley seca</p>
+					<p class="any">2018-02-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Puput-Purga-2018.jpg" alt="Puput, Purga"/>
+				<figcaption>
+					<p class="artista">Puput</p>
+					<p class="album">Purga</p>
+					<p class="any">2018-02-02</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SmokingSouls(feat.Desakato)-L'UltimBall-2018-Single.jpg" alt="Smoking Souls, Desakato, L'últim ball"/>
+				<figcaption>
+					<p class="artista">Smoking Souls (feat. Desakato)</p>
+					<p class="album">L'últim ball</p>
+					<p class="any">2018-01-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Ekko-LasLeyesDeSuJauria-2018.jpg" alt="Ekko, Las Leyes De Su Jauría"/>
+				<figcaption>
+					<p class="artista">Ekko</p>
+					<p class="album">Las leyes de su jauría</p>
+					<p class="any">2018-01-12</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RedNRebel-AtTheCrossroads%2BScars-Single-2018.jpg" alt="Red n'rebel, At the crossroads, Scars"/>
+				<figcaption>
+					<p class="artista">Red N'Rebel</p>
+					<p class="album">At the crossroads + Scars</p>
+					<p class="any">2018-01-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Mim-Especies-2017.jpg" alt="Mim, Espècies, Rafa Gallardo, Pau Ortiz, Alex Huguet, Cristian Pepió"/>
+				<figcaption>
+					<p class="artista">Mim</p>
+					<p class="album">Espècies</p>
+					<p class="any">2017-11-17</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Constan-LAbricDeSetHiverns.jpg" alt="Constan Fernández Pino, L'abric de set hiverns"/>
+				<figcaption>
+					<p class="artista">Constan</p>
+					<p class="album">L'abric de set hiverns</p>
+					<p class="any">2017-11-03</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Sotrac-SotaElRoure-2017.jpg" alt="Sotrac, Sota el roure"/>
+				<figcaption>
+					<p class="artista">Sotrac</p>
+					<p class="album">Sota el roure</p>
+					<p class="any">2017-10-06</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheGramophoneAllstarsBigBand-MaracaSoul-2017.jpg" alt="The Gramophone Allstars Big Band, Maraca Soul"/>
+				<figcaption>
+					<p class="artista">The Gramophone Allstars Big Band</p>
+					<p class="album">Maraca soul</p>
+					<p class="any">2017-09-19</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LokitoLopongo-TeoriaDeCuerdos.jpg" alt="Lokito Lopongo, Teoría de cuerdos"/>
+				<figcaption>
+					<p class="artista">Lokito Lopongo</p>
+					<p class="album">Teoría de cuerdos</p>
+					<p class="any">2017-06-27</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PelDeGall-TotesSesDeixadesSonPerdudes.jpg" alt="Pèl de gall, Totes ses deixades són perdudes"/>
+				<figcaption>
+					<p class="artista">Pèl de gall</p>
+					<p class="album">Totes ses deixades són perdudes</p>
+					<p class="any">2017-06-12</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaTerrassetaDePreixens-Tou.jpg" alt="La terrasseta de Preixens, Tou"/>
+				<figcaption>
+					<p class="artista">La terrasseta de Preixens</p>
+					<p class="album">Tou</p>
+					<p class="any">2017-05-19</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Deliri-LaNitSencera.jpg" alt="Deliri, La nit sencera"/>
+				<figcaption>
+					<p class="artista">Deliri</p>
+					<p class="album">La nit sencera</p>
+					<p class="any">2017-05-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Dubcat-LaDiferencia.jpg" alt="Dubcat, La diferència, Spank me"/>
+				<figcaption>
+					<p class="artista">Dubcat</p>
+					<p class="album">La diferència</p>
+					<p class="any">2017-05-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ThulaDuus-Fruit.jpg" alt="Thüla Duus, Fruit"/>
+				<figcaption>
+					<p class="artista">Thüla Duus</p>
+					<p class="album">Fruit</p>
+					<p class="any">2017-05-01</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Subversa-Error.jpg" alt="Subversa, Error"/>
+				<figcaption>
+					<p class="artista">Subversa</p>
+					<p class="album">Error</p>
+					<p class="any">2017-05</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Icarians-Ales.jpg" alt="Icarians, Ales"/>
+				<figcaption>
+					<p class="artista">Icarians</p>
+					<p class="album">Ales</p>
+					<p class="any">2017-04-10</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Xakras-Corrents.jpg" alt="Xakras, Corrents"/>
+				<figcaption>
+					<p class="artista">Xakras</p>
+					<p class="album">Corrents</p>
+					<p class="any">2017-04-07</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheAssclats-XIII-EP-2017.jpg" alt="The Assclats, XIII"/>
+				<figcaption>
+					<p class="artista">The Assclats</p>
+					<p class="album">XIII</p>
+					<p class="any">2017-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheAssclats-TheAssclats-2017EP.jpg" alt="The Assclats, EP"/>
+				<figcaption>
+					<p class="artista">The Assclats</p>
+					<p class="album">The Assclats</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Sherpah-H.jpg" alt="Sherpah, H"/>
+				<figcaption>
+					<p class="artista">Sherpah</p>
+					<p class="album">H</p>
+					<p class="any">2017-03-31</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CallejonCanalla-IndicioFinal.jpg" alt="Callejón Canalla, Indicio final"/>
+				<figcaption>
+					<p class="artista">Callejón Canalla</p>
+					<p class="album">Indicio final</p>
+					<p class="any">2017-03-26</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Zoo-Raval.jpg" alt="Zoo, Raval"/>
+				<figcaption>
+					<p class="artista">Zoo</p>
+					<p class="album">Raval</p>
+					<p class="any">2017-03-24</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LostArtOfMurder-MisNochesSinDormir.jpg" alt="Lost art of murder, Mis noches sin dormir"/>
+				<figcaption>
+					<p class="artista">Lost art of murder</p>
+					<p class="album">Mis noches sin dormir</p>
+					<p class="any">2017-03-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SmokingSouls-CendraIOr.jpg" alt="Smoking Souls, Cendra i or"/>
+				<figcaption>
+					<p class="artista">Smoking Souls</p>
+					<p class="album">Cendra i or</p>
+					<p class="any">2017-02-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Enzel-CapitaIbuprofen.jpg" alt="Enzel, Capità Ibuprofen"/>
+				<figcaption>
+					<p class="artista">Enzel</p>
+					<p class="album">Capità Ibuprofen</p>
+					<p class="any">2017-01-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GhostTrip-Reincarnation.jpg" alt="Ghost Trip, Reincarnation, Nadia Elgabu, Nacho Fisac, Victor Altimiras, Adrià Vives"/>
+				<figcaption>
+					<p class="artista">Ghost Trip</p>
+					<p class="album">Reincarnation</p>
+					<p class="any">2017-01-20</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PupilesDilatives-LesSilenciades.jpg" alt="Pupil·les Dilatives, Les silenciades"/>
+				<figcaption>
+					<p class="artista">Pupil·les Dilatives</p>
+					<p class="album">Les silenciades</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AnnaD'Ivori-RereElsVidres2017.jpg" alt="Anna D'Ivori, Rere els vidres"/>
+				<figcaption>
+					<p class="artista">Anna D'Ivori</p>
+					<p class="album">Rere els vidres</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Dubcat-Som-2017.jpg" alt="Dubcat, Som"/>
+				<figcaption>
+					<p class="artista">Dubcat</p>
+					<p class="album">Som</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Edna-AraOMai-2017.jpg" alt="Edna, Ara o mai"/>
+				<figcaption>
+					<p class="artista">Edna</p>
+					<p class="album">Ara o mai</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LluisCartes-ElPaisDelsNansCabuts-2017.jpg" alt="Lluís Cartes, El país dels nans cabuts"/>
+				<figcaption>
+					<p class="artista">Lluís Cartes</p>
+					<p class="album">El país dels nans cabuts</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LokitoLopongo-Descoloca-Single-2017.jpg" alt="Lokito Lopongo, Descoloca"/>
+				<figcaption>
+					<p class="artista">Lokito Lopongo</p>
+					<p class="album">Descoloca</p>
+					<p class="any">2017</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Nuc-ArranDelMar-2017.jpg" alt="Nuc, Arran de mar"/>
+				<figcaption>
+					<p class="artista">Nuc</p>
+					<p class="album">Arran de mar</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OjoDeBuenCubero-Ingovernable-2017.jpg" alt="Ojo De Buen Cubero, Ingovernable"/>
+				<figcaption>
+					<p class="artista">Ojo De Buen Cubero</p>
+					<p class="album">Ingovernable</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SaraTerraza-SaraTerraza&TheBlackSheep-EP-2017.jpg" alt="Sara Terraza, The Black Sheep"/>
+				<figcaption>
+					<p class="artista">Sara Terraza</p>
+					<p class="album">Sara Terraza & The Black Sheep</p>
+					<p class="any">2017</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/XarimAreste-Polinesies-2017.jpg" alt="Xarim Aresté, Polinèsies"/>
+				<figcaption>
+					<p class="artista">Xarim Aresté</p>
+					<p class="album">Polinèsies</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Cheri-TrasVariosCuentos-EP.jpg" alt="Cheri, Tras varios cuentos"/>
+				<figcaption>
+					<p class="artista">Cheri</p>
+					<p class="album">Tras varios cuentos</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AlfonsoDeVilallonga-LaLibreria(The-Bookshop,IsabelCoixet)-2017-BSO.jpg" alt="Alfonso De Vilallonga, La Librería, The Bookshop, Isabel Coixet"/>
+				<figcaption>
+					<p class="artista">Alfonso De Vilallonga</p>
+					<p class="album">La Librería (The Bookshop) Isabel Coixet BSO</p>
+					<p class="any">2017</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DeTuATu-Moments.jpg" alt="De tu a tu, Moments"/>
+				<figcaption>
+					<p class="artista">De tu a tu</p>
+					<p class="album">Moments</p>
+					<p class="any">2016-12-02</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Falcon&Firkin-MomentsChillOut.jpg" alt="Falcon & Firkin, Moments Chill Out, Falcon, Firkin, Moments ChillOut"/>
+				<figcaption>
+					<p class="artista">Falcon & Firkin</p>
+					<p class="album">Moments Chill Out</p>
+					<p class="any">2016-12-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RocPuig-FocICendra-2016.jpg" alt="Roc Puig, Òscar Puig, Foc i Cendra, Jofre Bardagí"/>
+				<figcaption>
+					<p class="artista">Roc Puig</p>
+					<p class="album">Foc i cendra</p>
+					<p class="any">2016-09-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Gossos-Zenit.jpg" alt="Gossos, Zenit"/>
+				<figcaption>
+					<p class="artista">Gossos</p>
+					<p class="album">Zenit</p>
+					<p class="any">2016-09-16</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GreenZola-Interconnected.jpg" alt="Green Zola, Interconnected, Carles Gasset Alcaine"/>
+				<figcaption>
+					<p class="artista">Green Zola</p>
+					<p class="album">Interconnected</p>
+					<p class="any">2016-07-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tremp-Zaindu.jpg" alt="Tremp, Zaindu"/>
+				<figcaption>
+					<p class="artista">Tremp</p>
+					<p class="album">Zaindu</p>
+					<p class="any">2016-07-01</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/IsaacUlam-Ratpenat-2016.jpg" alt="Isaac Ulam, Ratpenat"/>
+				<figcaption>
+					<p class="artista">Isaac Ulam</p>
+					<p class="album">Ratpenat</p>
+					<p class="any">2016-04-08</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaPolsIL'Era.jpg" alt="La pols i l'era"/>
+				<figcaption>
+					<p class="artista">La pols i l'era</p>
+					<p class="album"></p>
+					<p class="any">2016-02-19</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Minerva-M.jpg" alt="Minerva, M"/>
+				<figcaption>
+					<p class="artista">Minerva</p>
+					<p class="album">M</p>
+					<p class="any">2016-02-09</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Deskarats-DKSVol2.jpg" alt="Deskarats, DKS Vol. 2"/>
+				<figcaption>
+					<p class="artista">Deskarats</p>
+					<p class="album">DKS Vol. 2</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/L'HomeTrencat-EsMortINoHoSap.jpeg" alt="L'Home Trencat, És mort i no ho sap"/>
+				<figcaption>
+					<p class="artista">L'Home Trencat</p>
+					<p class="album">És mort i no ho sap</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LilitIDionis-ElTempsDelsPobles.jpg" alt="Lilit i Dionís, El temps dels pobles, Lilit, Dionís"/>
+				<figcaption>
+					<p class="artista">Lilit i Dionís</p>
+					<p class="album">El temps dels pobles</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OjoDeBuenCubero-ElRonDeAyer.jpg" alt="Ojo De Buen Cubero, El ron de ayer"/>
+				<figcaption>
+					<p class="artista">Ojo De Buen Cubero</p>
+					<p class="album">El ron de ayer</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PaulFuster-GoBetween.jpg" alt="Paul Fuster, Go/Between, go between"/>
+				<figcaption>
+					<p class="artista">Paul Fuster</p>
+					<p class="album">Go/Between</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RaquelJimenez-BaliSpirit.jpg" alt="Raquel Jiménez, Bali Spirit Sound Vol. 1, Bali Spirit, Bali Spirit by Raquel Jiménez"/>
+				<figcaption>
+					<p class="artista">Bali Spirit by Raquel Jiménez</p>
+					<p class="album">Bali Spirit Sound Vol. 1</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Renaldo&Clara-ElsAfores.jpg" alt="Renaldo & Clara, Els afores, Renaldo, Clara"/>
+				<figcaption>
+					<p class="artista">Renaldo & Clara</p>
+					<p class="album">Els afores</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LasVictimasCiviles-40AnosDeExitosDelPosFranquismoEspanol.jpg" alt="Las Víctimas Civiles, 40 años de éxitos del posfranquismo español"/>
+				<figcaption>
+					<p class="artista">Las Víctimas Civiles</p>
+					<p class="album">40 años de éxitos del posfranquismo español</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Meteor-EnllaLaLlum.jpg" alt="Meteor, Enllà la llum"/>
+				<figcaption>
+					<p class="artista">Meteor</p>
+					<p class="album">Enllà la llum</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Kinsky-TheEdgeOfTheWineDarkSea.jpg" alt="Kinsky, The edge of the wine-dark sea"/>
+				<figcaption>
+					<p class="artista">Kinsky</p>
+					<p class="album">The edge of the wine-dark sea</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/XavierBaro-IUnaFadaHoTrasmuda.jpg" alt="Xavier Baró, I una fada ho trasmuda"/>
+				<figcaption>
+					<p class="artista">Xavier Baró</p>
+					<p class="album">I una fada ho trasmuda</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CorRoent-Batega.jpg" alt="Cor Roent, Batega"/>
+				<figcaption>
+					<p class="artista">Cor Roent</p>
+					<p class="album">Batega</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Zoo-TempestesVenenDelSud.jpg" alt="Zoo, Tempestes vénen del sud"/>
+				<figcaption>
+					<p class="artista">Zoo</p>
+					<p class="album">Tempestes vénen del sud</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RanRanRan-RanRanRan.jpg" alt="RanRanRan"/>
+				<figcaption>
+					<p class="artista">RanRanRan</p>
+					<p class="album"></p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheeVertigos-Shades.jpg" alt="Thee Vertigos, Shades"/>
+				<figcaption>
+					<p class="artista">Thee Vertigos</p>
+					<p class="album">Shades</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/VictorBranch-Introspective.jpg" alt="Victor Branch, Introspective"/>
+				<figcaption>
+					<p class="artista">Victor Branch</p>
+					<p class="album">Introspective</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/XavierBaro-Renaldo&Clara.jpg" alt="Xavier Baró i Renaldo & Clara, Xavier Baró, Renaldo, Clara"/>
+				<figcaption>
+					<p class="artista">Xavier Baró i Renaldo & Clara</p>
+					<p class="album"></p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/XaviVidal-Simetria.jpg" alt="Xavi Vidal, Σimetria, Simetria"/>
+				<figcaption>
+					<p class="artista">Xavi Vidal</p>
+					<p class="album">Σimetria</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Mazoni-7SongsForAnEndlessNight.jpg" alt="Mazoni, 7 Songs for an endless night"/>
+				<figcaption>
+					<p class="artista">Mazoni</p>
+					<p class="album">7 Songs for an endless night</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Solar-Metropolis.jpg" alt="Solar, Metropolis"/>
+				<figcaption>
+					<p class="artista">Solar</p>
+					<p class="album">Metropolis</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Imprudentes-PareceMentira.jpg" alt="Imprudentes, Parece Mentira"/>
+				<figcaption>
+					<p class="artista">Imprudentes</p>
+					<p class="album">Parece Mentira</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaPelopony-Yolanda.jpg" alt="La Pelopony, Yolanda"/>
+				<figcaption>
+					<p class="artista">La Pelopony</p>
+					<p class="album">Yolanda</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MariaArnalIMarcelBages-Verbena.jpg" alt="Maria Arnal i Marcel Bages, Maria Arnal, Marcel Bages, Verbena"/>
+				<figcaption>
+					<p class="artista">Maria Arnal i Marcel Bages</p>
+					<p class="album">Verbena</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Atzembla-CorsArmats.jpg" alt="Atzembla, Cors armats"/>
+				<figcaption>
+					<p class="artista">Atzembla</p>
+					<p class="album">Cors armats</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Assekes-UnNouCami.jpg" alt="Assekes, Un nou camí"/>
+				<figcaption>
+					<p class="artista">Assekes</p>
+					<p class="album">Un nou camí</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SenyorDelsLlamps-EremHeaviesINoCumbes.jpg" alt="Senyor dels llamps, Érem heavies i no cumbes"/>
+				<figcaption>
+					<p class="artista">Senyor dels llamps</p>
+					<p class="album">Érem heavies i no cumbes</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tumbaos-Oju!.jpg" alt="Tumbaos, Oju!"/>
+				<figcaption>
+					<p class="artista">Tumbaos</p>
+					<p class="album">Oju!</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Hysteriofunk-Forma.jpg" alt="Hysteriofunk, Forma"/>
+				<figcaption>
+					<p class="artista">Hysteriofunk</p>
+					<p class="album">Forma</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GhostTrip-Fisherman.jpg" alt="Ghost Trip, Fisherman"/>
+				<figcaption>
+					<p class="artista">Ghost Trip</p>
+					<p class="album">Fisherman</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GhostTrip-Carnation.jpg" alt="Ghost Trip, Carnation, 80's rockstars, Hittin' the ground"/>
+				<figcaption>
+					<p class="artista">Ghost Trip</p>
+					<p class="album">Carnation</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MondoLoco-AireFresco.jpg" alt="Möndo Loco, Mondo Loco, Aire fresco"/>
+				<figcaption>
+					<p class="artista">Möndo Loco</p>
+					<p class="album">Aire fresco</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ToniXucla-DePoetesCanconetes.jpg" alt="Toni Xuclà, De poetes cançonetes"/>
+				<figcaption>
+					<p class="artista">Toni Xuclà</p>
+					<p class="album">De poetes cançonetes</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tortellinis-EnUnRacoDelMon.jpg" alt="Tortellinis"/>
+				<figcaption>
+					<p class="artista">Tortellinis</p>
+					<p class="album">En un racó del món</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Milu.jpg" alt="Milú"/>
+				<figcaption>
+					<p class="artista">Milú</p>
+					<p class="album">Un món per descobrir</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Ayvala-LaRueVacilon-2016.jpg" alt="Ayvala, La rue Vacilon"/>
+				<figcaption>
+					<p class="artista">Ayvala</p>
+					<p class="album">La rue Vacilon</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LokitoLopongo-OrquestaSinTambor-2016.jpg" alt="Lokito Lopongo, Orquesta sin tambor"/>
+				<figcaption>
+					<p class="artista">Lokito Lopongo</p>
+					<p class="album">Orquesta sin tambor</p>
+					<p class="any">2016</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Inventors-L'AlgebraDelTemps-2015-06-04-EP.jpg" alt="Inventors, L'Àlgebra Del Temps"/>
+				<figcaption>
+					<p class="artista">Inventors</p>
+					<p class="album">L'Àlgebra Del Temps</p>
+					<p class="any">2015-06-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Bob%26ElLladre-El-ColorDeLaNit-2015-04-23-Single.jpg" alt="Bob & El Lladre, El Color De La Nit"/>
+				<figcaption>
+					<p class="artista">Bob & El Lladre</p>
+					<p class="album">El Color De La Nit</p>
+					<p class="any">2015-04-23</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Accio-1001Colors.jpg" alt="Acció, 1001 Colors"/>
+				<figcaption>
+					<p class="artista">Acció</p>
+					<p class="album">1001 Colors</p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CrisJuanico-F(a)usta.jpg" alt="Cris Juanico, F(a)usta, Fausta"/>
+				<figcaption>
+					<p class="artista">Cris Juanico</p>
+					<p class="album">F(a)usta</p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Arlo-2015.jpg" alt="Arlo"/>
+				<figcaption>
+					<p class="artista">Arlo</p>
+					<p class="album"></p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LostArtofMurder-EP-2015.jpg" alt="Lost Art of Murder"/>
+				<figcaption>
+					<p class="artista">Lost Art of Murder</p>
+					<p class="album"></p>
+					<p class="any">2015</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Matis-Llum-2015.jpg" alt="Matís, Llum"/>
+				<figcaption>
+					<p class="artista">Matís</p>
+					<p class="album">Llum</p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OjoDeBuenCubero-Soc-2015.jpg" alt="Ojo De Buen Cubero, Sóc"/>
+				<figcaption>
+					<p class="artista">Ojo De Buen Cubero</p>
+					<p class="album">Sóc</p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Puput-UpupaEpops-2015.jpg" alt="Puput, Upupa Epops"/>
+				<figcaption>
+					<p class="artista">Puput</p>
+					<p class="album">Upupa Epops</p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Rumbalbar-Ara-2015.jpg" alt="Rumbalbar, Ara"/>
+				<figcaption>
+					<p class="artista">Rumbalbar</p>
+					<p class="album">Ara</p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SmokingSouls-Nomades-2015.jpg" alt="Smoking Souls, Nòmades"/>
+				<figcaption>
+					<p class="artista">Smoking Souls</p>
+					<p class="album">Nòmades</p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/UnAltreNadaldeCancons-2015.jpg" alt="Un altre Nadal de cançons"/>
+				<figcaption>
+					<p class="artista">Un altre Nadal de cançons</p>
+					<p class="album"></p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LidiaSerra-LaTerraEsCasaMeva.jpg" alt="Lídia Serra López, La Terra és casa meva, Col·lecció Cantem"/>
+				<figcaption>
+					<p class="artista">Lídia Serra López</p>
+					<p class="album">La Terra és casa meva</p>
+					<p class="any">2015</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/XvB-Autoretrats.jpg" alt="XvB, Autoretrats, Xavi Vidal, Berni Mora"/>
+				<figcaption>
+					<p class="artista">XvB (Xavi Vidal, Berni Mora)</p>
+					<p class="album">Autoretrats</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PereEspinosa-Evolucio.jpg" alt="Pere Espinosa, Evolució"/>
+				<figcaption>
+					<p class="artista">Pere Espinosa</p>
+					<p class="album">Evolució</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MiquelAbras-PerAmorALArt.jpg" alt="Miquel Abras, Per amor a l'art"/>
+				<figcaption>
+					<p class="artista">Miquel Abras</p>
+					<p class="album">Per amor a l'art</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AlaDeMoska-MalaConciencia.jpg" alt="Alademoska, Mala conciencia"/>
+				<figcaption>
+					<p class="artista">Alademoska</p>
+					<p class="album">Mala conciencia</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AndreuMartinez-TickTock.jpg" alt="Andreu Martinez, Tick Tock"/>
+				<figcaption>
+					<p class="artista">Andreu Martinez</p>
+					<p class="album">Tick Tock</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Atupa-ExpansionPack.jpg" alt="Atupa, Expansion Pack"/>
+				<figcaption>
+					<p class="artista">Atupa</p>
+					<p class="album">Expansion Pack</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DamiaOlivella-Origen.jpg" alt="Damià Olivella, Origen"/>
+				<figcaption>
+					<p class="artista">Damià Olivella</p>
+					<p class="album">Origen</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/HighTimes-FinsQueSurtiElSol.jpg" alt="High Times, Fins que surti el Sol"/>
+				<figcaption>
+					<p class="artista">High Times</p>
+					<p class="album">Fins que surti el Sol</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/QuadernObert-PoemesICancons-2014.jpg" alt="Quadern obert, Poemes i cançons"/>
+				<figcaption>
+					<p class="artista">Quadern Obert</p>
+					<p class="album">Poemes i cançons</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JordiBoixados-CuquesDeLlum.jpg" alt="Jordi Boixadós, Cuques de llum"/>
+				<figcaption>
+					<p class="artista">Jordi Boixadós</p>
+					<p class="album">Cuques de llum</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Meteor-AlloQueSom.jpg" alt="Meteor, Allò que som"/>
+				<figcaption>
+					<p class="artista">Meteor</p>
+					<p class="album">Allò que som</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/HolyBouncer-Ladies&Gentlemen-EP-2014.jpg" alt="Holy Bouncer, Ladies & Gentlemen"/>
+				<figcaption>
+					<p class="artista">Holy Bouncer</p>
+					<p class="album">Ladies & Gentlemen</p>
+					<p class="any">2014</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/KingKongBoy-AlcemElVol-2014.jpg" alt="King Kong Boy, Alcem el vol"/>
+				<figcaption>
+					<p class="artista">King Kong Boy</p>
+					<p class="album">Alcem el vol</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaPerdiuSpencer-NostreCodi-2014.jpg" alt="La perdiu Spencer, Nostre codi"/>
+				<figcaption>
+					<p class="artista">La perdiu Spencer</p>
+					<p class="album">Nostre codi</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LokitoLopongo-UnPoquitoDiferentes-EP-2014.jpg" alt="Lokito Lopongo, Un poquito diferentes"/>
+				<figcaption>
+					<p class="artista">Lokito Lopongo</p>
+					<p class="album">Un poquito diferentes</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MonsieurH-MiseEnAbyme-2014.jpg" alt="Monsieur H, Mise en abyme"/>
+				<figcaption>
+					<p class="artista">Monsieur H</p>
+					<p class="album">Mise en abyme</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PastoretsRock-RockNCorNadales2.0-2014.jpg" alt="Pastorets Rock, Rock'N'Cor, Nadales 2.0"/>
+				<figcaption>
+					<p class="artista">Pastorets Rock</p>
+					<p class="album">Rock'N'Cor Nadales 2.0</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Renaldo%26Clara-FruitsDelTeuBosc-2014.jpg" alt="Renaldo & Clara, Fruits del teu bosc"/>
+				<figcaption>
+					<p class="artista">Renaldo & Clara</p>
+					<p class="album">Fruits del teu bosc</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheGramophoneAllstarsBigBand-Jazzmaica-2014.jpg" alt="The Gramophone Allstars Big Band, Jazzmaica"/>
+				<figcaption>
+					<p class="artista">The Gramophone Allstars Big Band</p>
+					<p class="album">Jazzmaica</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ThePenguinsBand-ShuffleCut&Deal-2014.jpg" alt="The Penguins Band, Shuffle, cut & deal"/>
+				<figcaption>
+					<p class="artista">The Penguins Band</p>
+					<p class="album">Shuffle, cut & deal</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/WednesdayLips-SeasonIII-HowToBeAwakeUntillDown-2014.jpg" alt="Wednesday Lips, Season III How to be awake untill down"/>
+				<figcaption>
+					<p class="artista">Wednesday Lips</p>
+					<p class="album">Season III How to be awake untill down</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Xavieruga-HaEstatUnPlaer-2014.jpg" alt="Xavieruga, Ha estat un plaer..."/>
+				<figcaption>
+					<p class="artista">Xavieruga</p>
+					<p class="album">Ha estat un plaer...</p>
+					<p class="any">2014</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Terratombats-2014NiUnMinutMes.jpg" alt="Terratombats, 20:14 Ni un minut més"/>
+				<figcaption>
+					<p class="artista">Terratombats</p>
+					<p class="album">20:14 Ni un minut més</p>
+					<p class="any">2013-03-01</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OrxataSoundSystem3.1-20130620.jpg" alt="Orxata Sound System, 3.1"/>
+				<figcaption>
+					<p class="artista">Orxata Sound System</p>
+					<p class="album">3.1</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Gossos-Batecs.jpg" alt="Gossos, Batecs"/>
+				<figcaption>
+					<p class="artista">Gossos</p>
+					<p class="album">Batecs</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Accio-OnSocAra.jpg" alt="Acció, On sóc ara"/>
+				<figcaption>
+					<p class="artista">Acció</p>
+					<p class="album">On sóc ara</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AlbertPalomar-CorDeBou.jpg" alt="Albert Palomar, Cor de bou"/>
+				<figcaption>
+					<p class="artista">Albert Palomar</p>
+					<p class="album">Cor de bou</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AltresCanconsDeNadal5.jpg" alt="Altres cançons de Nadal 5"/>
+				<figcaption>
+					<p class="artista">Altres cançons de Nadal 5</p>
+					<p class="album"></p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Anne-ACauDOrella.jpg" alt="Anne, A cau d'orella"/>
+				<figcaption>
+					<p class="artista">Anne</p>
+					<p class="album">A cau d'orella</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Aspencat-Essencia.jpg" alt="Aspencat, Essència"/>
+				<figcaption>
+					<p class="artista">Aspencat</p>
+					<p class="album">Essència</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Bob&ElLladre-439.jpg" alt="Bob & El lladre, 439"/>
+				<figcaption>
+					<p class="artista">Bob & El lladre</p>
+					<p class="album">439</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CrisJuanico-UnMonDeNadales.jpg" alt="Cris Juanico, Un món de nadales"/>
+				<figcaption>
+					<p class="artista">Cris Juanico</p>
+					<p class="album">Un món de nadales</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DoctorCalypso-SempreEndavant.jpg" alt="Doctor Calypso, Sempre endavant"/>
+				<figcaption>
+					<p class="artista">Doctor Calypso</p>
+					<p class="album">Sempre endavant</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JordiBatiste-Nova.jpg" alt="Jordi Batiste, Nova"/>
+				<figcaption>
+					<p class="artista">Jordi Batiste</p>
+					<p class="album">Nova</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Kinsky-SunsetOnTheGoodFight.jpg" alt="Kinsky, Sunset on the good fight"/>
+				<figcaption>
+					<p class="artista">Kinsky</p>
+					<p class="album">Sunset on the good fight</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheBlinded-EssenceOfTime.jpg" alt="The Blinded, Essence of time"/>
+				<figcaption>
+					<p class="artista">The Blinded</p>
+					<p class="album">Essence of time</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Antidot-Irripipum.jpg" alt="Antídot, Irripipum"/>
+				<figcaption>
+					<p class="artista">Antídot</p>
+					<p class="album">Irripipum</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/FollsINocturns-207.jpg" alt="Folls i Nocturns, 207"/>
+				<figcaption>
+					<p class="artista">Folls i Nocturns</p>
+					<p class="album">207</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Hysteriofunk-Deco.jpg" alt="Hysteriofunk, Deco"/>
+				<figcaption>
+					<p class="artista">Hysteriofunk</p>
+					<p class="album">Deco</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaMalaga-MananaSol.jpg" alt="La Màlaga, Mañana Sol"/>
+				<figcaption>
+					<p class="artista">La Màlaga</p>
+					<p class="album">Mañana Sol</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PaulFuster-PaulsPlanet.jpg" alt="Paul Fuster, Pauls Planet"/>
+				<figcaption>
+					<p class="artista">Paul Fuster</p>
+					<p class="album">Pauls Planet</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AtVersaris-NoFear-EP-2013.jpg" alt="At Versaris, No fear"/>
+				<figcaption>
+					<p class="artista">At Versaris</p>
+					<p class="album">No fear</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/BarretCosmic-Single-2013.jpg" alt="Barret Còsmic"/>
+				<figcaption>
+					<p class="artista">Barret Còsmic</p>
+					<p class="album"></p>
+					<p class="any">2013</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/NoExpectations-Demo-EP-2013.jpg" alt="No Expectations, Demo"/>
+				<figcaption>
+					<p class="artista">No Expectations</p>
+					<p class="album">Demo</p>
+					<p class="any">2013</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PullMyStrings-DoraBay-2013.jpg" alt="Pull My Strings, Dora Bay"/>
+				<figcaption>
+					<p class="artista">Pull My Strings</p>
+					<p class="album">Dora Bay</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Puput-Puput-2013.jpg" alt="Puput"/>
+				<figcaption>
+					<p class="artista">Puput</p>
+					<p class="album"></p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Solar-Ignicion-2013.jpg" alt="Solar, Ignición"/>
+				<figcaption>
+					<p class="artista">Solar</p>
+					<p class="album">Ignición</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JaTHoDire-MovimentsSalvatges.jpg" alt="Ja t'ho diré, Moviments Salvatges"/>
+				<figcaption>
+					<p class="artista">Ja t'ho diré</p>
+					<p class="album">Moviments Salvatges</p>
+					<p class="any">2013</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Vertigen-IntentDePoema.jpg" alt="Vertigen, Intent De Poema"/>
+				<figcaption>
+					<p class="artista">Vertigen</p>
+					<p class="album">Intent De Poema</p>
+					<p class="any">2013-06-18</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Kodul-LaNostraResposta-2013.jpg" alt="Kòdul, La nostra resposta"/>
+				<figcaption>
+					<p class="artista">Kòdul</p>
+					<p class="album">La nostra resposta</p>
+					<p class="any">2013-04</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MiquelAbras-HeroisDelSegleXXI.jpg" alt="Miquel Abras, Herois el segle XXI, Polseres Vermelles"/>
+				<figcaption>
+					<p class="artista">Miquel Abras</p>
+					<p class="album">Herois del segle XXI (Polseres Vermelles T2)</p>
+					<p class="any">2013-03-13</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/WednesdayLips-SeasonTwoSideA-2012.jpg" alt="Wednesday Lips, Season Two, Side A:, Songs to Spend a Rainy Afternoon Watching Through the Window"/>
+				<figcaption>
+					<p class="artista">Wednesday Lips</p>
+					<p class="album">Season Two - Side A:Songs to Spend a Rainy Afternoon Watching Through the Window</p>
+					<p class="any">2012-12-27</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MenaixATrua-GuiaDePetitsSenyals.jpg" alt="Menaix a truà, Guia de petits senyals"/>
+				<figcaption>
+					<p class="artista">Menaix a truà</p>
+					<p class="album">Guia de petits senyals</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MiquelAbras-EquilibrisImpossibles.jpg" alt="Miquel Abras, Equilibris impossibles"/>
+				<figcaption>
+					<p class="artista">Miquel Abras</p>
+					<p class="album">Equilibris impossibles</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Aspencat-Inedit.jpg" alt="Aspencat, Inèdit"/>
+				<figcaption>
+					<p class="artista">Aspencat</p>
+					<p class="album">Inèdit</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Amelie-EsElMoment.jpg" alt="Amelie, És el moment"/>
+				<figcaption>
+					<p class="artista">Amelie</p>
+					<p class="album">És el moment</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AlbertPalomar-NoEstemSols.jpg" alt="Albert Palomar, No estem sols"/>
+				<figcaption>
+					<p class="artista">Albert Palomar</p>
+					<p class="album">No estem sols</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Atzembla-ElTeuViatge.jpg" alt="Atzembla, El teu viatge"/>
+				<figcaption>
+					<p class="artista">Atzembla</p>
+					<p class="album">El teu viatge</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DamiaOlivella-UnNouSentit.jpg" alt="Damià Olivella, Un nou sentit"/>
+				<figcaption>
+					<p class="artista">Damià Olivella</p>
+					<p class="album">Un nou sentit</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Deskarats-Festival.jpg" alt="Deskarats, Festival"/>
+				<figcaption>
+					<p class="artista">Deskarats</p>
+					<p class="album">Festival</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Enatizo-Malnacido.jpg" alt="Enatizo, Malnacido"/>
+				<figcaption>
+					<p class="artista">Enatizo</p>
+					<p class="album">Malnacido</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheRisas-ElMillorDelsMoments.jpg" alt="The Risas, El millor dels moments"/>
+				<figcaption>
+					<p class="artista">The Risas</p>
+					<p class="album">El millor dels moments</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Font-7.jpg" alt="Font, 7"/>
+				<figcaption>
+					<p class="artista">Font</p>
+					<p class="album">7</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Jade-Reevolucion.jpg" alt="Jade, Reevolución"/>
+				<figcaption>
+					<p class="artista">Jade</p>
+					<p class="album">Reevolución</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaSenyoretaDescalca-Descalcos.jpg" alt="La senyoreta descalça, Descalços"/>
+				<figcaption>
+					<p class="artista">La senyoreta descalça</p>
+					<p class="album">Descalços</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MarAbella-Abans.jpg" alt="Mar Abella, Abans, Un cop més"/>
+				<figcaption>
+					<p class="artista">Mar Abella</p>
+					<p class="album">Abans, Un cop més</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OrxataSoundSystem-3.0.jpg" alt="Orxata Sound System, 3.0"/>
+				<figcaption>
+					<p class="artista">Orxata Sound System</p>
+					<p class="album">3.0</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OrxataSoundSystem-3.0Mixtape-2012.jpg" alt="Orxata Sound System, 3.0, Mixtape"/>
+				<figcaption>
+					<p class="artista">Orxata Sound System</p>
+					<p class="album">3.0 Mixtape</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PolCroketa-TheHouseOfLove.jpg" alt="Pol Croketa, The house of love"/>
+				<figcaption>
+					<p class="artista">Pol Croketa</p>
+					<p class="album">The house of love</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TributDeSorraIFullesAMiquelMartiIPol.jpg" alt="Àlex Carmona, Maria Dolça Manubens, Tribut de sorra i fulles a Miquel Martí i Pol"/>
+				<figcaption>
+					<p class="artista">Àlex Carmona i Maria Dolça Manubens</p>
+					<p class="album">Tribut de sorra i fulles a Miquel Martí i Pol</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Cronics-L'IrresolubleCasDeL'AssassiSurrealista-2012.jpg" alt="Crònics, L'irresoluble cas de l'assassí surrealista"/>
+				<figcaption>
+					<p class="artista">Crònics</p>
+					<p class="album">L'irresoluble cas de l'assassí surrealista</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Eli'Paperboy'ReedMeetsThePepperPots-TimeAndPlace-EP-2012.jpg" alt="Eli Paperboy reed meets The Pepper Pots, Time and place"/>
+				<figcaption>
+					<p class="artista">Eli 'Paperboy' Reed meets The Pepper Pots</p>
+					<p class="album">Time and place</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Hexamine-RedWallsBlackDoor-2012.jpg" alt="Hexamine, RedWalls, BlackDoor"/>
+				<figcaption>
+					<p class="artista">Hexamine</p>
+					<p class="album">RedWalls,BlackDoor</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/IvetteNadal-MestresAmics-2012.jpg" alt="Ivette Nadal, Mestres i amics"/>
+				<figcaption>
+					<p class="artista">Ivette Nadal</p>
+					<p class="album">Mestres i amics</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JCMC-NoTeMiresLaPortada-2012.jpg" alt="JCMC, No te mires la portada"/>
+				<figcaption>
+					<p class="artista">JCMC</p>
+					<p class="album">No te mires la portada</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Karbunko-EnsenandoLosDientes-2012.jpg" alt="Karbunko, Enseñando los dientes"/>
+				<figcaption>
+					<p class="artista">Karbunko</p>
+					<p class="album">Enseñando los dientes</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RedSouls-TresSomnisDespresDeCreuret-EP-2012.jpg" alt="Red Souls, Tres somnis després de creure't"/>
+				<figcaption>
+					<p class="artista">Red Souls</p>
+					<p class="album">Tres somnis després de creure't</p>
+					<p class="any">2012</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tremendamente-AlPunto-2012.jpg" alt="Tremendamente, Al punto"/>
+				<figcaption>
+					<p class="artista">Tremendamente</p>
+					<p class="album">Al punto</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Acousters-DarrereLaPorta-2012.jpg" alt="Acousters, Darrere la porta"/>
+				<figcaption>
+					<p class="artista">Acousters</p>
+					<p class="album">Darrere la porta...</p>
+					<p class="any">2012</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/FosiBarry-LaHostia-2011.jpg" alt="Fosi Barry, La hòstia"/>
+				<figcaption>
+					<p class="artista">Fosi Barry</p>
+					<p class="album">La Hòstia</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/NatxoTarres&TheWireless-LiveInAuditori.jpg" alt="Natxo Tarrés & The Wireless, Marley 30 anys. Live in Auditori"/>
+				<figcaption>
+					<p class="artista">Natxo Tarrés & The Wireless</p>
+					<p class="album">Marley 30 anys. Live in Auditori</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Amelie-SomiantDesperts.jpg" alt="Amelie, Somiant desperts"/>
+				<figcaption>
+					<p class="artista">Amelie</p>
+					<p class="album">Somiant desperts</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AmicsDelBosc-FluctuacionsDeLApostolFlam.jpg" alt="Amics del bosc, Fluctuacions de l'Apòstol/Flam"/>
+				<figcaption>
+					<p class="artista">Amics del bosc</p>
+					<p class="album">Fluctuacions de l'Apòstol/Flam</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AspencatNaixenPrimaveres.jpg" alt="Aspencat, Naixen primaveres"/>
+				<figcaption>
+					<p class="artista">Aspencat</p>
+					<p class="album">Naixen primaveres</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AtVersaris&AssTrio-PerPrincipisElegants.jpg" alt="At Versaris & Asstrio, Per principis elegants"/>
+				<figcaption>
+					<p class="artista">At Versaris & Asstrio</p>
+					<p class="album">Per principis elegants</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/BoogieDreams-Teledirigits.jpg" alt="Boogie Dreams, Teledirigits"/>
+				<figcaption>
+					<p class="artista">Boogie Dreams</p>
+					<p class="album">Teledirigits</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CrisJuanico-DuesPedres.jpg" alt="Cris Juanico, Dues pedres"/>
+				<figcaption>
+					<p class="artista">Cris Juanico</p>
+					<p class="album">Dues pedres</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Eina-LEstatILaRevolucio.jpg" alt="Eina, L'estat i la revolució"/>
+				<figcaption>
+					<p class="artista">Eina</p>
+					<p class="album">L'estat i la revolució</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MalTrago-CogiendoColor.jpg" alt="Mal Trago, Cogiendo color"/>
+				<figcaption>
+					<p class="artista">Mal Trago</p>
+					<p class="album">Cogiendo color</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TrianguloEstereo-Invisible.jpg" alt="Triangulo Estereo, Invisible"/>
+				<figcaption>
+					<p class="artista">Triangulo Estereo</p>
+					<p class="album">Invisible</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TributAAntoniaFont-AlegriaRevisitat.jpg" alt="Tribut a Antonia Font, Alegria Revisitat"/>
+				<figcaption>
+					<p class="artista">Tribut a Antonia Font</p>
+					<p class="album">Alegria Revisitat</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EdTulipa-Popterapia.jpg" alt="Ed Tulipa, Popteràpia"/>
+				<figcaption>
+					<p class="artista">Ed Tulipa</p>
+					<p class="album">Popteràpia</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Faerica-MorfeuIJulieta.jpg" alt="Faèrica, Morfeu i Julieta"/>
+				<figcaption>
+					<p class="artista">Faèrica</p>
+					<p class="album">Morfeu i Julieta</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Kodul-Empremta.jpg" alt="Kòdul, Empremta"/>
+				<figcaption>
+					<p class="artista">Kòdul</p>
+					<p class="album">Empremta</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MariaSalgado-Abrazo-Abraco.jpg" alt="María Salgado, Abrazo-Abraço"/>
+				<figcaption>
+					<p class="artista">María Salgado</p>
+					<p class="album">Abrazo-Abraço</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Mine-LesMaresmesMaleides.jpg" alt="Mine!, Les maresmes maleïdes"/>
+				<figcaption>
+					<p class="artista">Mine!</p>
+					<p class="album">Les maresmes maleïdes</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MisterJones-PensamientoYAccion.jpg" alt="Mister Jones, Pensamiento y acción"/>
+				<figcaption>
+					<p class="artista">Mister Jones</p>
+					<p class="album">Pensamiento y acción</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OrxataSoundSystem-2.0.jpg" alt="Orxata Sound System, 2.0"/>
+				<figcaption>
+					<p class="artista">Orxata Sound System</p>
+					<p class="album">2.0</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PauAlabajos-UnaAmableUnaTristaUnaPetitaPatria.jpg" alt="Pau Alabajos, Una amable, una trista, una petita patria"/>
+				<figcaption>
+					<p class="artista">Pau Alabajos</p>
+					<p class="album">Una amable, una trista, una petita patria</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Raiz-ElLadoDeLosRebeldes.jpg" alt="La Raíz, El lado de los rebeldes"/>
+				<figcaption>
+					<p class="artista">La Raíz</p>
+					<p class="album">El lado de los rebeldes</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PolCroketa-PolPlay.jpg" alt="Pol Croketa, Pol Play"/>
+				<figcaption>
+					<p class="artista">Pol Croketa</p>
+					<p class="album">Pol Play</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Pantanito-AsesDeLaRumba-EP-2011.jpg" alt="Pantanito, Ases de la rumba"/>
+				<figcaption>
+					<p class="artista">Pantanito</p>
+					<p class="album">Ases de la rumba</p>
+					<p class="any">2011</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PaulFuster-Repte-2011.jpg" alt="Paul Fuster, Repte"/>
+				<figcaption>
+					<p class="artista">Paul Fuster</p>
+					<p class="album">Repte</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Rocco-2011.jpg" alt="Rocco"/>
+				<figcaption>
+					<p class="artista">Rocco</p>
+					<p class="album"></p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/HighTimes-QueNoAcabiMai-2011.jpg" alt="High Times, Que no acabi mai!"/>
+				<figcaption>
+					<p class="artista">High Times</p>
+					<p class="album">Que no acabi mai!</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ElBeldaIElConjuntBadabadoc-VitaminaSol2011single.jpg" alt="El Belda I El Conjunt Badabadoc, Vitamina Sol"/>
+				<figcaption>
+					<p class="artista">El Belda I El Conjunt Badabadoc</p>
+					<p class="album">Vitamina Sol</p>
+					<p class="any">2011</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Xenon-MilHistories-2011-07-01-Album.jpg" alt="Xenon, Mil Històries"/>
+				<figcaption>
+					<p class="artista">Xenon</p>
+					<p class="album">Mil Històries</p>
+					<p class="any">2011-07-01</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SmouPoc-2011-02-22-Album.jpg" alt="Smou Poc"/>
+				<figcaption>
+					<p class="artista">Smou Poc</p>
+					<p class="album">Smou Poc</p>
+					<p class="any">2011-02-22</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ElBeldaIElConjuntBadabadoc-PaisPetit2010single.jpg" alt="El Belda I El Conjunt Badabadoc, País Petit"/>
+				<figcaption>
+					<p class="artista">El Belda I El Conjunt Badabadoc</p>
+					<p class="album">País Petit</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Ruido-Tentaciones-EP-2010.jpg" alt="Ruido!, Tentaciones"/>
+				<figcaption>
+					<p class="artista">Ruido!</p>
+					<p class="album">Tentaciones</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Gossos-Dia1.jpg" alt="Gossos, Dia 1"/>
+				<figcaption>
+					<p class="artista">Gossos</p>
+					<p class="album">Dia 1</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MiquelAbras-TempsDeZel.jpg" alt="Miquel Abras, Temps de zel"/>
+				<figcaption>
+					<p class="artista">Miquel Abras</p>
+					<p class="album">Temps de zel</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Bandal.O.S-UnSitioBajoElSol.jpg" alt="BandaL.O.S, Un sitio bajo el sol"/>
+				<figcaption>
+					<p class="artista">BandaL.O.S</p>
+					<p class="album">Un sitio bajo el sol</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AncientAmbientFlute&AlbertGGalbany.jpg" alt="Ancient Ambient Flute & Albert G. Galbany"/>
+				<figcaption>
+					<p class="artista">Albert G. Galbany</p>
+					<p class="album">Ancient Ambient Flute</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CrisJuanico-PedresQueRatllen.jpg" alt="Cris Juanico, Pedres que ratllen"/>
+				<figcaption>
+					<p class="artista">Cris Juanico</p>
+					<p class="album">Pedres que ratllen</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DaniFlaco-SecretosDeSumario.jpg" alt="Dani Flaco, Secretos de sumario"/>
+				<figcaption>
+					<p class="artista">Dani Flaco</p>
+					<p class="album">Secretos de sumario</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Dekrepits-SemblaQuePloura.jpg" alt="Dekrèpits, Sembla que plourà"/>
+				<figcaption>
+					<p class="artista">Dekrèpits</p>
+					<p class="album">Sembla que plourà</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/SubmariPop(TributCatalaATheBeatles)-2010.jpg" alt="Submarí Pop, Tribut Català a The Beatles"/>
+				<figcaption>
+					<p class="artista">Submarí Pop</p>
+					<p class="album">Tribut Català a The Beatles</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Costa59-UnMarDeConfetti.jpg" alt="Costa 59, Un mar de confetti"/>
+				<figcaption>
+					<p class="artista">Costa 59</p>
+					<p class="album">Un mar de confetti</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/GloriaTerricabras-Esperant-te.jpg" alt="Glòria Terricabras, Esperant-te"/>
+				<figcaption>
+					<p class="artista">Glòria Terricabras</p>
+					<p class="album">Esperant-te</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/IvetteNadal-ALEsquenaDUnElefant.jpg" alt="Ivette Nadal, A l'esquena d'un elefant"/>
+				<figcaption>
+					<p class="artista">Ivette Nadal</p>
+					<p class="album">A l'esquena d'un elefant</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Jorcx-EnFiEnResum2000-09.jpg" alt="Jorcx, En fi... En resum 2000-09"/>
+				<figcaption>
+					<p class="artista">Jorcx</p>
+					<p class="album">En fi... En resum 2000-09</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JordiGuardans-TEscricDesDeGranada.jpg" alt="Adolfo Osta, Carles Rebassa, Ester Formosa, Gerad Quintana, Sílvia Comes, Túrnez, Sesé canten Jordi Guardans, T'escric des de Granada"/>
+				<figcaption>
+					<p class="artista">Canten Jordi Guardans</p>
+					<p class="album">T'escric des de Granada</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Kibo-Racons.jpg" alt="Kibo, Racons"/>
+				<figcaption>
+					<p class="artista">Kibo</p>
+					<p class="album">Racons</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LaIaia-ElMeuVaixell.jpg" alt="La Iaia, El meu vaixell"/>
+				<figcaption>
+					<p class="artista">La Iaia</p>
+					<p class="album">El meu vaixell</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Mine-UnBrindisPelNenAndroide.jpg" alt="Mine!, Un brindis pel nen androide"/>
+				<figcaption>
+					<p class="artista">Mine!</p>
+					<p class="album">Un brindis pel nen androide</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Morodo-RebelAction.jpg" alt="Morodo, Rebel action"/>
+				<figcaption>
+					<p class="artista">Morodo</p>
+					<p class="album">Rebel action</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MousseDeArana-FaisanesPerdicesYCabezasDeJabalis.jpg" alt="Mousse de araña, faisanes, perdices y cabezas de jabalís"/>
+				<figcaption>
+					<p class="artista">Mousse de araña</p>
+					<p class="album">Faisanes, perdices y cabezas de jabalís</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OrxataSoundSystem-2.0Beta2.jpg" alt="Orxata Sound System, 2.0 Beta 2"/>
+				<figcaption>
+					<p class="artista">Orxata Sound System</p>
+					<p class="album">2.0 Beta 2</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OriolFoll-Foc.jpg" alt="Oriol Foll, Foc"/>
+				<figcaption>
+					<p class="artista">Oriol Foll</p>
+					<p class="album">Foc</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Plouen-Ancoratge.jpg" alt="Plouen, Ancoratge"/>
+				<figcaption>
+					<p class="artista">Plouen</p>
+					<p class="album">Ancoratge</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ChivoChivato-DejarseLaPiel-2010.jpg" alt="Chivo Chivato, Dejarse la piel"/>
+				<figcaption>
+					<p class="artista">Chivo Chivato</p>
+					<p class="album">Dejarse la piel</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Raim-LaVerema-2010.jpg" alt="Raïm, La verema"/>
+				<figcaption>
+					<p class="artista">Raïm</p>
+					<p class="album">La verema</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RecklessSide-HellIsComing-2010.jpg" alt="Reckless Side, Hell is coming"/>
+				<figcaption>
+					<p class="artista">Reckless Side</p>
+					<p class="album">Hell is coming</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LosGuardiansDelPont-Rockferatu.jpg" alt="Los guardians del pont, LGP, Rockferatu"/>
+				<figcaption>
+					<p class="artista">Los Guardians Del Pont (LGP)</p>
+					<p class="album">Rockferatu</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			 <figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CiudadNeon-HorizonteAlReves-2010.jpg" alt="Ciudad Neón, Horizonte al revés"/>
+				<figcaption>
+					<p class="artista">Ciudad Neón</p>
+					<p class="album">Horizonte al revés</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Psicophonics20101228EP.jpg" alt="Psicophonics, #, 2010, EP"/>
+				<figcaption>
+					<p class="artista">Psicophonics</p>
+					<p class="album">#</p>
+					<p class="any">2010</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RicardCanalsILaBandaDelsCantautats-CosesQuePassen-2009.jpg" alt="Ricard Canals, La Banda Dels Cantautats, Coses que passen"/>
+				<figcaption>
+					<p class="artista">Ricard Canals i La Banda Dels Cantautats</p>
+					<p class="album">Coses que passen</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Polonia-ElDisc.jpg" alt="Polònia, El disc"/>
+				<figcaption>
+					<p class="artista">Polònia</p>
+					<p class="album">El disc</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DijousPaella-Vol.2.jpg" alt="Dijous Paella, Vol. II, Vol. 2"/>
+				<figcaption>
+					<p class="artista">Dijous Paella</p>
+					<p class="album">Vol. II</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Aspencat-ObriLaLlauna.jpg" alt="Aspencat, Obri la llauna"/>
+				<figcaption>
+					<p class="artista">Aspencat</p>
+					<p class="album">Obri la llauna</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>				
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CompartirDonaGustet-Marquet.jpg" alt="Compartir Dóna Gustet, Marquet"/>
+				<figcaption>
+					<p class="artista">Compartir Dóna Gustet</p>
+					<p class="album">Marquet</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Corzanius-SabesQuienSoy-2009.jpg" alt="Corzanius, ¿Sabes quién soy?"/>
+				<figcaption>
+					<p class="artista">Corzanius</p>
+					<p class="album">¿Sabes quién soy?</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DamiaOlivella-Ara.jpg" alt="Damià Olivella, Ara"/>
+				<figcaption>
+					<p class="artista">Damià Olivella</p>
+					<p class="album">Ara</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DoctorCalambre-DeMomentoMusica.jpg" alt="Doctor Calambre, De momento música..."/>
+				<figcaption>
+					<p class="artista">Doctor Calambre</p>
+					<p class="album">De momento música...</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Efedefunk-TodaUnaVida-2009.jpg" alt="Efedefunk, Toda una vida"/>
+				<figcaption>
+					<p class="artista">Efedefunk</p>
+					<p class="album">Toda una vida</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JoanjoBosk-EnElTempleDelVent.jpg" alt="Joanjo Bosk, En el temple del vent"/>
+				<figcaption>
+					<p class="artista">Joanjo Bosk</p>
+					<p class="album">En el temple del vent</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tremendamente-SonarBienDespierto.jpg" alt="Tremendamente, Soñar bien despierto"/>
+				<figcaption>
+					<p class="artista">Tremendamente</p>
+					<p class="album">Soñar bien despierto</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/VingaVa.jpg" alt="Vinga va!"/>
+				<figcaption>
+					<p class="artista">Compartir Dóna Gustet, Orxata Sound System, Experimental Smòuquers of Carxofa</p>
+					<p class="album">Vinga va!</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Miyagui-980-1030.jpg" alt="Miyagui, 980-/030"/>
+				<figcaption>
+					<p class="artista">Miyagui</p>
+					<p class="album">980/1030</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OrxataSoundSystem-2.0Beta1.jpg" alt="Orxata Sound System, 2.0 Beta 1"/>
+				<figcaption>
+					<p class="artista">Orxata Sound System</p>
+					<p class="album">2.0 Beta 1</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ALineAboveTheSea-2009-EP.jpg" alt="A line above the sea"/>
+				<figcaption>
+					<p class="artista">A line above the sea</p>
+					<p class="album"></p>
+					<p class="any">2009</p>
+				</figcaption>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/QuanSomrius-ElMillorDelNadal-2009.jpg" alt="Quan Somrius, El millor del Nadal"/>
+				<figcaption>
+					<p class="artista">Quan Somrius</p>
+					<p class="album">El millor del Nadal</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/ProjecteBu-Vol.1-2009.jpg" alt="Projecte Bu, Vol.1"/>
+				<figcaption>
+					<p class="artista">Projecte Bu</p>
+					<p class="album">Vol.1</p>
+					<p class="any">2009</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MenaixATrua-ComElVent.jpg" alt="Menaix a truà, Com el vent"/>
+				<figcaption>
+					<p class="artista">Menaix a truà</p>
+					<p class="album">Com el vent</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EntreDos-TranquilsDaltSArbre-2008.jpg" alt="Entre Dos, Tranquils dalt s'arbre"/>
+				<figcaption>
+					<p class="artista">Entre Dos</p>
+					<p class="album">Tranquils dalt s'arbre</p>
+					<p class="any">2008-11-19</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CrisJuanico-TotDeMi.jpg" alt="Cris Juanico, Tot de mi"/>
+				<figcaption>
+					<p class="artista">Cris Juanico</p>
+					<p class="album">Tot de mi</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/EstanislauVerdet-LAllHoEsTotPelsAnglesos.jpg" alt="Estanislau Verdet, L'all ho és tot pels anglesos"/>
+				<figcaption>
+					<p class="artista">Estanislau Verdet</p>
+					<p class="album">L'all ho és tot pels anglesos</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/LeCroupier-MeHanDichoQue.jpg" alt="Le Croupier, Me han dicho que..."/>
+				<figcaption>
+					<p class="artista">Le Croupier</p>
+					<p class="album">Me han dicho que...</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/IvetteNadal-GuerresDolcissimes.jpg" alt="Ivette Nadal, Guerres dolcíssimes"/>
+				<figcaption>
+					<p class="artista">Ivette Nadal</p>
+					<p class="album">Guerres dolcíssimes</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/JosepThio-ElsTeusCels-2008.jpg" alt="Josep Thió, Els teus cels"/>
+				<figcaption>
+					<p class="artista">Josep Thió</p>
+					<p class="album">Els teus cels</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PastoretsRock-2De10AmbFaixa.jpg" alt="Pastorets Rock, 2 de 10 amb faixa"/>
+				<figcaption>
+					<p class="artista">Pastorets Rock</p>
+					<p class="album">2 de 10 amb faixa</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PauAlabajos-TeoriaDelCaos.jpg" alt="Pau Alabajos, Teoria del caos"/>
+				<figcaption>
+					<p class="artista">Pau Alabajos</p>
+					<p class="album">Teoria del caos</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PlouenCatximbes-Telescopi.jpg" alt="Plouen Catximbes, Telescopi"/>
+				<figcaption>
+					<p class="artista">Plouen Catximbes</p>
+					<p class="album">Telescopi</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Poetristes-OnzeNadalsIUnCapDAny.jpg" alt="Poetristes, Onze Nadals i un cap d'any"/>
+				<figcaption>
+					<p class="artista">Poetristes</p>
+					<p class="album">Onze Nadals i un cap d'any</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/RamonSaulo-SomAixi.jpg" alt="Ramon Sauló, Som així..."/>
+				<figcaption>
+					<p class="artista">Ramon Sauló</p>
+					<p class="album">Som així...</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Clepton-Consumeix-te-2008.jpg" alt="Clepton, Consumeix-te"/>
+				<figcaption>
+					<p class="artista">Clepton</p>
+					<p class="album">Consumeix-te</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Dekrepits-ElMonGiraAlReves-2008.jpg" alt="Dekrèpits, El món gira al revés"/>
+				<figcaption>
+					<p class="artista">Dekrèpits</p>
+					<p class="album">El món gira al revés</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Eina-L'ArtdeLaGuerra-2008.jpg" alt="Eina, L'art de la guerra"/>
+				<figcaption>
+					<p class="artista">Eina</p>
+					<p class="album">L'art de la guerra</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/MiquelAbras-M'agradaSentirElQueTuSents-2008.jpg" alt="Miquel Abras, M'agrada sentir el que tu sents"/>
+				<figcaption>
+					<p class="artista">Miquel Abras</p>
+					<p class="album">M'agrada sentir el que tu sents</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Rauxa-TerapiaDeGrup-2008.jpg" alt="Rauxa, Teràpia de grup"/>
+				<figcaption>
+					<p class="artista">Rauxa</p>
+					<p class="album">Teràpia de grup</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Sivic-MusicaPerAFomentarElCivisme-2008.jpg" alt="Sívic, Música per a fomentar el civisme"/>
+				<figcaption>
+					<p class="artista">Sívic</p>
+					<p class="album">Música per a fomentar el civisme</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/TheDirtyClub-Roots-2008.jpg" alt="The dirty club, Roots"/>
+				<figcaption>
+					<p class="artista">The dirty club</p>
+					<p class="album">Roots</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Espart-TreballDeCamp.jpg" alt="Espart, Treball de camp"/>
+				<figcaption>
+					<p class="artista">Espart</p>
+					<p class="album">Treball de camp</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Gossos-ALAuditori-15Anys-2008.jpg" alt="Gossos, A L'Auditori, 15 Anys"/>
+				<figcaption>
+					<p class="artista">Gossos</p>
+					<p class="album">A l'Auditori - 15 anys</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CurneliusAnonymous-You'llNeverSeeTheTruthOnYourTelevision-2008-Album.jpg" alt="Curnelius Anonymous, You'll Never See The Truth On Your Television"/>
+				<figcaption>
+					<p class="artista">Curnelius Anonymous</p>
+					<p class="album">You'll Never See The Truth On Your Television</p>
+					<p class="any">2008</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/DamienZorn-BestiaSenseCor-2007.jpg" alt="Damien Zorn, Bèstia sense cor"/>
+				<figcaption>
+					<p class="artista">Damien Zorn</p>
+					<p class="album">Bèstia sense cor</p>
+					<p class="any">2007</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/AltresCanconsDeNadal4.jpg" alt="Altres cançons de Nadal 4"/>
+				<figcaption>
+					<p class="artista">Altres cançons de Nadal 4</p>
+					<p class="album"></p>
+					<p class="any">2007</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Dekrepits-TornenElsTemps.jpg" alt="Dekrèpits, Tornen els temps"/>
+				<figcaption>
+					<p class="artista">Dekrèpits</p>
+					<p class="album">Tornen els temps</p>
+					<p class="any">2007</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Frenetic-361.jpg" alt="Frenètic, 361º"/>
+				<figcaption>
+					<p class="artista">Frenètic</p>
+					<p class="album">361º</p>
+					<p class="any">2007</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OrxataSoundSystem-1.0.jpg" alt="Orxata Sound System, 1.0"/>
+				<figcaption>
+					<p class="artista">Orxata Sound System</p>
+					<p class="album">1.0</p>
+					<p class="any">2007</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/HemisferiCentre-UnLloc-2007.jpg" alt="Hemisferi Centre, Un lloc"/>
+				<figcaption>
+					<p class="artista">Hemisferi Centre</p>
+					<p class="album">Un lloc</p>
+					<p class="any">2007</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tremendamente-AbreTuMente-2007.jpg" alt="Tremendamente, Abre tu mente..."/>
+				<figcaption>
+					<p class="artista">Tremendamente</p>
+					<p class="album">Abre tu mente...</p>
+					<p class="any">2007</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Tupolev-2007.jpg" alt="Tupolev"/>
+				<figcaption>
+					<p class="artista">Tupolev</p>
+					<p class="album">Tupolev</p>
+					<p class="any">2007</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/CrisJuanico&OJO&TDM-VolamASaLluna.jpg" alt="Cris Juanico & Original Jazz Orquestra & Taller de Músics, Vola'm a sa Lluna"/>
+				<figcaption>
+					<p class="artista">Cris Juanico & Original Jazz Orquestra & Taller de Músics</p>
+					<p class="album">Vola'm a sa Lluna</p>
+					<p class="any">2006</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/PlouenCatximbes-PlouenCatximbes.jpg" alt="Plouen Catximbes, Plouen Catximbes"/>
+				<figcaption>
+					<p class="artista">Plouen Catximbes</p>
+					<p class="album">Plouen Catximbes</p>
+					<p class="any">2006</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/Grip-2005.jpg" alt="Grip"/>
+				<figcaption>
+					<p class="artista">Grip</p>
+					<p class="album"></p>
+					<p class="any">2005</p>
+				</figcaption>
+			</figure>
+			
+			<figure class="treballQuadricula" onclick="ampliaTreball(this)">
+				<img class="treballPortada" src="miniatures/OrxataSoundSystem-Orxata.jpg" alt="Orxata Sound System, Orxata"/>
+				<figcaption>
+					<p class="artista">Orxata Sound System</p>
+					<p class="album">Orxata</p>
+					<p class="any">2005</p>
+				</figcaption>
+			</figure>
+
+		</article>
+
+		<footer>
+			<h2></h2>
+			<hr>
+			<h3>© CatMastering | Juanjo Muñoz</h3>
+		</footer>
+	</body>
+</html>
