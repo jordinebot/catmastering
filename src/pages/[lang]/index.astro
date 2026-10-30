@@ -108,14 +108,12 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
           <svg class="icon-grid" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>
         </button>
       </div>
-      <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(assetFilename(credit.cover))}`)} data-alt={`${credit.artist}${credit.title ? ` — ${credit.title}` : ''}`} aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(assetFilename(credit.thumbnail))}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
+      <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(assetFilename(credit.cover))}`)} data-thumb={route(`images/thumbs/${encodeURIComponent(assetFilename(credit.thumbnail))}`)} data-open-label={`${t.open} ${credit.artist}`} data-close-label={`${t.close} ${credit.artist}`} aria-expanded="false" aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(assetFilename(credit.thumbnail))}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
       <p class="add-credit-wrap"><a class="add-credit" href="https://github.com/jordinebot/catmastering/issues/new?template=add-credit.yml">{t.add} ↗</a></p>
     </article>
   </main>
 
   <footer>© CatMastering | Juanjo Muñoz</footer>
-  <dialog id="lightbox" aria-label="Cover image"><button class="dialog-close" type="button" aria-label={t.close}>×</button><img id="lightbox-image" alt="" /></dialog>
-
   <script>
     const search = document.querySelector<HTMLInputElement>('#credit-search');
     const cards = [...document.querySelectorAll<HTMLElement>('.credit')];
@@ -132,11 +130,45 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
       clearSearch.addEventListener('click', () => { search.value = ''; search.dispatchEvent(new Event('input', { bubbles: true })); search.focus(); });
     }
 
-    const dialog = document.querySelector<HTMLDialogElement>('#lightbox')!;
-    const lightboxImage = document.querySelector<HTMLImageElement>('#lightbox-image')!;
-    document.querySelectorAll<HTMLButtonElement>('.cover-button').forEach((button) => button.addEventListener('click', () => { lightboxImage.src = button.dataset.full ?? ''; lightboxImage.alt = button.dataset.alt ?? ''; dialog.showModal(); }));
-    document.querySelector<HTMLButtonElement>('.dialog-close')!.addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+    const animateGrid = (before: DOMRect[]) => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      cards.forEach((card, index) => {
+        const from = before[index];
+        const to = card.getBoundingClientRect();
+        if (!from.width || !to.width) return;
+        const dx = from.left - to.left;
+        const dy = from.top - to.top;
+        const sx = from.width / to.width;
+        const sy = from.height / to.height;
+        if (Math.abs(dx) < 1 && Math.abs(dy) < 1 && Math.abs(sx - 1) < .01 && Math.abs(sy - 1) < .01) return;
+        card.animate([
+          { transform: `translate(${dx}px, ${dy}px) scale(${sx}, ${sy})` },
+          { transform: 'translate(0, 0) scale(1, 1)' },
+        ], { duration: 360, easing: 'cubic-bezier(.2,.7,.2,1)' });
+      });
+    };
+    cards.forEach((card) => {
+      const button = card.querySelector<HTMLButtonElement>('.cover-button')!;
+      const image = button.querySelector<HTMLImageElement>('img')!;
+      button.addEventListener('click', () => {
+        const before = cards.map((item) => item.getBoundingClientRect());
+        const shouldExpand = !card.classList.contains('is-expanded');
+        cards.forEach((item) => {
+          item.classList.remove('is-expanded');
+          const itemButton = item.querySelector<HTMLButtonElement>('.cover-button')!;
+          itemButton.setAttribute('aria-expanded', 'false');
+          itemButton.setAttribute('aria-label', itemButton.dataset.openLabel ?? '');
+          itemButton.querySelector<HTMLImageElement>('img')!.src = itemButton.dataset.thumb ?? '';
+        });
+        if (shouldExpand) {
+          card.classList.add('is-expanded');
+          button.setAttribute('aria-expanded', 'true');
+          button.setAttribute('aria-label', button.dataset.closeLabel ?? '');
+          image.src = button.dataset.full ?? image.src;
+        }
+        animateGrid(before);
+      });
+    });
 
     const gallery = document.querySelector<HTMLElement>('#fotos')!;
     const slides = [...gallery.querySelectorAll<HTMLImageElement>('.slideshow-image')];
