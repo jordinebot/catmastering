@@ -27,8 +27,8 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
     <a class="brand" href={route(`${lang}/`)} aria-label="CatMastering"><img src={route('images/brand/CatMastering.svg')} alt="CatMastering" /></a>
     <nav class="main-nav" aria-label="Main navigation"><a href="#estudi">{t.nav[0]}</a><a href="#equip">{t.nav[1]}</a><a href="#contacte">{t.nav[2]}</a><a href="#credits">{t.nav[3]}</a></nav>
     <div class="header-end">
-      <nav class="social-header" aria-label="Social media"><a href="https://www.facebook.com/CatMastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Facebook-White.svg')} alt="Facebook" /></a><a href="https://twitter.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Twitter-White.svg')} alt="Twitter" /></a><a href="https://instagram.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Instagram-White.svg')} alt="Instagram" /></a></nav>
-      <nav class="languages" aria-label="Language">{Object.keys(langNames).map((key) => <a href={route(`${key}/`)} lang={key} aria-current={key === lang ? 'page' : undefined}>{key.toUpperCase()}</a>)}</nav>
+      <nav class="social-header" aria-label="Social media"><a href="https://www.facebook.com/CatMastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Facebook-White.svg')} alt="Facebook" /></a><a href="https://instagram.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Instagram-White.svg')} alt="Instagram" /></a></nav>
+      <nav class="languages" aria-label="Language">{Object.keys(langNames).filter((key) => key !== lang).map((key) => <a href={route(`${key}/`)} lang={key}>{key.toUpperCase()}</a>)}</nav>
     </div>
   </header>
 
@@ -74,7 +74,7 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
           <p><a href="mailto:juanjo@catmastering.cat">juanjo@catmastering.cat</a></p>
           <p><a href="mailto:catmastering@gmail.com">catmastering@gmail.com</a></p>
           <p><a href="https://www.google.com/maps/search/?api=1&query=Manresa%2C+Barcelona" target="_blank" rel="noreferrer">{t.location}</a></p>
-          <div class="social-contact"><a href="https://www.facebook.com/CatMastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Facebook-Black.svg')} alt="Facebook" /></a><a href="https://twitter.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Twitter-Black.svg')} alt="Twitter" /></a><a href="https://instagram.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Instagram-Black.svg')} alt="Instagram" /></a></div>
+          <div class="social-contact"><a href="https://www.facebook.com/CatMastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Facebook-Black.svg')} alt="Facebook" /></a><a href="https://instagram.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Instagram-Black.svg')} alt="Instagram" /></a></div>
         </div>
       </div>
     </article>
