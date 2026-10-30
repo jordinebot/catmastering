@@ -89,11 +89,19 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
     <article id="credits" class="content-section">
       <h2>{t.credits}</h2>
       <hr />
-      <div class="credits-subhead">
-        <button id="view-toggle" type="button" data-list-label={t.list} data-grid-label={t.grid} aria-label={t.list} title={t.list}>☷</button>
-        <h3>{t.creditsIntro}</h3>
+      <h3>{t.creditsIntro}</h3>
+      <div class="credit-tools">
+        <label for="credit-search">{t.search}</label>
+        <div class="credit-search-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m15.5 15.5 4.2 4.2"/></svg>
+          <input id="credit-search" type="search" placeholder={t.search} />
+        </div>
+        <span id="result-count" aria-live="polite">{credits.length} {t.count}</span>
+        <button id="view-toggle" type="button" data-list-label={t.list} data-grid-label={t.grid} aria-label={t.list} title={t.list}>
+          <svg class="icon-list" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h10M9 12h10M9 18h10"/><circle cx="5" cy="6" r=".7"/><circle cx="5" cy="12" r=".7"/><circle cx="5" cy="18" r=".7"/></svg>
+          <svg class="icon-grid" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>
+        </button>
       </div>
-      <div class="credit-tools"><label for="credit-search">{t.search}</label><input id="credit-search" type="search" placeholder={t.search} /><span id="result-count" aria-live="polite">{credits.length} {t.count}</span></div>
       <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(credit.cover)}`)} data-alt={`${credit.artist}${credit.title ? ` — ${credit.title}` : ''}`} aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(credit.thumbnail)}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
       <p class="add-credit-wrap"><a class="add-credit" href="https://github.com/jordinebot/catmastering/issues/new?template=add-credit.yml">{t.add} ↗</a></p>
     </article>
@@ -143,6 +151,7 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
     document.querySelector<HTMLButtonElement>('#view-toggle')!.addEventListener('click', (event) => {
       const button = event.currentTarget as HTMLButtonElement;
       const listView = document.querySelector('#credit-grid')!.classList.toggle('list-view');
+      button.classList.toggle('is-list-view', listView);
       button.setAttribute('aria-label', listView ? button.dataset.gridLabel ?? '' : button.dataset.listLabel ?? '');
       button.title = listView ? button.dataset.gridLabel ?? '' : button.dataset.listLabel ?? '';
     });
