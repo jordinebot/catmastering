@@ -34,7 +34,6 @@ button,input{font:inherit}
 #controlFotos button[hidden]{display:none}
 .content-section{padding:3em 0 0;scroll-margin-top:90px}
 h1,h2{min-height:0;margin:0;padding:.34em .5em .38em;border-radius:7px 7px 0 0;background:#f0f1f2;color:var(--ink);font-size:clamp(1.5rem,3.2vw,2rem);font-weight:600;letter-spacing:-.025em;line-height:1.2}
-h1{font-size:clamp(1.7rem,4vw,2.35rem)}
 h3{margin:0 0 1.2em;padding:.42em .7em .48em;border-radius:0 0 7px 7px;background:#f7f7f7;color:#777;font-size:.95rem;font-weight:400;line-height:1.5}
 hr{display:none}
 .content-section p{margin:.6em auto}
@@ -44,6 +43,10 @@ hr{display:none}
 .brand-logos .brand-logo-adm{flex:0 1 170px;width:min(170px,45vw);height:auto;aspect-ratio:245.1/73.5;border-radius:4px;background:#111}
 .brand-logos img{display:block;width:100%;height:100%;object-fit:contain}
 .studio-intro{margin-top:8px!important;color:#777;font-size:.92rem}
+.equipment-brands{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:center;gap:12px;max-width:800px;margin:8px auto 0;padding:8px 18px;background:transparent}
+.equipment-brand{display:flex;align-items:center;justify-content:center;min-width:0;min-height:62px;padding:6px}
+.equipment-brand img{display:block;width:auto;height:auto;max-width:100%;max-height:48px;object-fit:contain;filter:grayscale(1);opacity:.78;transition:filter .22s ease,opacity .22s ease,transform .22s ease}
+.equipment-brand:hover img{filter:grayscale(.15);opacity:1;transform:translateY(-2px)}
 .contact-layout{display:flex;align-items:flex-start;justify-content:center;gap:24px;padding:0 12px}
 .contact-photo{width:min(15em,38%);height:auto;border-radius:4px;object-fit:cover}
 .contact-details{width:min(23em,50%);padding:4px 0;text-align:left}
@@ -80,5 +83,6 @@ dialog::backdrop{background:rgba(0,0,0,.82)}
 dialog img{display:block;max-width:92vw;max-height:86vh;object-fit:contain}
 .dialog-close{position:absolute;top:-14px;right:-14px;width:36px;height:36px;border:0;border-radius:50%;background:#fff;color:#222;font-size:23px;line-height:1;cursor:pointer}
 @media(max-width:900px){.site-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 12px;padding:12px}.brand{grid-column:1/-1;width:min(100%,440px);margin:0 auto}.brand img{width:100%;max-width:440px}.main-nav{justify-content:flex-start;width:auto;min-width:0;gap:clamp(5px,1.8vw,14px);font-size:clamp(11px,1.8vw,14px)}.header-end{justify-self:end;gap:0}.languages{gap:7px;font-size:12px}.social-header{display:none}}
-@media(max-width:560px){:root{font-size:15px}.site-header{position:relative;gap:8px 8px;padding:10px}.brand{width:min(100%,440px);max-width:none;margin:0 auto}.main-nav{gap:clamp(5px,1.8vw,9px);font-size:clamp(10px,3vw,12px)}.content-section{padding-top:2.4em}.contact-layout{align-items:center;flex-direction:column;gap:8px}.contact-photo{width:10em;max-width:65%}.contact-details{width:auto;max-width:100%;text-align:center}.contact-details p{margin-bottom:8px!important}.social-contact{justify-content:center}.brand-logos{height:48px;gap:12px}.brand-logos .brand-logo-cat{flex-basis:48px;width:48px;height:48px}.brand-logos .brand-logo-adm{flex-basis:min(150px,45vw);width:min(150px,45vw)}.credits-subhead{padding:0 32px}.credit-grid{gap:4px}.credit{flex-basis:4.5em;width:4.5em;height:4.5em}.credit-grid.list-view .credit{width:100%}}
+@media(max-width:700px){.equipment-brands{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:12px}}
+@media(max-width:560px){:root{font-size:15px}.site-header{position:relative;gap:8px 8px;padding:10px}.brand{width:min(100%,440px);max-width:none;margin:0 auto}.main-nav{gap:clamp(5px,1.8vw,9px);font-size:clamp(10px,3vw,12px)}.content-section{padding-top:2.4em}.contact-layout{align-items:center;flex-direction:column;gap:8px}.contact-photo{width:10em;max-width:65%}.contact-details{width:auto;max-width:100%;text-align:center}.contact-details p{margin-bottom:8px!important}.social-contact{justify-content:center}.brand-logos{height:48px;gap:12px}.brand-logos .brand-logo-cat{flex-basis:48px;width:48px;height:48px}.brand-logos .brand-logo-adm{flex-basis:min(150px,45vw);width:min(150px,45vw)}.equipment-brands{grid-template-columns:repeat(2,minmax(0,1fr))}.equipment-brand:last-child{grid-column:1/-1}.credits-subhead{padding:0 32px}.credit-grid{gap:4px}.credit{flex-basis:4.5em;width:4.5em;height:4.5em}.credit-grid.list-view .credit{width:100%}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
