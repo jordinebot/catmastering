@@ -109,7 +109,6 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
         </button>
       </div>
       <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(assetFilename(credit.cover))}`)} data-thumb={route(`images/thumbs/${encodeURIComponent(assetFilename(credit.thumbnail))}`)} data-open-label={`${t.open} ${credit.artist}`} data-close-label={`${t.close} ${credit.artist}`} aria-expanded="false" aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(assetFilename(credit.thumbnail))}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
-      <p class="add-credit-wrap"><a class="add-credit" href="https://github.com/jordinebot/catmastering/issues/new?template=add-credit.yml">{t.add} ↗</a></p>
     </article>
   </main>
 
