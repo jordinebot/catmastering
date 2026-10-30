@@ -1,0 +1,3362 @@
+[
+  {
+    "id": "km0-lescosesquesom-2aff83",
+    "artist": "Km.0",
+    "title": "Les Coses Que Son",
+    "date": "2023-10-20",
+    "cover": "Km0-LesCosesQueSom.jpg",
+    "thumbnail": "Km0-LesCosesQueSom.jpg"
+  },
+  {
+    "id": "puput-puput-24041c",
+    "artist": "Puput",
+    "title": "Puput",
+    "date": "2023-10-10",
+    "cover": "Puput-Puput.jpg",
+    "thumbnail": "Puput-Puput.jpg"
+  },
+  {
+    "id": "emanmunia-diaadia-01110e",
+    "artist": "Eman Munia",
+    "title": "Día a día",
+    "date": "2023-10-05",
+    "cover": "EmanMunia-DiaADia.jpg",
+    "thumbnail": "EmanMunia-DiaADia.jpg"
+  },
+  {
+    "id": "lagravetatdecoulomb-l-efectedoppler-a0baf1",
+    "artist": "La Gravetat de Coulomb",
+    "title": "L'Efecte Doppler",
+    "date": "2023-10-02",
+    "cover": "LaGravetatDeCoulomb-L'EfecteDoppler.jpg",
+    "thumbnail": "LaGravetatDeCoulomb-L'EfecteDoppler.jpg"
+  },
+  {
+    "id": "laninaparacaidas-simulacrodeincendio-030a6a",
+    "artist": "La Niña Paracaídas",
+    "title": "Simulacro De Incendio",
+    "date": "2023-09-22",
+    "cover": "LaNinaParacaidas-SimulacroDeIncendio.jpg",
+    "thumbnail": "LaNinaParacaidas-SimulacroDeIncendio.jpg"
+  },
+  {
+    "id": "gorkagaray-thirdmoonofjupiter-c4b54f",
+    "artist": "Gorka Garay",
+    "title": "Third Moon Of Jupiter",
+    "date": "2023-09-14",
+    "cover": "GorkaGaray-ThirdMoonOfJupiter.jpg",
+    "thumbnail": "GorkaGaray-ThirdMoonOfJupiter.jpg"
+  },
+  {
+    "id": "albamarba-mysticaintrospectiva-f633eb",
+    "artist": "Alba Marbà",
+    "title": "Mystica introspectiva (Acústic songs of love)",
+    "date": "2023-08-23",
+    "cover": "AlbaMarba-MysticaIntrospectiva.jpg",
+    "thumbnail": "AlbaMarba-MysticaIntrospectiva.jpg"
+  },
+  {
+    "id": "ramoneta-ramoneta-c21876",
+    "artist": "Ramoneta",
+    "title": "Ramoneta",
+    "date": "2023-05-23",
+    "cover": "Ramoneta-Ramoneta.jpg",
+    "thumbnail": "Ramoneta-Ramoneta.jpg"
+  },
+  {
+    "id": "mariepratt-vivint-b3dca9",
+    "artist": "Marie Pratt",
+    "title": "Vivint!",
+    "date": "2023-04-21",
+    "cover": "MariePratt-Vivint.jpg",
+    "thumbnail": "MariePratt-Vivint.jpg"
+  },
+  {
+    "id": "rosermonfortetrio-landscapesongs-1789bd",
+    "artist": "Roser Monforte Trio",
+    "title": "Landscape Songs",
+    "date": "2023-04-20",
+    "cover": "RoserMonforteTrio-LandscapeSongs.jpg",
+    "thumbnail": "RoserMonforteTrio-LandscapeSongs.jpg"
+  },
+  {
+    "id": "peldegall-forcesd-atraccio-1222cc",
+    "artist": "Pèl de Gall",
+    "title": "Forces d'atracció",
+    "date": "2023-04-14",
+    "cover": "PelDeGall-ForcesD'Atraccio.jpg",
+    "thumbnail": "PelDeGall-ForcesD'Atraccio.jpg"
+  },
+  {
+    "id": "albamarba-dona-mlamusica-99b0a7",
+    "artist": "Alba Marbà",
+    "title": "Dona'm la música",
+    "date": "2023-04-12",
+    "cover": "AlbaMarba-Dona'MLaMusica.jpg",
+    "thumbnail": "AlbaMarba-Dona'MLaMusica.jpg"
+  },
+  {
+    "id": "marionaescoda-d-unaaltramanera-a416f0",
+    "artist": "Mariona Escoda",
+    "title": "D'una altra manera",
+    "date": "2023-03-31",
+    "cover": "MarionaEscoda-D'UnaAltraManera.jpg",
+    "thumbnail": "MarionaEscoda-D'UnaAltraManera.jpg"
+  },
+  {
+    "id": "suasi-pecesd-antiquari-34c8d7",
+    "artist": "Suasi",
+    "title": "Peces d'antiquari",
+    "date": "2023-03-31",
+    "cover": "Suasi-PecesD'Antiquari.jpg",
+    "thumbnail": "Suasi-PecesD'Antiquari.jpg"
+  },
+  {
+    "id": "l-illa-canconsdelpelut-ae1040",
+    "artist": "L'Illa",
+    "title": "Cançons Del Pelut",
+    "date": "2023-03-04",
+    "cover": "L'Illa-CanconsDelPelut.jpg",
+    "thumbnail": "L'Illa-CanconsDelPelut.jpg"
+  },
+  {
+    "id": "oriolcors-vacaureunllamp-c33b26",
+    "artist": "Oriol Cors",
+    "title": "Va Caure Un Llamp",
+    "date": "2022-12-15",
+    "cover": "OriolCors-VaCaureUnLlamp.jpg",
+    "thumbnail": "OriolCors-VaCaureUnLlamp.jpg"
+  },
+  {
+    "id": "theslingshots-breakout-813ea6",
+    "artist": "The Slingshots",
+    "title": "Break out!",
+    "date": "2022-11-07",
+    "cover": "TheSlingshots-BreakOut.jpg",
+    "thumbnail": "TheSlingshots-BreakOut.jpg"
+  },
+  {
+    "id": "kaliza-kimera-95b927",
+    "artist": "Kaliza",
+    "title": "Kimera",
+    "date": "2022-10-21",
+    "cover": "Kaliza-Kimera.jpg",
+    "thumbnail": "Kaliza-Kimera.jpg"
+  },
+  {
+    "id": "julivert-atamarit-d6f54a",
+    "artist": "Julivert",
+    "title": "A Tamarit!",
+    "date": "2022-09-27",
+    "cover": "Julivert-ATamarit.jpg",
+    "thumbnail": "Julivert-ATamarit.jpg"
+  },
+  {
+    "id": "docandfriends-docisbackintown-fac1f2",
+    "artist": "Doc and friends",
+    "title": "Doc is back in town",
+    "date": "2022-09-23",
+    "cover": "DocAndFriends-DocIsBackInTown.jpg",
+    "thumbnail": "DocAndFriends-DocIsBackInTown.jpg"
+  },
+  {
+    "id": "eduardgener-swingdecomarques-f543c7",
+    "artist": "Eduard Gener",
+    "title": "Swing de comarques",
+    "date": "2022-09-20",
+    "cover": "EduardGener-SwingDeComarques.jpg",
+    "thumbnail": "EduardGener-SwingDeComarques.jpg"
+  },
+  {
+    "id": "retornovenoso-limfa-db32a3",
+    "artist": "Retorno Venoso",
+    "title": "Limfa",
+    "date": "2022-08-04",
+    "cover": "RetornoVenoso-Limfa.jpg",
+    "thumbnail": "RetornoVenoso-Limfa.jpg"
+  },
+  {
+    "id": "laraiz-entrepoetasypresos-b43cea",
+    "artist": "La Raíz",
+    "title": "Entre poetas y presos (Vinyl)",
+    "date": "2022-07",
+    "cover": "LaRaiz-EntrePoetasYPresos.jpg",
+    "thumbnail": "LaRaiz-EntrePoetasYPresos.jpg"
+  },
+  {
+    "id": "marcelpich-marcelpichcantaguillemd-efak-ad843e",
+    "artist": "Marcel Pich",
+    "title": "Marcel Pich canta Guillem d'Efak (En directe a l'Alguer)",
+    "date": "2022-06-01",
+    "cover": "MarcelPich-MarcelPichCantaGuillemD'Efak.jpg",
+    "thumbnail": "MarcelPich-MarcelPichCantaGuillemD'Efak.jpg"
+  },
+  {
+    "id": "catfolkin-bonvent-704341",
+    "artist": "Catfolkin",
+    "title": "Bon Vent",
+    "date": "2022-05-20",
+    "cover": "Catfolkin-BonVent.jpg",
+    "thumbnail": "Catfolkin-BonVent.jpg"
+  },
+  {
+    "id": "benmarcus-reflexion-856a0d",
+    "artist": "Ben Marcus",
+    "title": "Reflexión",
+    "date": "2022-05-06",
+    "cover": "BenMarcus-Reflexion.jpg",
+    "thumbnail": "BenMarcus-Reflexion.jpg"
+  },
+  {
+    "id": "juliablum-sobrelamarxa-b4e4b1",
+    "artist": "Júlia Blum",
+    "title": "Sobre La Marxa",
+    "date": "2022-04-29",
+    "cover": "JuliaBlum-SobreLaMarxa.jpg",
+    "thumbnail": "JuliaBlum-SobreLaMarxa.jpg"
+  },
+  {
+    "id": "verbaline-choosetobefreei-b27f76",
+    "artist": "Verbaline",
+    "title": "Choose To Be Free I",
+    "date": "2022-04-23",
+    "cover": "Verbaline-ChooseToBeFreeI.jpg",
+    "thumbnail": "Verbaline-ChooseToBeFreeI.jpg"
+  },
+  {
+    "id": "verbaline-choosetobefreeii-d6a88d",
+    "artist": "Verbaline",
+    "title": "Choose To Be Free II",
+    "date": "2022-04-23",
+    "cover": "Verbaline-ChooseToBeFreeII.jpg",
+    "thumbnail": "Verbaline-ChooseToBeFreeII.jpg"
+  },
+  {
+    "id": "lamulata-maixat--770602",
+    "artist": "La Mulata",
+    "title": "Maixat!",
+    "date": "2022-04-22",
+    "cover": "LaMulata-Maixat!.jpg",
+    "thumbnail": "LaMulata-Maixat!.jpg"
+  },
+  {
+    "id": "cactus-modeavio-04145b",
+    "artist": "Cactus",
+    "title": "Mode avió",
+    "date": "2022-04-08",
+    "cover": "Cactus-ModeAvio.jpg",
+    "thumbnail": "Cactus-ModeAvio.jpg"
+  },
+  {
+    "id": "entredaltres-projectem-1561ad",
+    "artist": "Entre d'altres",
+    "title": "Projecte M",
+    "date": "2022-04-02",
+    "cover": "EntreDAltres-ProjecteM.jpg",
+    "thumbnail": "EntreDAltres-ProjecteM.jpg"
+  },
+  {
+    "id": "galanell-cuandoanochece-13c2c2",
+    "artist": "Gala Nell",
+    "title": "Cuando Anochece",
+    "date": "2022-03-25",
+    "cover": "GalaNell-CuandoAnochece.jpg",
+    "thumbnail": "GalaNell-CuandoAnochece.jpg"
+  },
+  {
+    "id": "seikos-estival-066e05",
+    "artist": "Seikos",
+    "title": "Estival",
+    "date": "2022-03-25",
+    "cover": "Seikos-Estival.jpg",
+    "thumbnail": "Seikos-Estival.jpg"
+  },
+  {
+    "id": "kotlape-todolobueno-e318bb",
+    "artist": "Kòt Lapè",
+    "title": "Todo lo bueno",
+    "date": "2022-03-18",
+    "cover": "KotLape-TodoLoBueno.jpg",
+    "thumbnail": "KotLape-TodoLoBueno.jpg"
+  },
+  {
+    "id": "9zenit-finald-estiu-b3e3d3",
+    "artist": "9Zenit",
+    "title": "Final D'Estiu",
+    "date": "2022-03-10",
+    "cover": "9Zenit-FinalD'Estiu.jpg",
+    "thumbnail": "9Zenit-FinalD'Estiu.jpg"
+  },
+  {
+    "id": "vicmirallas-directoenapolo-18210a",
+    "artist": "Vic Mirallas",
+    "title": "Directo en Apolo",
+    "date": "2022-02-25",
+    "cover": "VicMirallas-DirectoEnApolo.jpg",
+    "thumbnail": "VicMirallas-DirectoEnApolo.jpg"
+  },
+  {
+    "id": "pupil-les-totires-9a6b58",
+    "artist": "Pupil·les",
+    "title": "Tot i res",
+    "date": "2022-02-10",
+    "cover": "Pupil·les-TotIRes.jpg",
+    "thumbnail": "Pupil·les-TotIRes.jpg"
+  },
+  {
+    "id": "pauboigues-lasega-9785f7",
+    "artist": "Pau Boigües",
+    "title": "La Sega",
+    "date": "2022-01-10",
+    "cover": "PauBoigues-LaSega.jpg",
+    "thumbnail": "PauBoigues-LaSega.jpg"
+  },
+  {
+    "id": "samuelearba-nienlornienlamornienelcel-4dfd0a",
+    "artist": "Samuele Arba",
+    "title": "Ni En L'Or Ni En L'Amor Ni En El Cel",
+    "date": "2021-12-25",
+    "cover": "SamueleArba-NiEnLOrNiEnLAmorNiEnElCel.jpg",
+    "thumbnail": "SamueleArba-NiEnLOrNiEnLAmorNiEnElCel.jpg"
+  },
+  {
+    "id": "julibarrero-liquid-2bd6a1",
+    "artist": "Juli Barrero",
+    "title": "Líquid",
+    "date": "2021-12-06",
+    "cover": "JuliBarrero-Liquid.jpg",
+    "thumbnail": "JuliBarrero-Liquid.jpg"
+  },
+  {
+    "id": "ferreteriarosario-ferreteriarosario-963d0b",
+    "artist": "Ferretería Rosario",
+    "title": "Ferretería Rosario",
+    "date": "2021-12-02",
+    "cover": "FerreteriaRosario-FerreteriaRosario.jpg",
+    "thumbnail": "FerreteriaRosario-FerreteriaRosario.jpg"
+  },
+  {
+    "id": "laiaindika-viviresmuchomas-d7d263",
+    "artist": "Laia Indika",
+    "title": "Vivir es mucho más",
+    "date": "2021-11-19",
+    "cover": "LaiaIndika-VivirEsMuchoMas.jpg",
+    "thumbnail": "LaiaIndika-VivirEsMuchoMas.jpg"
+  },
+  {
+    "id": "lafumiga-fotosintesi-4beda0",
+    "artist": "La Fúmiga",
+    "title": "Fotosíntesi",
+    "date": "2021-11-05",
+    "cover": "LaFumiga-FotoSintesi.jpg",
+    "thumbnail": "LaFumiga-FotoSintesi.jpg"
+  },
+  {
+    "id": "joanreig-bagatzem-e26499",
+    "artist": "Joan Reig",
+    "title": "Bagatzem",
+    "date": "2021-10-15",
+    "cover": "JoanReig-Bagatzem.jpg",
+    "thumbnail": "JoanReig-Bagatzem.jpg"
+  },
+  {
+    "id": "falsterbo-adeupaf-fb77a4",
+    "artist": "Falsterbo",
+    "title": "Adéu, Paf",
+    "date": "2021-10-05",
+    "cover": "Falsterbo-AdeuPaf.jpg",
+    "thumbnail": "Falsterbo-AdeuPaf.jpg"
+  },
+  {
+    "id": "sargantanah-guruma-82a29b",
+    "artist": "Sargantanah",
+    "title": "Guruma",
+    "date": "2021-09-16",
+    "cover": "Sargantanah-Guruma.jpg",
+    "thumbnail": "Sargantanah-Guruma.jpg"
+  },
+  {
+    "id": "capitasolench-762d87",
+    "artist": "Capità Solench",
+    "title": "Capità Solench",
+    "date": "2021-09-01",
+    "cover": "CapitaSolench.jpg",
+    "thumbnail": "CapitaSolench.jpg"
+  },
+  {
+    "id": "juniormackenzie-nowthatwearedead-0b34b0",
+    "artist": "Junior Mackenzie",
+    "title": "Now That We Are Dead",
+    "date": "2021-09",
+    "cover": "JuniorMackenzie-NowThatWeAreDead.jpg",
+    "thumbnail": "JuniorMackenzie-NowThatWeAreDead.jpg"
+  },
+  {
+    "id": "texate-adormidera-9fb18a",
+    "artist": "Texate",
+    "title": "Adormidera",
+    "date": "2021-09",
+    "cover": "Texate-Adormidera.jpg",
+    "thumbnail": "Texate-Adormidera.jpg"
+  },
+  {
+    "id": "robinsecret-somiantunaltrecel-d420c2",
+    "artist": "Robin Secret",
+    "title": "Somiant un altre cel",
+    "date": "2021-08-04",
+    "cover": "RobinSecret-SomiantUnAltreCel.jpg",
+    "thumbnail": "RobinSecret-SomiantUnAltreCel.jpg"
+  },
+  {
+    "id": "nebulossa-poliedricademi-63df9f",
+    "artist": "Nebulossa",
+    "title": "Poliédrica de mi",
+    "date": "2021-05-26",
+    "cover": "Nebulossa-PoliedricaDeMi.jpg",
+    "thumbnail": "Nebulossa-PoliedricaDeMi.jpg"
+  },
+  {
+    "id": "vernal-vernal-e19298",
+    "artist": "Vernal",
+    "title": "Vernal",
+    "date": "2021-05-14",
+    "cover": "Vernal-Vernal.jpg",
+    "thumbnail": "Vernal-Vernal.jpg"
+  },
+  {
+    "id": "srramirez-quenosbailenloquitao-2e24d9",
+    "artist": "Sr. Ramírez",
+    "title": "Que nos bailen lo quitao",
+    "date": "2021-05-07",
+    "cover": "SrRamirez-QueNosBailenLoQuitao.jpg",
+    "thumbnail": "SrRamirez-QueNosBailenLoQuitao.jpg"
+  },
+  {
+    "id": "germanegre-picantsobscenesamoripenes-ed7520",
+    "artist": "Germà Negre",
+    "title": "Picants, obscenes, amor i penes",
+    "date": "2021-05-06",
+    "cover": "GermaNegre-PicantsObscenesAmorIPenes.jpg",
+    "thumbnail": "GermaNegre-PicantsObscenesAmorIPenes.jpg"
+  },
+  {
+    "id": "inuits-emrebello-47a4cd",
+    "artist": "I-nuits",
+    "title": "Em Rebel·lo",
+    "date": "2021-05-06",
+    "cover": "INuits-EmRebello.jpg",
+    "thumbnail": "INuits-EmRebello.jpg"
+  },
+  {
+    "id": "alisondarwin-ficcionyrealidad-07586f",
+    "artist": "Alison Darwin",
+    "title": "Ficción y realidad",
+    "date": "2021-04-09",
+    "cover": "AlisonDarwin-FiccionYRealidad.jpg",
+    "thumbnail": "AlisonDarwin-FiccionYRealidad.jpg"
+  },
+  {
+    "id": "eduardgener-enyoroelteuamortandolc-f196ea",
+    "artist": "Eduard Gener",
+    "title": "Enyoro el teu amor tan dolç",
+    "date": "2021-04-06",
+    "cover": "EduardGener-EnyoroElTeuAmorTanDolc.jpg",
+    "thumbnail": "EduardGener-EnyoroElTeuAmorTanDolc.jpg"
+  },
+  {
+    "id": "zoo-llepolies-236438",
+    "artist": "Zoo",
+    "title": "Llepolies",
+    "date": "2021-03-26",
+    "cover": "Zoo-Llepolies.jpg",
+    "thumbnail": "Zoo-Llepolies.jpg"
+  },
+  {
+    "id": "ebriknight-carrer-66b171",
+    "artist": "Ebri Knight",
+    "title": "Carrer",
+    "date": "2021-03-12",
+    "cover": "EbriKnight-Carrer.jpg",
+    "thumbnail": "EbriKnight-Carrer.jpg"
+  },
+  {
+    "id": "briancaffrey-roomtofly-d003c0",
+    "artist": "Brian Caffrey",
+    "title": "Room to fly",
+    "date": "2021-02-20",
+    "cover": "BrianCaffrey-RoomToFly.jpg",
+    "thumbnail": "BrianCaffrey-RoomToFly.jpg"
+  },
+  {
+    "id": "laskabrass-mirela-7d5dc6",
+    "artist": "La Ska Brass",
+    "title": "Mírela",
+    "date": "2021-01-24",
+    "cover": "LaSkaBrass-Mirela.jpg",
+    "thumbnail": "LaSkaBrass-Mirela.jpg"
+  },
+  {
+    "id": "cozmicjet-whatchagonnado-4bb037",
+    "artist": "Cozmic Jet",
+    "title": "Whatcha gonna do?",
+    "date": "2021-01-15",
+    "cover": "CozmicJet-WhatchaGonnaDo.jpg",
+    "thumbnail": "CozmicJet-WhatchaGonnaDo.jpg"
+  },
+  {
+    "id": "emar-segundobigbang-046d5e",
+    "artist": "Emar",
+    "title": "Segundo Big Bang",
+    "date": "2020-11-22",
+    "cover": "Emar-SegundoBigBang.jpg",
+    "thumbnail": "Emar-SegundoBigBang.jpg"
+  },
+  {
+    "id": "emar-ambar-f1a3ef",
+    "artist": "Emar",
+    "title": "Ambar",
+    "date": "2020-11-20",
+    "cover": "Emar-Ambar.jpg",
+    "thumbnail": "Emar-Ambar.jpg"
+  },
+  {
+    "id": "ericvinaixa-lamesbonicahistoria-b11a7a",
+    "artist": "Èric Vinaixa",
+    "title": "La més bonica història",
+    "date": "2020-11-20",
+    "cover": "EricVinaixa-LaMesBonicaHistoria.jpg",
+    "thumbnail": "EricVinaixa-LaMesBonicaHistoria.jpg"
+  },
+  {
+    "id": "malfet-aorillasdeunideal-147c39",
+    "artist": "Malfet",
+    "title": "A Orillas De Un Ideal",
+    "date": "2020-10-08",
+    "cover": "Malfet-AOrillasDeUnIdeal.jpg",
+    "thumbnail": "Malfet-AOrillasDeUnIdeal.jpg"
+  },
+  {
+    "id": "emar-loquemedejasdentro-463fc1",
+    "artist": "Emar",
+    "title": "Lo que me dejas dentro",
+    "date": "2020-09-25",
+    "cover": "Emar-LoQueMeDejasDentro.jpg",
+    "thumbnail": "Emar-LoQueMeDejasDentro.jpg"
+  },
+  {
+    "id": "suasi-quetriomfil-amor-4a199c",
+    "artist": "Suasi",
+    "title": "Que triomfi l'amor",
+    "date": "2020-09-04",
+    "cover": "Suasi-QueTriomfiL'Amor.jpg",
+    "thumbnail": "Suasi-QueTriomfiL'Amor.jpg"
+  },
+  {
+    "id": "idea-som-fdf148",
+    "artist": "Idea",
+    "title": "Som feat. Albert García (Ítaca Band)",
+    "date": "2020-09-03",
+    "cover": "Idea-Som.jpg",
+    "thumbnail": "Idea-Som.jpg"
+  },
+  {
+    "id": "setembre-sotaelsostredecristall-a23b61",
+    "artist": "Setembre",
+    "title": "Sota el sostre de cristall",
+    "date": "2020-05-20",
+    "cover": "Setembre-SotaElSostreDeCristall.jpg",
+    "thumbnail": "Setembre-SotaElSostreDeCristall.jpg"
+  },
+  {
+    "id": "ekko-desbocados-d884da",
+    "artist": "Ekko",
+    "title": "Desbocados",
+    "date": "2020-05-08",
+    "cover": "Ekko-Desbocados.jpg",
+    "thumbnail": "Ekko-Desbocados.jpg"
+  },
+  {
+    "id": "falcon-firkin-santsilvestre-c3934e",
+    "artist": "Falcon & Firkin",
+    "title": "Sant Silvestre",
+    "date": "2020-04-17",
+    "cover": "Falcon&Firkin-SantSilvestre.jpg",
+    "thumbnail": "Falcon&Firkin-SantSilvestre.jpg"
+  },
+  {
+    "id": "allez-salvatge-b690c6",
+    "artist": "Allez!",
+    "title": "Salvatge",
+    "date": "2020-04-04",
+    "cover": "Allez!-Salvatge.jpg",
+    "thumbnail": "Allez!-Salvatge.jpg"
+  },
+  {
+    "id": "lizzylalarga-lizzylalarga-b05fdb",
+    "artist": "Lizzy La Larga",
+    "title": "Lizzy La Larga",
+    "date": "2020-03-27",
+    "cover": "LizzyLaLarga-LizzyLaLarga.jpg",
+    "thumbnail": "LizzyLaLarga-LizzyLaLarga.jpg"
+  },
+  {
+    "id": "glaucs-totespossible-1ea4ef",
+    "artist": "Glaucs",
+    "title": "Tot és possible",
+    "date": "2020-03-17",
+    "cover": "Glaucs-TotEsPossible.jpg",
+    "thumbnail": "Glaucs-TotEsPossible.jpg"
+  },
+  {
+    "id": "roige-ingravid-71165e",
+    "artist": "Roigé",
+    "title": "Ingràvid",
+    "date": "2020-02-28",
+    "cover": "Roige-Ingravid.jpg",
+    "thumbnail": "Roige-Ingravid.jpg"
+  },
+  {
+    "id": "peldegall-asavostrasalut-4d3ea4",
+    "artist": "Pèl De Gall",
+    "title": "A Sa Vostra Salut",
+    "date": "2020-02-07",
+    "cover": "PelDeGall-ASaVostraSalut.jpg",
+    "thumbnail": "PelDeGall-ASaVostraSalut.jpg"
+  },
+  {
+    "id": "ushanka-dezero-0993be",
+    "artist": "Ushanka",
+    "title": "De zero",
+    "date": "2020-01-24",
+    "cover": "Ushanka-DeZero.jpg",
+    "thumbnail": "Ushanka-DeZero.jpg"
+  },
+  {
+    "id": "tresportrece-maquinayespiral-d8f0b6",
+    "artist": "Tresportrece",
+    "title": "Máquina y espiral",
+    "date": "2020",
+    "cover": "Tresportrece-MaquinaYEspiral.jpg",
+    "thumbnail": "Tresportrece-MaquinaYEspiral.jpg"
+  },
+  {
+    "id": "gaspa-chasingbrightlight-476f9f",
+    "artist": "Gaspa",
+    "title": "Chasing bright light",
+    "date": "2019-12-13",
+    "cover": "Gaspa-ChasingBrightLight.jpg",
+    "thumbnail": "Gaspa-ChasingBrightLight.jpg"
+  },
+  {
+    "id": "sotaelfirmament-495d2b",
+    "artist": "Àlex Carmona",
+    "title": "Sota el firmament (A Joan Salvat-Papasseit)",
+    "date": "2019-11-29",
+    "cover": "SotaElFirmament.jpg",
+    "thumbnail": "SotaElFirmament.jpg"
+  },
+  {
+    "id": "rehenes-aranazosbajolapiel-aa320d",
+    "artist": "Rehenes",
+    "title": "Arañazos bajo la piel",
+    "date": "2019-11-08",
+    "cover": "Rehenes-AranazosBajoLaPiel.jpg",
+    "thumbnail": "Rehenes-AranazosBajoLaPiel.jpg"
+  },
+  {
+    "id": "chapaosalanueva-poesiadegaraje-fe78da",
+    "artist": "Chapaos a la nueva",
+    "title": "Poesía de garaje",
+    "date": "2019-10-11",
+    "cover": "ChapaosALaNueva-PoesiaDeGaraje.jpg",
+    "thumbnail": "ChapaosALaNueva-PoesiaDeGaraje.jpg"
+  },
+  {
+    "id": "salvaracero-immortals-2019-10-04-244725",
+    "artist": "Salva Racero",
+    "title": "Immortals",
+    "date": "2019-10-04",
+    "cover": "SalvaRacero-Immortals-2019-10-04.jpg",
+    "thumbnail": "SalvaRacero-Immortals-2019-10-04.jpg"
+  },
+  {
+    "id": "l-espurna-akontrakorrent-ep-2019-09-16-0688a5",
+    "artist": "L'Espurna",
+    "title": "A Kontra Korrent",
+    "date": "2019-09-16",
+    "cover": "L'Espurna-AKontraKorrent-EP-2019-09-16.jpg",
+    "thumbnail": "L'Espurna-AKontraKorrent-EP-2019-09-16.jpg"
+  },
+  {
+    "id": "awakate-awakate-dacaad",
+    "artist": "Awakate",
+    "title": "Awakate",
+    "date": "2019-09-11",
+    "cover": "Awakate-Awakate.jpg",
+    "thumbnail": "Awakate-Awakate.jpg"
+  },
+  {
+    "id": "virtutshomologues-resilience-006404",
+    "artist": "Virtuts Homòlogues",
+    "title": "Resilience",
+    "date": "2019-06-21",
+    "cover": "VirtutsHomologues-Resilience.jpg",
+    "thumbnail": "VirtutsHomologues-Resilience.jpg"
+  },
+  {
+    "id": "enricnavarro-milcosesperdudes-2019-06-14-album-e2052e",
+    "artist": "Enric Navarro",
+    "title": "Mil coses perdudes",
+    "date": "2019-06-14",
+    "cover": "EnricNavarro-MilCosesPerdudes-2019-06-14-Album.jpg",
+    "thumbnail": "EnricNavarro-MilCosesPerdudes-2019-06-14-Album.jpg"
+  },
+  {
+    "id": "tonixucla-shennuialtrestresorsamagats-2019-05-17-album-a18b63",
+    "artist": "Toni Xuclà",
+    "title": "Shen Nü i altres tresors amagats",
+    "date": "2019-05-17",
+    "cover": "ToniXucla-ShenNuIAltresTresorsAmagats-2019-05-17-Album.jpg",
+    "thumbnail": "ToniXucla-ShenNuIAltresTresorsAmagats-2019-05-17-Album.jpg"
+  },
+  {
+    "id": "jofrebardagi-hamburg-a84228",
+    "artist": "Jofre Bardagí",
+    "title": "Hamburg",
+    "date": "2019-05-02",
+    "cover": "JofreBardagi-Hamburg.jpg",
+    "thumbnail": "JofreBardagi-Hamburg.jpg"
+  },
+  {
+    "id": "pupilles-rimmel-2019-04-30-ep-8ea2eb",
+    "artist": "Pupil·les",
+    "title": "Rímmel",
+    "date": "2019-04-30",
+    "cover": "Pupilles-Rimmel-2019-04-30-EP.jpg",
+    "thumbnail": "Pupilles-Rimmel-2019-04-30-EP.jpg"
+  },
+  {
+    "id": "lamulata-tropicdelmediterrani-6e0468",
+    "artist": "La Mulata",
+    "title": "Tròpic del Mediterrani",
+    "date": "2019-04-26",
+    "cover": "LaMulata-TropicDelMediterrani.jpg",
+    "thumbnail": "LaMulata-TropicDelMediterrani.jpg"
+  },
+  {
+    "id": "salvaracero-vaig-2019-04-26-ep-ae7fe4",
+    "artist": "Salva Racero",
+    "title": "Vaig",
+    "date": "2019-04-26",
+    "cover": "SalvaRacero-Vaig-2019-04-26-EP.jpg",
+    "thumbnail": "SalvaRacero-Vaig-2019-04-26-EP.jpg"
+  },
+  {
+    "id": "walkin-roots-boots-2019-04-16-ep-0f9192",
+    "artist": "Walkin' Roots",
+    "title": "Boots",
+    "date": "2019-04-16",
+    "cover": "Walkin'Roots-Boots-2019-04-16-EP.jpg",
+    "thumbnail": "Walkin'Roots-Boots-2019-04-16-EP.jpg"
+  },
+  {
+    "id": "alisondarwin-findyourfreedom-2019-04-09-ep-090856",
+    "artist": "Alison Darwin",
+    "title": "Find Your Freedom",
+    "date": "2019-04-09",
+    "cover": "AlisonDarwin-FindYourFreedom-2019-04-09-EP.jpg",
+    "thumbnail": "AlisonDarwin-FindYourFreedom-2019-04-09-EP.jpg"
+  },
+  {
+    "id": "crisjuanico-viu-1e462c",
+    "artist": "Cris Juanico",
+    "title": "Viu",
+    "date": "2019-04-05",
+    "cover": "CrisJuanico-Viu.jpg",
+    "thumbnail": "CrisJuanico-Viu.jpg"
+  },
+  {
+    "id": "ebriknight-lavozdormida-2019-04-01-ep-710a38",
+    "artist": "Ebri Knight",
+    "title": "La voz dormida",
+    "date": "2019-04-01",
+    "cover": "EbriKnight-LaVozDormida-2019-04-01-EP.jpg",
+    "thumbnail": "EbriKnight-LaVozDormida-2019-04-01-EP.jpg"
+  },
+  {
+    "id": "ghosttrip-pesadillas-dacc9b",
+    "artist": "Ghost Trip",
+    "title": "Pesadillas, malos tiempos y todos sus amigos",
+    "date": "2019-03-29",
+    "cover": "GhostTrip-Pesadillas.jpg",
+    "thumbnail": "GhostTrip-Pesadillas.jpg"
+  },
+  {
+    "id": "fina-inconformista-2019-03-22-album-60d7a3",
+    "artist": "Fina",
+    "title": "#Inconformista",
+    "date": "2019-03-22",
+    "cover": "Fina-Inconformista-2019-03-22-Album.jpg",
+    "thumbnail": "Fina-Inconformista-2019-03-22-Album.jpg"
+  },
+  {
+    "id": "tesa-rural-2019-03-22-album-2b2584",
+    "artist": "Tesa",
+    "title": "Rural",
+    "date": "2019-03-22",
+    "cover": "Tesa-Rural-2019-03-22-Album.jpg",
+    "thumbnail": "Tesa-Rural-2019-03-22-Album.jpg"
+  },
+  {
+    "id": "eltiolacareta-gritarebelate-2019-03-15-album-e0d33a",
+    "artist": "El Tio La Careta",
+    "title": "Grita - Rebélate",
+    "date": "2019-03-15",
+    "cover": "ElTioLaCareta-GritaRebelate-2019-03-15-Album.jpg",
+    "thumbnail": "ElTioLaCareta-GritaRebelate-2019-03-15-Album.jpg"
+  },
+  {
+    "id": "thetargarians-cridaambmi-a4fbf0",
+    "artist": "The Targarians",
+    "title": "Crida amb mi!",
+    "date": "2019-03-01",
+    "cover": "TheTargarians-CridaAmbMi.jpg",
+    "thumbnail": "TheTargarians-CridaAmbMi.jpg"
+  },
+  {
+    "id": "laxnbusto-poliedric-2019-02-15-album-0478f0",
+    "artist": "Lax'n'busto",
+    "title": "Polièdric",
+    "date": "2019-02-15",
+    "cover": "LaxNBusto-Poliedric-2019-02-15-Album.jpg",
+    "thumbnail": "LaxNBusto-Poliedric-2019-02-15-Album.jpg"
+  },
+  {
+    "id": "pares-janohovolemtot-2019-02-08-album-57960d",
+    "artist": "Pares",
+    "title": "Ja no ho volem tot",
+    "date": "2019-02-08",
+    "cover": "Pares-JaNoHoVolemTot-2019-02-08-Album.jpg",
+    "thumbnail": "Pares-JaNoHoVolemTot-2019-02-08-Album.jpg"
+  },
+  {
+    "id": "moonlit-desastrenatural-1eac49",
+    "artist": "Moonlit",
+    "title": "Desastre Natural",
+    "date": "2019-01-09",
+    "cover": "Moonlit-DesastreNatural.jpg",
+    "thumbnail": "Moonlit-DesastreNatural.jpg"
+  },
+  {
+    "id": "lostitiriterosdebinefar-jaujacancionesyjuegosdelpaissonado-2019-01-05-album-8d2bee",
+    "artist": "Los Titiriteros de Binéfar",
+    "title": "Jauja, Canciones y juegos del país soñado",
+    "date": "2019-01-05",
+    "cover": "LosTitiriterosDeBinefar-JaujaCancionesYJuegosDelPaisSonado-2019-01-05-Album.jpg",
+    "thumbnail": "LosTitiriterosDeBinefar-JaujaCancionesYJuegosDelPaisSonado-2019-01-05-Album.jpg"
+  },
+  {
+    "id": "elcanal-descodificado-a7344c",
+    "artist": "El Canal",
+    "title": "Descodificado",
+    "date": "2019",
+    "cover": "ElCanal-Descodificado.jpg",
+    "thumbnail": "ElCanal-Descodificado.jpg"
+  },
+  {
+    "id": "gossos-paraulesquenosesborren-2018-11-30-80d40b",
+    "artist": "Gossos",
+    "title": "Paraules que no s'esborren, imatges que no s'en van",
+    "date": "2018-11-30",
+    "cover": "Gossos-ParaulesQueNoSEsborren-2018-11-30.jpg",
+    "thumbnail": "Gossos-ParaulesQueNoSEsborren-2018-11-30.jpg"
+  },
+  {
+    "id": "roser-diva-sdisco-28e8f1",
+    "artist": "Roser",
+    "title": "Diva's Disco",
+    "date": "2018-11-16",
+    "cover": "Roser-Diva'sDisco.jpg",
+    "thumbnail": "Roser-Diva'sDisco.jpg"
+  },
+  {
+    "id": "pinturamusicadaantonimiro-2018-10-15-album-00054b",
+    "artist": "Pintura Musicada Antoni Miró",
+    "title": "Júlia, Pau Alabajos, Lu Rois, Miquel Gil, Cesk Freixas, Mireia Vives, Borja Penalba, Mara Aranda, Feliu Ventura, El Diluvi, Francesc Anyó, Pepa Alòs",
+    "date": "2018-10-15",
+    "cover": "PinturaMusicadaAntoniMiro-2018-10-15-Album.jpg",
+    "thumbnail": "PinturaMusicadaAntoniMiro-2018-10-15-Album.jpg"
+  },
+  {
+    "id": "cronopios-lasonoracreacio20181102album-cdc0cb",
+    "artist": "Cronopios",
+    "title": "La Sonora Creació",
+    "date": "2018-10-05",
+    "cover": "Cronopios-LaSonoraCreacio20181102album.jpg",
+    "thumbnail": "Cronopios-LaSonoraCreacio20181102album.jpg"
+  },
+  {
+    "id": "akontrakorrent-lanostrasentencia-2018-09-27-single-7d5560",
+    "artist": "A Kontra Korrent",
+    "title": "La Nostra Sentència",
+    "date": "2018-09-27",
+    "cover": "AKontraKorrent-LaNostraSentencia-2018-09-27-Single.jpg",
+    "thumbnail": "AKontraKorrent-LaNostraSentencia-2018-09-27-Single.jpg"
+  },
+  {
+    "id": "misterjones-denaufragiosydeseos-2018-09-22-82a9a3",
+    "artist": "Mister Jones",
+    "title": "De naufragios y deseos",
+    "date": "2018-09-22",
+    "cover": "MisterJones-DeNaufragiosYDeseos-2018-09-22.jpg",
+    "thumbnail": "MisterJones-DeNaufragiosYDeseos-2018-09-22.jpg"
+  },
+  {
+    "id": "elsenyorpeix-ballemelmon-d79b41",
+    "artist": "El Senyor Peix",
+    "title": "Ballem el món",
+    "date": "2018-06-15",
+    "cover": "ElSenyorPeix-BallemElMon.jpg",
+    "thumbnail": "ElSenyorPeix-BallemElMon.jpg"
+  },
+  {
+    "id": "destemps-mentidesperfardar-2264d8",
+    "artist": "Destemps",
+    "title": "Mentides per fardar",
+    "date": "2018-06-08",
+    "cover": "Destemps-MentidesPerFardar.jpg",
+    "thumbnail": "Destemps-MentidesPerFardar.jpg"
+  },
+  {
+    "id": "austral-teoriadelevolucio-088431",
+    "artist": "Avstral",
+    "title": "Teoria de l'evolució",
+    "date": "2018-05-18",
+    "cover": "Austral-TeoriaDeLEvolucio.jpg",
+    "thumbnail": "Austral-TeoriaDeLEvolucio.jpg"
+  },
+  {
+    "id": "peranoia-solotemazos-2018-953d98",
+    "artist": "Peranoia",
+    "title": "Sólo temazos",
+    "date": "2018-05-18",
+    "cover": "PERANOIA-SoloTemazos-2018.jpg",
+    "thumbnail": "PERANOIA-SoloTemazos-2018.jpg"
+  },
+  {
+    "id": "eltiolacareta-grita-2018-04-25-ep-a21b30",
+    "artist": "El Tio La Careta",
+    "title": "Grita",
+    "date": "2018-04-25",
+    "cover": "ElTioLaCareta-Grita-2018-04-25-EP.jpg",
+    "thumbnail": "ElTioLaCareta-Grita-2018-04-25-EP.jpg"
+  },
+  {
+    "id": "germanegre-moltdeporcipocasalsitxa-2018-04-23-53730e",
+    "artist": "Germà Negre",
+    "title": "Molt De Porc I Poca Salsitxa",
+    "date": "2018-04-23",
+    "cover": "GermaNegre-MoltDePorcIPocaSalsitxa-2018-04-23.jpg",
+    "thumbnail": "GermaNegre-MoltDePorcIPocaSalsitxa-2018-04-23.jpg"
+  },
+  {
+    "id": "setrill-senders-20180515-70d9c5",
+    "artist": "Setrill",
+    "title": "Senders",
+    "date": "2018-04-23",
+    "cover": "Setrill-Senders-20180515.jpg",
+    "thumbnail": "Setrill-Senders-20180515.jpg"
+  },
+  {
+    "id": "brigadamoreneta-construintlabase-2018-04-17-ep-f83ca4",
+    "artist": "Brigada Moreneta",
+    "title": "Construïnt la base",
+    "date": "2018-04-17",
+    "cover": "BrigadaMoreneta-ConstruintLaBase-2018-04-17-EP.jpg",
+    "thumbnail": "BrigadaMoreneta-ConstruintLaBase-2018-04-17-EP.jpg"
+  },
+  {
+    "id": "lluismolina-myownpace-2018-97d5de",
+    "artist": "Lluís Molina",
+    "title": "My own pace",
+    "date": "2018-04-14",
+    "cover": "LluisMolina-MyOwnPace-2018.jpg",
+    "thumbnail": "LluisMolina-MyOwnPace-2018.jpg"
+  },
+  {
+    "id": "cactus-cactus-2018-04-13-album-798995",
+    "artist": "Cactus",
+    "title": "Cactus",
+    "date": "2018-04-13",
+    "cover": "Cactus-Cactus-2018-04-13-Album.jpg",
+    "thumbnail": "Cactus-Cactus-2018-04-13-Album.jpg"
+  },
+  {
+    "id": "joanreig-20180413ep-a3748c",
+    "artist": "Joan Reig",
+    "title": "EP",
+    "date": "2018-04-13",
+    "cover": "JoanReig-20180413EP.jpg",
+    "thumbnail": "JoanReig-20180413EP.jpg"
+  },
+  {
+    "id": "cuits-airesdenorte-2018-a37689",
+    "artist": "Cuits",
+    "title": "Aires del norte (feat. Pupil·les, Ekko & Madamme Mustash)",
+    "date": "2018-04-09",
+    "cover": "Cuits-AiresDeNorte-2018.jpg",
+    "thumbnail": "Cuits-AiresDeNorte-2018.jpg"
+  },
+  {
+    "id": "eam-elfocquenosapaga-2018-7dfa17",
+    "artist": "EAM (Exèrcit d'Alliberament Musical)",
+    "title": "El foc que no s'apaga",
+    "date": "2018-04-09",
+    "cover": "EAM-ElFocQueNoSApaga-2018.jpg",
+    "thumbnail": "EAM-ElFocQueNoSApaga-2018.jpg"
+  },
+  {
+    "id": "walkinroots-old-ep-2018-a3ce65",
+    "artist": "Walkin' Roots",
+    "title": "Old",
+    "date": "2018-04-09",
+    "cover": "WalkinRoots-Old-EP-2018.jpg",
+    "thumbnail": "WalkinRoots-Old-EP-2018.jpg"
+  },
+  {
+    "id": "ginesta-neix-2018-9ca1ad",
+    "artist": "Ginestà",
+    "title": "Neix",
+    "date": "2018-03-30",
+    "cover": "Ginesta-Neix-2018.jpg",
+    "thumbnail": "Ginesta-Neix-2018.jpg"
+  },
+  {
+    "id": "icarians-laberints-2018-ep-a02093",
+    "artist": "Icarians",
+    "title": "Laberints",
+    "date": "2018-03-30",
+    "cover": "Icarians-Laberints-2018-EP.jpg",
+    "thumbnail": "Icarians-Laberints-2018-EP.jpg"
+  },
+  {
+    "id": "falcon-firkin-bressagio-2018-b221ae",
+    "artist": "Falcon & Firkin",
+    "title": "Bressagio",
+    "date": "2018-03-16",
+    "cover": "Falcon&Firkin-Bressagio-2018.jpg",
+    "thumbnail": "Falcon&Firkin-Bressagio-2018.jpg"
+  },
+  {
+    "id": "ovellaxao-cantcorral-2018-43236a",
+    "artist": "Ovella Xao",
+    "title": "Cant corral",
+    "date": "2018-03-16",
+    "cover": "OvellaXao-CantCorral-2018.jpg",
+    "thumbnail": "OvellaXao-CantCorral-2018.jpg"
+  },
+  {
+    "id": "ginesta-gemma-polo-bruixes-2018-single-30a405",
+    "artist": "Ginestà ft. Gemma Polo",
+    "title": "Bruixes",
+    "date": "2018-03-14",
+    "cover": "Ginesta&Gemma-Polo-Bruixes-2018-single.jpg",
+    "thumbnail": "Ginesta&Gemma-Polo-Bruixes-2018-single.jpg"
+  },
+  {
+    "id": "catfolkin-quenos-aturi-97bc1e",
+    "artist": "Catfolkin",
+    "title": "Que no s'aturi",
+    "date": "2018-03-09",
+    "cover": "Catfolkin-QueNoS'Aturi.jpg",
+    "thumbnail": "Catfolkin-QueNoS'Aturi.jpg"
+  },
+  {
+    "id": "guardafuegos-mientrastodocambia-2018-02-16-ep-231c36",
+    "artist": "Guardafuegos",
+    "title": "Mientras todo cambia",
+    "date": "2018-02-16",
+    "cover": "Guardafuegos-MientrasTodoCambia-2018-02-16-EP.jpg",
+    "thumbnail": "Guardafuegos-MientrasTodoCambia-2018-02-16-EP.jpg"
+  },
+  {
+    "id": "konsumorespeto-losprimerosdiasdelaleyseca-ep-fd231d",
+    "artist": "Konsumo Respeto",
+    "title": "Los primeros días de la ley seca",
+    "date": "2018-02-05",
+    "cover": "KonsumoRespeto-LosPrimerosDiasDeLaLeySeca-EP.jpg",
+    "thumbnail": "KonsumoRespeto-LosPrimerosDiasDeLaLeySeca-EP.jpg"
+  },
+  {
+    "id": "puput-purga-2018-a21c0f",
+    "artist": "Puput",
+    "title": "Purga",
+    "date": "2018-02-02",
+    "cover": "Puput-Purga-2018.jpg",
+    "thumbnail": "Puput-Purga-2018.jpg"
+  },
+  {
+    "id": "smokingsouls-feat-desakato-l-ultimball-2018-single-102c36",
+    "artist": "Smoking Souls (feat. Desakato)",
+    "title": "L'últim ball",
+    "date": "2018-01-23",
+    "cover": "SmokingSouls(feat.Desakato)-L'UltimBall-2018-Single.jpg",
+    "thumbnail": "SmokingSouls(feat.Desakato)-L'UltimBall-2018-Single.jpg"
+  },
+  {
+    "id": "ekko-lasleyesdesujauria-2018-4e6e20",
+    "artist": "Ekko",
+    "title": "Las leyes de su jauría",
+    "date": "2018-01-12",
+    "cover": "Ekko-LasLeyesDeSuJauria-2018.jpg",
+    "thumbnail": "Ekko-LasLeyesDeSuJauria-2018.jpg"
+  },
+  {
+    "id": "rednrebel-atthecrossroads-scars-single-2018-44c3fb",
+    "artist": "Red N'Rebel",
+    "title": "At the crossroads + Scars",
+    "date": "2018-01-05",
+    "cover": "RedNRebel-AtTheCrossroads+Scars-Single-2018.jpg",
+    "thumbnail": "RedNRebel-AtTheCrossroads+Scars-Single-2018.jpg"
+  },
+  {
+    "id": "mim-especies-2017-74d513",
+    "artist": "Mim",
+    "title": "Espècies",
+    "date": "2017-11-17",
+    "cover": "Mim-Especies-2017.jpg",
+    "thumbnail": "Mim-Especies-2017.jpg"
+  },
+  {
+    "id": "constan-labricdesethiverns-325274",
+    "artist": "Constan",
+    "title": "L'abric de set hiverns",
+    "date": "2017-11-03",
+    "cover": "Constan-LAbricDeSetHiverns.jpg",
+    "thumbnail": "Constan-LAbricDeSetHiverns.jpg"
+  },
+  {
+    "id": "sotrac-sotaelroure-2017-41a2a8",
+    "artist": "Sotrac",
+    "title": "Sota el roure",
+    "date": "2017-10-06",
+    "cover": "Sotrac-SotaElRoure-2017.jpg",
+    "thumbnail": "Sotrac-SotaElRoure-2017.jpg"
+  },
+  {
+    "id": "thegramophoneallstarsbigband-maracasoul-2017-2dc445",
+    "artist": "The Gramophone Allstars Big Band",
+    "title": "Maraca soul",
+    "date": "2017-09-19",
+    "cover": "TheGramophoneAllstarsBigBand-MaracaSoul-2017.jpg",
+    "thumbnail": "TheGramophoneAllstarsBigBand-MaracaSoul-2017.jpg"
+  },
+  {
+    "id": "lokitolopongo-teoriadecuerdos-b73efd",
+    "artist": "Lokito Lopongo",
+    "title": "Teoría de cuerdos",
+    "date": "2017-06-27",
+    "cover": "LokitoLopongo-TeoriaDeCuerdos.jpg",
+    "thumbnail": "LokitoLopongo-TeoriaDeCuerdos.jpg"
+  },
+  {
+    "id": "peldegall-totessesdeixadessonperdudes-21763b",
+    "artist": "Pèl de gall",
+    "title": "Totes ses deixades són perdudes",
+    "date": "2017-06-12",
+    "cover": "PelDeGall-TotesSesDeixadesSonPerdudes.jpg",
+    "thumbnail": "PelDeGall-TotesSesDeixadesSonPerdudes.jpg"
+  },
+  {
+    "id": "laterrassetadepreixens-tou-74779e",
+    "artist": "La terrasseta de Preixens",
+    "title": "Tou",
+    "date": "2017-05-19",
+    "cover": "LaTerrassetaDePreixens-Tou.jpg",
+    "thumbnail": "LaTerrassetaDePreixens-Tou.jpg"
+  },
+  {
+    "id": "deliri-lanitsencera-c5475c",
+    "artist": "Deliri",
+    "title": "La nit sencera",
+    "date": "2017-05-16",
+    "cover": "Deliri-LaNitSencera.jpg",
+    "thumbnail": "Deliri-LaNitSencera.jpg"
+  },
+  {
+    "id": "dubcat-ladiferencia-41812e",
+    "artist": "Dubcat",
+    "title": "La diferència",
+    "date": "2017-05-05",
+    "cover": "Dubcat-LaDiferencia.jpg",
+    "thumbnail": "Dubcat-LaDiferencia.jpg"
+  },
+  {
+    "id": "thuladuus-fruit-0345e1",
+    "artist": "Thüla Duus",
+    "title": "Fruit",
+    "date": "2017-05-01",
+    "cover": "ThulaDuus-Fruit.jpg",
+    "thumbnail": "ThulaDuus-Fruit.jpg"
+  },
+  {
+    "id": "subversa-error-d94946",
+    "artist": "Subversa",
+    "title": "Error",
+    "date": "2017-05",
+    "cover": "Subversa-Error.jpg",
+    "thumbnail": "Subversa-Error.jpg"
+  },
+  {
+    "id": "icarians-ales-3b9f62",
+    "artist": "Icarians",
+    "title": "Ales",
+    "date": "2017-04-10",
+    "cover": "Icarians-Ales.jpg",
+    "thumbnail": "Icarians-Ales.jpg"
+  },
+  {
+    "id": "xakras-corrents-32c3b8",
+    "artist": "Xakras",
+    "title": "Corrents",
+    "date": "2017-04-07",
+    "cover": "Xakras-Corrents.jpg",
+    "thumbnail": "Xakras-Corrents.jpg"
+  },
+  {
+    "id": "theassclats-xiii-ep-2017-c1deb0",
+    "artist": "The Assclats",
+    "title": "XIII",
+    "date": "2017-04",
+    "cover": "TheAssclats-XIII-EP-2017.jpg",
+    "thumbnail": "TheAssclats-XIII-EP-2017.jpg"
+  },
+  {
+    "id": "sherpah-h-0468bb",
+    "artist": "Sherpah",
+    "title": "H",
+    "date": "2017-03-31",
+    "cover": "Sherpah-H.jpg",
+    "thumbnail": "Sherpah-H.jpg"
+  },
+  {
+    "id": "callejoncanalla-indiciofinal-ee4bb7",
+    "artist": "Callejón Canalla",
+    "title": "Indicio final",
+    "date": "2017-03-26",
+    "cover": "CallejonCanalla-IndicioFinal.jpg",
+    "thumbnail": "CallejonCanalla-IndicioFinal.jpg"
+  },
+  {
+    "id": "zoo-raval-b525f3",
+    "artist": "Zoo",
+    "title": "Raval",
+    "date": "2017-03-24",
+    "cover": "Zoo-Raval.jpg",
+    "thumbnail": "Zoo-Raval.jpg"
+  },
+  {
+    "id": "lostartofmurder-misnochessindormir-4691c8",
+    "artist": "Lost art of murder",
+    "title": "Mis noches sin dormir",
+    "date": "2017-03-09",
+    "cover": "LostArtOfMurder-MisNochesSinDormir.jpg",
+    "thumbnail": "LostArtOfMurder-MisNochesSinDormir.jpg"
+  },
+  {
+    "id": "smokingsouls-cendraior-96eb87",
+    "artist": "Smoking Souls",
+    "title": "Cendra i or",
+    "date": "2017-02-20",
+    "cover": "SmokingSouls-CendraIOr.jpg",
+    "thumbnail": "SmokingSouls-CendraIOr.jpg"
+  },
+  {
+    "id": "enzel-capitaibuprofen-81d71e",
+    "artist": "Enzel",
+    "title": "Capità Ibuprofen",
+    "date": "2017-01-20",
+    "cover": "Enzel-CapitaIbuprofen.jpg",
+    "thumbnail": "Enzel-CapitaIbuprofen.jpg"
+  },
+  {
+    "id": "ghosttrip-reincarnation-79e1bf",
+    "artist": "Ghost Trip",
+    "title": "Reincarnation",
+    "date": "2017-01-20",
+    "cover": "GhostTrip-Reincarnation.jpg",
+    "thumbnail": "GhostTrip-Reincarnation.jpg"
+  },
+  {
+    "id": "alfonsodevilallonga-lalibreria-the-bookshop-isabelcoixet-2017-bso-024336",
+    "artist": "Alfonso De Vilallonga",
+    "title": "La Librería (The Bookshop) Isabel Coixet BSO",
+    "date": "2017",
+    "cover": "AlfonsoDeVilallonga-LaLibreria(The-Bookshop,IsabelCoixet)-2017-BSO.jpg",
+    "thumbnail": "AlfonsoDeVilallonga-LaLibreria(The-Bookshop,IsabelCoixet)-2017-BSO.jpg"
+  },
+  {
+    "id": "annad-ivori-rereelsvidres2017-876e05",
+    "artist": "Anna D'Ivori",
+    "title": "Rere els vidres",
+    "date": "2017",
+    "cover": "AnnaD'Ivori-RereElsVidres2017.jpg",
+    "thumbnail": "AnnaD'Ivori-RereElsVidres2017.jpg"
+  },
+  {
+    "id": "cheri-trasvarioscuentos-ep-699b8b",
+    "artist": "Cheri",
+    "title": "Tras varios cuentos",
+    "date": "2017",
+    "cover": "Cheri-TrasVariosCuentos-EP.jpg",
+    "thumbnail": "Cheri-TrasVariosCuentos-EP.jpg"
+  },
+  {
+    "id": "dubcat-som-2017-623293",
+    "artist": "Dubcat",
+    "title": "Som",
+    "date": "2017",
+    "cover": "Dubcat-Som-2017.jpg",
+    "thumbnail": "Dubcat-Som-2017.jpg"
+  },
+  {
+    "id": "edna-araomai-2017-d501a6",
+    "artist": "Edna",
+    "title": "Ara o mai",
+    "date": "2017",
+    "cover": "Edna-AraOMai-2017.jpg",
+    "thumbnail": "Edna-AraOMai-2017.jpg"
+  },
+  {
+    "id": "lluiscartes-elpaisdelsnanscabuts-2017-9f2166",
+    "artist": "Lluís Cartes",
+    "title": "El país dels nans cabuts",
+    "date": "2017",
+    "cover": "LluisCartes-ElPaisDelsNansCabuts-2017.jpg",
+    "thumbnail": "LluisCartes-ElPaisDelsNansCabuts-2017.jpg"
+  },
+  {
+    "id": "lokitolopongo-descoloca-single-2017-7357d9",
+    "artist": "Lokito Lopongo",
+    "title": "Descoloca",
+    "date": "2017",
+    "cover": "LokitoLopongo-Descoloca-Single-2017.jpg",
+    "thumbnail": "LokitoLopongo-Descoloca-Single-2017.jpg"
+  },
+  {
+    "id": "nuc-arrandelmar-2017-f215ee",
+    "artist": "Nuc",
+    "title": "Arran de mar",
+    "date": "2017",
+    "cover": "Nuc-ArranDelMar-2017.jpg",
+    "thumbnail": "Nuc-ArranDelMar-2017.jpg"
+  },
+  {
+    "id": "ojodebuencubero-ingovernable-2017-2f5e59",
+    "artist": "Ojo De Buen Cubero",
+    "title": "Ingovernable",
+    "date": "2017",
+    "cover": "OjoDeBuenCubero-Ingovernable-2017.jpg",
+    "thumbnail": "OjoDeBuenCubero-Ingovernable-2017.jpg"
+  },
+  {
+    "id": "pupilesdilatives-lessilenciades-ccab77",
+    "artist": "Pupil·les Dilatives",
+    "title": "Les silenciades",
+    "date": "2017",
+    "cover": "PupilesDilatives-LesSilenciades.jpg",
+    "thumbnail": "PupilesDilatives-LesSilenciades.jpg"
+  },
+  {
+    "id": "saraterraza-saraterraza-theblacksheep-ep-2017-9ae839",
+    "artist": "Sara Terraza",
+    "title": "Sara Terraza & The Black Sheep",
+    "date": "2017",
+    "cover": "SaraTerraza-SaraTerraza&TheBlackSheep-EP-2017.jpg",
+    "thumbnail": "SaraTerraza-SaraTerraza&TheBlackSheep-EP-2017.jpg"
+  },
+  {
+    "id": "theassclats-theassclats-2017ep-36a3a2",
+    "artist": "The Assclats",
+    "title": "The Assclats",
+    "date": "2017",
+    "cover": "TheAssclats-TheAssclats-2017EP.jpg",
+    "thumbnail": "TheAssclats-TheAssclats-2017EP.jpg"
+  },
+  {
+    "id": "xarimareste-polinesies-2017-0c9882",
+    "artist": "Xarim Aresté",
+    "title": "Polinèsies",
+    "date": "2017",
+    "cover": "XarimAreste-Polinesies-2017.jpg",
+    "thumbnail": "XarimAreste-Polinesies-2017.jpg"
+  },
+  {
+    "id": "falcon-firkin-momentschillout-63c146",
+    "artist": "Falcon & Firkin",
+    "title": "Moments Chill Out",
+    "date": "2016-12-16",
+    "cover": "Falcon&Firkin-MomentsChillOut.jpg",
+    "thumbnail": "Falcon&Firkin-MomentsChillOut.jpg"
+  },
+  {
+    "id": "detuatu-moments-3239e9",
+    "artist": "De tu a tu",
+    "title": "Moments",
+    "date": "2016-12-02",
+    "cover": "DeTuATu-Moments.jpg",
+    "thumbnail": "DeTuATu-Moments.jpg"
+  },
+  {
+    "id": "gossos-zenit-128654",
+    "artist": "Gossos",
+    "title": "Zenit",
+    "date": "2016-09-16",
+    "cover": "Gossos-Zenit.jpg",
+    "thumbnail": "Gossos-Zenit.jpg"
+  },
+  {
+    "id": "rocpuig-focicendra-2016-89f4dd",
+    "artist": "Roc Puig",
+    "title": "Foc i cendra",
+    "date": "2016-09-16",
+    "cover": "RocPuig-FocICendra-2016.jpg",
+    "thumbnail": "RocPuig-FocICendra-2016.jpg"
+  },
+  {
+    "id": "greenzola-interconnected-a26950",
+    "artist": "Green Zola",
+    "title": "Interconnected",
+    "date": "2016-07-23",
+    "cover": "GreenZola-Interconnected.jpg",
+    "thumbnail": "GreenZola-Interconnected.jpg"
+  },
+  {
+    "id": "tremp-zaindu-a60f04",
+    "artist": "Tremp",
+    "title": "Zaindu",
+    "date": "2016-07-01",
+    "cover": "Tremp-Zaindu.jpg",
+    "thumbnail": "Tremp-Zaindu.jpg"
+  },
+  {
+    "id": "isaaculam-ratpenat-2016-77cbec",
+    "artist": "Isaac Ulam",
+    "title": "Ratpenat",
+    "date": "2016-04-08",
+    "cover": "IsaacUlam-Ratpenat-2016.jpg",
+    "thumbnail": "IsaacUlam-Ratpenat-2016.jpg"
+  },
+  {
+    "id": "lapolsil-era-4253ae",
+    "artist": "La pols i l'era",
+    "title": "",
+    "date": "2016-02-19",
+    "cover": "LaPolsIL'Era.jpg",
+    "thumbnail": "LaPolsIL'Era.jpg"
+  },
+  {
+    "id": "minerva-m-d1506e",
+    "artist": "Minerva",
+    "title": "M",
+    "date": "2016-02-09",
+    "cover": "Minerva-M.jpg",
+    "thumbnail": "Minerva-M.jpg"
+  },
+  {
+    "id": "assekes-unnoucami-615366",
+    "artist": "Assekes",
+    "title": "Un nou camí",
+    "date": "2016",
+    "cover": "Assekes-UnNouCami.jpg",
+    "thumbnail": "Assekes-UnNouCami.jpg"
+  },
+  {
+    "id": "atzembla-corsarmats-0036a4",
+    "artist": "Atzembla",
+    "title": "Cors armats",
+    "date": "2016",
+    "cover": "Atzembla-CorsArmats.jpg",
+    "thumbnail": "Atzembla-CorsArmats.jpg"
+  },
+  {
+    "id": "ayvala-laruevacilon-2016-b302ef",
+    "artist": "Ayvala",
+    "title": "La rue Vacilon",
+    "date": "2016",
+    "cover": "Ayvala-LaRueVacilon-2016.jpg",
+    "thumbnail": "Ayvala-LaRueVacilon-2016.jpg"
+  },
+  {
+    "id": "raqueljimenez-balispirit-8edb01",
+    "artist": "Bali Spirit by Raquel Jiménez",
+    "title": "Bali Spirit Sound Vol. 1",
+    "date": "2016",
+    "cover": "RaquelJimenez-BaliSpirit.jpg",
+    "thumbnail": "RaquelJimenez-BaliSpirit.jpg"
+  },
+  {
+    "id": "corroent-batega-d91096",
+    "artist": "Cor Roent",
+    "title": "Batega",
+    "date": "2016",
+    "cover": "CorRoent-Batega.jpg",
+    "thumbnail": "CorRoent-Batega.jpg"
+  },
+  {
+    "id": "deskarats-dksvol2-58ad1c",
+    "artist": "Deskarats",
+    "title": "DKS Vol. 2",
+    "date": "2016",
+    "cover": "Deskarats-DKSVol2.jpg",
+    "thumbnail": "Deskarats-DKSVol2.jpg"
+  },
+  {
+    "id": "ghosttrip-carnation-3d214e",
+    "artist": "Ghost Trip",
+    "title": "Carnation",
+    "date": "2016",
+    "cover": "GhostTrip-Carnation.jpg",
+    "thumbnail": "GhostTrip-Carnation.jpg"
+  },
+  {
+    "id": "ghosttrip-fisherman-652a7b",
+    "artist": "Ghost Trip",
+    "title": "Fisherman",
+    "date": "2016",
+    "cover": "GhostTrip-Fisherman.jpg",
+    "thumbnail": "GhostTrip-Fisherman.jpg"
+  },
+  {
+    "id": "hysteriofunk-forma-66a1f3",
+    "artist": "Hysteriofunk",
+    "title": "Forma",
+    "date": "2016",
+    "cover": "Hysteriofunk-Forma.jpg",
+    "thumbnail": "Hysteriofunk-Forma.jpg"
+  },
+  {
+    "id": "imprudentes-parecementira-838e9a",
+    "artist": "Imprudentes",
+    "title": "Parece Mentira",
+    "date": "2016",
+    "cover": "Imprudentes-PareceMentira.jpg",
+    "thumbnail": "Imprudentes-PareceMentira.jpg"
+  },
+  {
+    "id": "kinsky-theedgeofthewinedarksea-b5fe42",
+    "artist": "Kinsky",
+    "title": "The edge of the wine-dark sea",
+    "date": "2016",
+    "cover": "Kinsky-TheEdgeOfTheWineDarkSea.jpg",
+    "thumbnail": "Kinsky-TheEdgeOfTheWineDarkSea.jpg"
+  },
+  {
+    "id": "l-hometrencat-esmortinohosap-880c35",
+    "artist": "L'Home Trencat",
+    "title": "És mort i no ho sap",
+    "date": "2016",
+    "cover": "L'HomeTrencat-EsMortINoHoSap.jpeg",
+    "thumbnail": "L'HomeTrencat-EsMortINoHoSap.jpeg"
+  },
+  {
+    "id": "lapelopony-yolanda-29815d",
+    "artist": "La Pelopony",
+    "title": "Yolanda",
+    "date": "2016",
+    "cover": "LaPelopony-Yolanda.jpg",
+    "thumbnail": "LaPelopony-Yolanda.jpg"
+  },
+  {
+    "id": "lasvictimasciviles-40anosdeexitosdelposfranquismoespanol-b14cc2",
+    "artist": "Las Víctimas Civiles",
+    "title": "40 años de éxitos del posfranquismo español",
+    "date": "2016",
+    "cover": "LasVictimasCiviles-40AnosDeExitosDelPosFranquismoEspanol.jpg",
+    "thumbnail": "LasVictimasCiviles-40AnosDeExitosDelPosFranquismoEspanol.jpg"
+  },
+  {
+    "id": "lilitidionis-eltempsdelspobles-77578c",
+    "artist": "Lilit i Dionís",
+    "title": "El temps dels pobles",
+    "date": "2016",
+    "cover": "LilitIDionis-ElTempsDelsPobles.jpg",
+    "thumbnail": "LilitIDionis-ElTempsDelsPobles.jpg"
+  },
+  {
+    "id": "lokitolopongo-orquestasintambor-2016-054feb",
+    "artist": "Lokito Lopongo",
+    "title": "Orquesta sin tambor",
+    "date": "2016",
+    "cover": "LokitoLopongo-OrquestaSinTambor-2016.jpg",
+    "thumbnail": "LokitoLopongo-OrquestaSinTambor-2016.jpg"
+  },
+  {
+    "id": "mariaarnalimarcelbages-verbena-f05d8a",
+    "artist": "Maria Arnal i Marcel Bages",
+    "title": "Verbena",
+    "date": "2016",
+    "cover": "MariaArnalIMarcelBages-Verbena.jpg",
+    "thumbnail": "MariaArnalIMarcelBages-Verbena.jpg"
+  },
+  {
+    "id": "mazoni-7songsforanendlessnight-781f7a",
+    "artist": "Mazoni",
+    "title": "7 Songs for an endless night",
+    "date": "2016",
+    "cover": "Mazoni-7SongsForAnEndlessNight.jpg",
+    "thumbnail": "Mazoni-7SongsForAnEndlessNight.jpg"
+  },
+  {
+    "id": "meteor-enllalallum-4968a4",
+    "artist": "Meteor",
+    "title": "Enllà la llum",
+    "date": "2016",
+    "cover": "Meteor-EnllaLaLlum.jpg",
+    "thumbnail": "Meteor-EnllaLaLlum.jpg"
+  },
+  {
+    "id": "milu-dc60ae",
+    "artist": "Milú",
+    "title": "Un món per descobrir",
+    "date": "2016",
+    "cover": "Milu.jpg",
+    "thumbnail": "Milu.jpg"
+  },
+  {
+    "id": "mondoloco-airefresco-086909",
+    "artist": "Möndo Loco",
+    "title": "Aire fresco",
+    "date": "2016",
+    "cover": "MondoLoco-AireFresco.jpg",
+    "thumbnail": "MondoLoco-AireFresco.jpg"
+  },
+  {
+    "id": "ojodebuencubero-elrondeayer-e87d4c",
+    "artist": "Ojo De Buen Cubero",
+    "title": "El ron de ayer",
+    "date": "2016",
+    "cover": "OjoDeBuenCubero-ElRonDeAyer.jpg",
+    "thumbnail": "OjoDeBuenCubero-ElRonDeAyer.jpg"
+  },
+  {
+    "id": "paulfuster-gobetween-e46548",
+    "artist": "Paul Fuster",
+    "title": "Go/Between",
+    "date": "2016",
+    "cover": "PaulFuster-GoBetween.jpg",
+    "thumbnail": "PaulFuster-GoBetween.jpg"
+  },
+  {
+    "id": "ranranran-ranranran-47bf82",
+    "artist": "RanRanRan",
+    "title": "",
+    "date": "2016",
+    "cover": "RanRanRan-RanRanRan.jpg",
+    "thumbnail": "RanRanRan-RanRanRan.jpg"
+  },
+  {
+    "id": "renaldo-clara-elsafores-eac9f8",
+    "artist": "Renaldo & Clara",
+    "title": "Els afores",
+    "date": "2016",
+    "cover": "Renaldo&Clara-ElsAfores.jpg",
+    "thumbnail": "Renaldo&Clara-ElsAfores.jpg"
+  },
+  {
+    "id": "senyordelsllamps-eremheaviesinocumbes-57ade4",
+    "artist": "Senyor dels llamps",
+    "title": "Érem heavies i no cumbes",
+    "date": "2016",
+    "cover": "SenyorDelsLlamps-EremHeaviesINoCumbes.jpg",
+    "thumbnail": "SenyorDelsLlamps-EremHeaviesINoCumbes.jpg"
+  },
+  {
+    "id": "solar-metropolis-54fd92",
+    "artist": "Solar",
+    "title": "Metropolis",
+    "date": "2016",
+    "cover": "Solar-Metropolis.jpg",
+    "thumbnail": "Solar-Metropolis.jpg"
+  },
+  {
+    "id": "theevertigos-shades-20d28c",
+    "artist": "Thee Vertigos",
+    "title": "Shades",
+    "date": "2016",
+    "cover": "TheeVertigos-Shades.jpg",
+    "thumbnail": "TheeVertigos-Shades.jpg"
+  },
+  {
+    "id": "tonixucla-depoetescanconetes-7b1b85",
+    "artist": "Toni Xuclà",
+    "title": "De poetes cançonetes",
+    "date": "2016",
+    "cover": "ToniXucla-DePoetesCanconetes.jpg",
+    "thumbnail": "ToniXucla-DePoetesCanconetes.jpg"
+  },
+  {
+    "id": "tortellinis-enunracodelmon-cdecc8",
+    "artist": "Tortellinis",
+    "title": "En un racó del món",
+    "date": "2016",
+    "cover": "Tortellinis-EnUnRacoDelMon.jpg",
+    "thumbnail": "Tortellinis-EnUnRacoDelMon.jpg"
+  },
+  {
+    "id": "tumbaos-oju--753913",
+    "artist": "Tumbaos",
+    "title": "Oju!",
+    "date": "2016",
+    "cover": "Tumbaos-Oju!.jpg",
+    "thumbnail": "Tumbaos-Oju!.jpg"
+  },
+  {
+    "id": "victorbranch-introspective-20ec9f",
+    "artist": "Victor Branch",
+    "title": "Introspective",
+    "date": "2016",
+    "cover": "VictorBranch-Introspective.jpg",
+    "thumbnail": "VictorBranch-Introspective.jpg"
+  },
+  {
+    "id": "xavividal-simetria-5e61fa",
+    "artist": "Xavi Vidal",
+    "title": "Σimetria",
+    "date": "2016",
+    "cover": "XaviVidal-Simetria.jpg",
+    "thumbnail": "XaviVidal-Simetria.jpg"
+  },
+  {
+    "id": "xavierbaro-iunafadahotrasmuda-65a36b",
+    "artist": "Xavier Baró",
+    "title": "I una fada ho trasmuda",
+    "date": "2016",
+    "cover": "XavierBaro-IUnaFadaHoTrasmuda.jpg",
+    "thumbnail": "XavierBaro-IUnaFadaHoTrasmuda.jpg"
+  },
+  {
+    "id": "xavierbaro-renaldo-clara-ac005b",
+    "artist": "Xavier Baró i Renaldo & Clara",
+    "title": "",
+    "date": "2016",
+    "cover": "XavierBaro-Renaldo&Clara.jpg",
+    "thumbnail": "XavierBaro-Renaldo&Clara.jpg"
+  },
+  {
+    "id": "zoo-tempestesvenendelsud-3367c3",
+    "artist": "Zoo",
+    "title": "Tempestes vénen del sud",
+    "date": "2016",
+    "cover": "Zoo-TempestesVenenDelSud.jpg",
+    "thumbnail": "Zoo-TempestesVenenDelSud.jpg"
+  },
+  {
+    "id": "inventors-l-algebradeltemps-2015-06-04-ep-934e4b",
+    "artist": "Inventors",
+    "title": "L'Àlgebra Del Temps",
+    "date": "2015-06-04",
+    "cover": "Inventors-L'AlgebraDelTemps-2015-06-04-EP.jpg",
+    "thumbnail": "Inventors-L'AlgebraDelTemps-2015-06-04-EP.jpg"
+  },
+  {
+    "id": "bob-ellladre-el-colordelanit-2015-04-23-single-601c46",
+    "artist": "Bob & El Lladre",
+    "title": "El Color De La Nit",
+    "date": "2015-04-23",
+    "cover": "Bob&ElLladre-El-ColorDeLaNit-2015-04-23-Single.jpg",
+    "thumbnail": "Bob&ElLladre-El-ColorDeLaNit-2015-04-23-Single.jpg"
+  },
+  {
+    "id": "accio-1001colors-669bd4",
+    "artist": "Acció",
+    "title": "1001 Colors",
+    "date": "2015",
+    "cover": "Accio-1001Colors.jpg",
+    "thumbnail": "Accio-1001Colors.jpg"
+  },
+  {
+    "id": "arlo-2015-420250",
+    "artist": "Arlo",
+    "title": "",
+    "date": "2015",
+    "cover": "Arlo-2015.jpg",
+    "thumbnail": "Arlo-2015.jpg"
+  },
+  {
+    "id": "crisjuanico-f-a-usta-220dac",
+    "artist": "Cris Juanico",
+    "title": "F(a)usta",
+    "date": "2015",
+    "cover": "CrisJuanico-F(a)usta.jpg",
+    "thumbnail": "CrisJuanico-F(a)usta.jpg"
+  },
+  {
+    "id": "lidiaserra-laterraescasameva-169b7d",
+    "artist": "Lídia Serra López",
+    "title": "La Terra és casa meva",
+    "date": "2015",
+    "cover": "LidiaSerra-LaTerraEsCasaMeva.jpg",
+    "thumbnail": "LidiaSerra-LaTerraEsCasaMeva.jpg"
+  },
+  {
+    "id": "lostartofmurder-ep-2015-f8482d",
+    "artist": "Lost Art of Murder",
+    "title": "",
+    "date": "2015",
+    "cover": "LostArtofMurder-EP-2015.jpg",
+    "thumbnail": "LostArtofMurder-EP-2015.jpg"
+  },
+  {
+    "id": "matis-llum-2015-11a6db",
+    "artist": "Matís",
+    "title": "Llum",
+    "date": "2015",
+    "cover": "Matis-Llum-2015.jpg",
+    "thumbnail": "Matis-Llum-2015.jpg"
+  },
+  {
+    "id": "ojodebuencubero-soc-2015-91fa41",
+    "artist": "Ojo De Buen Cubero",
+    "title": "Sóc",
+    "date": "2015",
+    "cover": "OjoDeBuenCubero-Soc-2015.jpg",
+    "thumbnail": "OjoDeBuenCubero-Soc-2015.jpg"
+  },
+  {
+    "id": "puput-upupaepops-2015-4eb1cf",
+    "artist": "Puput",
+    "title": "Upupa Epops",
+    "date": "2015",
+    "cover": "Puput-UpupaEpops-2015.jpg",
+    "thumbnail": "Puput-UpupaEpops-2015.jpg"
+  },
+  {
+    "id": "rumbalbar-ara-2015-3c9082",
+    "artist": "Rumbalbar",
+    "title": "Ara",
+    "date": "2015",
+    "cover": "Rumbalbar-Ara-2015.jpg",
+    "thumbnail": "Rumbalbar-Ara-2015.jpg"
+  },
+  {
+    "id": "smokingsouls-nomades-2015-7637f7",
+    "artist": "Smoking Souls",
+    "title": "Nòmades",
+    "date": "2015",
+    "cover": "SmokingSouls-Nomades-2015.jpg",
+    "thumbnail": "SmokingSouls-Nomades-2015.jpg"
+  },
+  {
+    "id": "unaltrenadaldecancons-2015-936cfa",
+    "artist": "Un altre Nadal de cançons",
+    "title": "",
+    "date": "2015",
+    "cover": "UnAltreNadaldeCancons-2015.jpg",
+    "thumbnail": "UnAltreNadaldeCancons-2015.jpg"
+  },
+  {
+    "id": "alademoska-malaconciencia-9021f8",
+    "artist": "Alademoska",
+    "title": "Mala conciencia",
+    "date": "2014",
+    "cover": "AlaDeMoska-MalaConciencia.jpg",
+    "thumbnail": "AlaDeMoska-MalaConciencia.jpg"
+  },
+  {
+    "id": "andreumartinez-ticktock-7e015c",
+    "artist": "Andreu Martinez",
+    "title": "Tick Tock",
+    "date": "2014",
+    "cover": "AndreuMartinez-TickTock.jpg",
+    "thumbnail": "AndreuMartinez-TickTock.jpg"
+  },
+  {
+    "id": "atupa-expansionpack-54c024",
+    "artist": "Atupa",
+    "title": "Expansion Pack",
+    "date": "2014",
+    "cover": "Atupa-ExpansionPack.jpg",
+    "thumbnail": "Atupa-ExpansionPack.jpg"
+  },
+  {
+    "id": "damiaolivella-origen-ca00ff",
+    "artist": "Damià Olivella",
+    "title": "Origen",
+    "date": "2014",
+    "cover": "DamiaOlivella-Origen.jpg",
+    "thumbnail": "DamiaOlivella-Origen.jpg"
+  },
+  {
+    "id": "hightimes-finsquesurtielsol-4ded75",
+    "artist": "High Times",
+    "title": "Fins que surti el Sol",
+    "date": "2014",
+    "cover": "HighTimes-FinsQueSurtiElSol.jpg",
+    "thumbnail": "HighTimes-FinsQueSurtiElSol.jpg"
+  },
+  {
+    "id": "holybouncer-ladies-gentlemen-ep-2014-d76de0",
+    "artist": "Holy Bouncer",
+    "title": "Ladies & Gentlemen",
+    "date": "2014",
+    "cover": "HolyBouncer-Ladies&Gentlemen-EP-2014.jpg",
+    "thumbnail": "HolyBouncer-Ladies&Gentlemen-EP-2014.jpg"
+  },
+  {
+    "id": "jordiboixados-cuquesdellum-6ce079",
+    "artist": "Jordi Boixadós",
+    "title": "Cuques de llum",
+    "date": "2014",
+    "cover": "JordiBoixados-CuquesDeLlum.jpg",
+    "thumbnail": "JordiBoixados-CuquesDeLlum.jpg"
+  },
+  {
+    "id": "kingkongboy-alcemelvol-2014-e489ae",
+    "artist": "King Kong Boy",
+    "title": "Alcem el vol",
+    "date": "2014",
+    "cover": "KingKongBoy-AlcemElVol-2014.jpg",
+    "thumbnail": "KingKongBoy-AlcemElVol-2014.jpg"
+  },
+  {
+    "id": "laperdiuspencer-nostrecodi-2014-716945",
+    "artist": "La perdiu Spencer",
+    "title": "Nostre codi",
+    "date": "2014",
+    "cover": "LaPerdiuSpencer-NostreCodi-2014.jpg",
+    "thumbnail": "LaPerdiuSpencer-NostreCodi-2014.jpg"
+  },
+  {
+    "id": "lokitolopongo-unpoquitodiferentes-ep-2014-6b06f3",
+    "artist": "Lokito Lopongo",
+    "title": "Un poquito diferentes",
+    "date": "2014",
+    "cover": "LokitoLopongo-UnPoquitoDiferentes-EP-2014.jpg",
+    "thumbnail": "LokitoLopongo-UnPoquitoDiferentes-EP-2014.jpg"
+  },
+  {
+    "id": "meteor-alloquesom-97612c",
+    "artist": "Meteor",
+    "title": "Allò que som",
+    "date": "2014",
+    "cover": "Meteor-AlloQueSom.jpg",
+    "thumbnail": "Meteor-AlloQueSom.jpg"
+  },
+  {
+    "id": "miquelabras-peramoralart-bed708",
+    "artist": "Miquel Abras",
+    "title": "Per amor a l'art",
+    "date": "2014",
+    "cover": "MiquelAbras-PerAmorALArt.jpg",
+    "thumbnail": "MiquelAbras-PerAmorALArt.jpg"
+  },
+  {
+    "id": "monsieurh-miseenabyme-2014-6e3893",
+    "artist": "Monsieur H",
+    "title": "Mise en abyme",
+    "date": "2014",
+    "cover": "MonsieurH-MiseEnAbyme-2014.jpg",
+    "thumbnail": "MonsieurH-MiseEnAbyme-2014.jpg"
+  },
+  {
+    "id": "pastoretsrock-rockncornadales2-0-2014-5e48cd",
+    "artist": "Pastorets Rock",
+    "title": "Rock'N'Cor Nadales 2.0",
+    "date": "2014",
+    "cover": "PastoretsRock-RockNCorNadales2.0-2014.jpg",
+    "thumbnail": "PastoretsRock-RockNCorNadales2.0-2014.jpg"
+  },
+  {
+    "id": "pereespinosa-evolucio-64aa0a",
+    "artist": "Pere Espinosa",
+    "title": "Evolució",
+    "date": "2014",
+    "cover": "PereEspinosa-Evolucio.jpg",
+    "thumbnail": "PereEspinosa-Evolucio.jpg"
+  },
+  {
+    "id": "quadernobert-poemesicancons-2014-0f02c8",
+    "artist": "Quadern Obert",
+    "title": "Poemes i cançons",
+    "date": "2014",
+    "cover": "QuadernObert-PoemesICancons-2014.jpg",
+    "thumbnail": "QuadernObert-PoemesICancons-2014.jpg"
+  },
+  {
+    "id": "renaldo-clara-fruitsdelteubosc-2014-3d4c94",
+    "artist": "Renaldo & Clara",
+    "title": "Fruits del teu bosc",
+    "date": "2014",
+    "cover": "Renaldo&Clara-FruitsDelTeuBosc-2014.jpg",
+    "thumbnail": "Renaldo&Clara-FruitsDelTeuBosc-2014.jpg"
+  },
+  {
+    "id": "thegramophoneallstarsbigband-jazzmaica-2014-c12c7b",
+    "artist": "The Gramophone Allstars Big Band",
+    "title": "Jazzmaica",
+    "date": "2014",
+    "cover": "TheGramophoneAllstarsBigBand-Jazzmaica-2014.jpg",
+    "thumbnail": "TheGramophoneAllstarsBigBand-Jazzmaica-2014.jpg"
+  },
+  {
+    "id": "thepenguinsband-shufflecut-deal-2014-ca5679",
+    "artist": "The Penguins Band",
+    "title": "Shuffle, cut & deal",
+    "date": "2014",
+    "cover": "ThePenguinsBand-ShuffleCut&Deal-2014.jpg",
+    "thumbnail": "ThePenguinsBand-ShuffleCut&Deal-2014.jpg"
+  },
+  {
+    "id": "wednesdaylips-seasoniii-howtobeawakeuntilldown-2014-53a1e9",
+    "artist": "Wednesday Lips",
+    "title": "Season III How to be awake untill down",
+    "date": "2014",
+    "cover": "WednesdayLips-SeasonIII-HowToBeAwakeUntillDown-2014.jpg",
+    "thumbnail": "WednesdayLips-SeasonIII-HowToBeAwakeUntillDown-2014.jpg"
+  },
+  {
+    "id": "xavieruga-haestatunplaer-2014-fecb0d",
+    "artist": "Xavieruga",
+    "title": "Ha estat un plaer...",
+    "date": "2014",
+    "cover": "Xavieruga-HaEstatUnPlaer-2014.jpg",
+    "thumbnail": "Xavieruga-HaEstatUnPlaer-2014.jpg"
+  },
+  {
+    "id": "xvb-autoretrats-2ecc25",
+    "artist": "XvB (Xavi Vidal, Berni Mora)",
+    "title": "Autoretrats",
+    "date": "2014",
+    "cover": "XvB-Autoretrats.jpg",
+    "thumbnail": "XvB-Autoretrats.jpg"
+  },
+  {
+    "id": "vertigen-intentdepoema-c82184",
+    "artist": "Vertigen",
+    "title": "Intent De Poema",
+    "date": "2013-06-18",
+    "cover": "Vertigen-IntentDePoema.jpg",
+    "thumbnail": "Vertigen-IntentDePoema.jpg"
+  },
+  {
+    "id": "kodul-lanostraresposta-2013-f6e8fb",
+    "artist": "Kòdul",
+    "title": "La nostra resposta",
+    "date": "2013-04",
+    "cover": "Kodul-LaNostraResposta-2013.jpg",
+    "thumbnail": "Kodul-LaNostraResposta-2013.jpg"
+  },
+  {
+    "id": "miquelabras-heroisdelseglexxi-f713be",
+    "artist": "Miquel Abras",
+    "title": "Herois del segle XXI (Polseres Vermelles T2)",
+    "date": "2013-03-13",
+    "cover": "MiquelAbras-HeroisDelSegleXXI.jpg",
+    "thumbnail": "MiquelAbras-HeroisDelSegleXXI.jpg"
+  },
+  {
+    "id": "terratombats-2014niunminutmes-9329cb",
+    "artist": "Terratombats",
+    "title": "20:14 Ni un minut més",
+    "date": "2013-03-01",
+    "cover": "Terratombats-2014NiUnMinutMes.jpg",
+    "thumbnail": "Terratombats-2014NiUnMinutMes.jpg"
+  },
+  {
+    "id": "accio-onsocara-863cc1",
+    "artist": "Acció",
+    "title": "On sóc ara",
+    "date": "2013",
+    "cover": "Accio-OnSocAra.jpg",
+    "thumbnail": "Accio-OnSocAra.jpg"
+  },
+  {
+    "id": "albertpalomar-cordebou-602e9c",
+    "artist": "Albert Palomar",
+    "title": "Cor de bou",
+    "date": "2013",
+    "cover": "AlbertPalomar-CorDeBou.jpg",
+    "thumbnail": "AlbertPalomar-CorDeBou.jpg"
+  },
+  {
+    "id": "altrescanconsdenadal5-e40db3",
+    "artist": "Altres cançons de Nadal 5",
+    "title": "",
+    "date": "2013",
+    "cover": "AltresCanconsDeNadal5.jpg",
+    "thumbnail": "AltresCanconsDeNadal5.jpg"
+  },
+  {
+    "id": "anne-acaudorella-0c0675",
+    "artist": "Anne",
+    "title": "A cau d'orella",
+    "date": "2013",
+    "cover": "Anne-ACauDOrella.jpg",
+    "thumbnail": "Anne-ACauDOrella.jpg"
+  },
+  {
+    "id": "antidot-irripipum-38a820",
+    "artist": "Antídot",
+    "title": "Irripipum",
+    "date": "2013",
+    "cover": "Antidot-Irripipum.jpg",
+    "thumbnail": "Antidot-Irripipum.jpg"
+  },
+  {
+    "id": "aspencat-essencia-aeb77c",
+    "artist": "Aspencat",
+    "title": "Essència",
+    "date": "2013",
+    "cover": "Aspencat-Essencia.jpg",
+    "thumbnail": "Aspencat-Essencia.jpg"
+  },
+  {
+    "id": "atversaris-nofear-ep-2013-7f1625",
+    "artist": "At Versaris",
+    "title": "No fear",
+    "date": "2013",
+    "cover": "AtVersaris-NoFear-EP-2013.jpg",
+    "thumbnail": "AtVersaris-NoFear-EP-2013.jpg"
+  },
+  {
+    "id": "barretcosmic-single-2013-db4be0",
+    "artist": "Barret Còsmic",
+    "title": "",
+    "date": "2013",
+    "cover": "BarretCosmic-Single-2013.jpg",
+    "thumbnail": "BarretCosmic-Single-2013.jpg"
+  },
+  {
+    "id": "bob-ellladre-439-796487",
+    "artist": "Bob & El lladre",
+    "title": "439",
+    "date": "2013",
+    "cover": "Bob&ElLladre-439.jpg",
+    "thumbnail": "Bob&ElLladre-439.jpg"
+  },
+  {
+    "id": "crisjuanico-unmondenadales-455a8a",
+    "artist": "Cris Juanico",
+    "title": "Un món de nadales",
+    "date": "2013",
+    "cover": "CrisJuanico-UnMonDeNadales.jpg",
+    "thumbnail": "CrisJuanico-UnMonDeNadales.jpg"
+  },
+  {
+    "id": "doctorcalypso-sempreendavant-5a4571",
+    "artist": "Doctor Calypso",
+    "title": "Sempre endavant",
+    "date": "2013",
+    "cover": "DoctorCalypso-SempreEndavant.jpg",
+    "thumbnail": "DoctorCalypso-SempreEndavant.jpg"
+  },
+  {
+    "id": "follsinocturns-207-f131c5",
+    "artist": "Folls i Nocturns",
+    "title": "207",
+    "date": "2013",
+    "cover": "FollsINocturns-207.jpg",
+    "thumbnail": "FollsINocturns-207.jpg"
+  },
+  {
+    "id": "gossos-batecs-b7bce0",
+    "artist": "Gossos",
+    "title": "Batecs",
+    "date": "2013",
+    "cover": "Gossos-Batecs.jpg",
+    "thumbnail": "Gossos-Batecs.jpg"
+  },
+  {
+    "id": "hysteriofunk-deco-291c89",
+    "artist": "Hysteriofunk",
+    "title": "Deco",
+    "date": "2013",
+    "cover": "Hysteriofunk-Deco.jpg",
+    "thumbnail": "Hysteriofunk-Deco.jpg"
+  },
+  {
+    "id": "jathodire-movimentssalvatges-4d390d",
+    "artist": "Ja t'ho diré",
+    "title": "Moviments Salvatges",
+    "date": "2013",
+    "cover": "JaTHoDire-MovimentsSalvatges.jpg",
+    "thumbnail": "JaTHoDire-MovimentsSalvatges.jpg"
+  },
+  {
+    "id": "jordibatiste-nova-b25352",
+    "artist": "Jordi Batiste",
+    "title": "Nova",
+    "date": "2013",
+    "cover": "JordiBatiste-Nova.jpg",
+    "thumbnail": "JordiBatiste-Nova.jpg"
+  },
+  {
+    "id": "kinsky-sunsetonthegoodfight-d7e263",
+    "artist": "Kinsky",
+    "title": "Sunset on the good fight",
+    "date": "2013",
+    "cover": "Kinsky-SunsetOnTheGoodFight.jpg",
+    "thumbnail": "Kinsky-SunsetOnTheGoodFight.jpg"
+  },
+  {
+    "id": "lamalaga-mananasol-bae2df",
+    "artist": "La Màlaga",
+    "title": "Mañana Sol",
+    "date": "2013",
+    "cover": "LaMalaga-MananaSol.jpg",
+    "thumbnail": "LaMalaga-MananaSol.jpg"
+  },
+  {
+    "id": "noexpectations-demo-ep-2013-c4562c",
+    "artist": "No Expectations",
+    "title": "Demo",
+    "date": "2013",
+    "cover": "NoExpectations-Demo-EP-2013.jpg",
+    "thumbnail": "NoExpectations-Demo-EP-2013.jpg"
+  },
+  {
+    "id": "orxatasoundsystem3-1-20130620-32c472",
+    "artist": "Orxata Sound System",
+    "title": "3.1",
+    "date": "2013",
+    "cover": "OrxataSoundSystem3.1-20130620.jpg",
+    "thumbnail": "OrxataSoundSystem3.1-20130620.jpg"
+  },
+  {
+    "id": "paulfuster-paulsplanet-8b07b4",
+    "artist": "Paul Fuster",
+    "title": "Pauls Planet",
+    "date": "2013",
+    "cover": "PaulFuster-PaulsPlanet.jpg",
+    "thumbnail": "PaulFuster-PaulsPlanet.jpg"
+  },
+  {
+    "id": "pullmystrings-dorabay-2013-e7ed1f",
+    "artist": "Pull My Strings",
+    "title": "Dora Bay",
+    "date": "2013",
+    "cover": "PullMyStrings-DoraBay-2013.jpg",
+    "thumbnail": "PullMyStrings-DoraBay-2013.jpg"
+  },
+  {
+    "id": "puput-puput-2013-dc604a",
+    "artist": "Puput",
+    "title": "",
+    "date": "2013",
+    "cover": "Puput-Puput-2013.jpg",
+    "thumbnail": "Puput-Puput-2013.jpg"
+  },
+  {
+    "id": "solar-ignicion-2013-7cac5f",
+    "artist": "Solar",
+    "title": "Ignición",
+    "date": "2013",
+    "cover": "Solar-Ignicion-2013.jpg",
+    "thumbnail": "Solar-Ignicion-2013.jpg"
+  },
+  {
+    "id": "theblinded-essenceoftime-98cdcb",
+    "artist": "The Blinded",
+    "title": "Essence of time",
+    "date": "2013",
+    "cover": "TheBlinded-EssenceOfTime.jpg",
+    "thumbnail": "TheBlinded-EssenceOfTime.jpg"
+  },
+  {
+    "id": "wednesdaylips-seasontwosidea-2012-40508c",
+    "artist": "Wednesday Lips",
+    "title": "Season Two - Side A:Songs to Spend a Rainy Afternoon Watching Through the Window",
+    "date": "2012-12-27",
+    "cover": "WednesdayLips-SeasonTwoSideA-2012.jpg",
+    "thumbnail": "WednesdayLips-SeasonTwoSideA-2012.jpg"
+  },
+  {
+    "id": "acousters-darrerelaporta-2012-b6ab03",
+    "artist": "Acousters",
+    "title": "Darrere la porta...",
+    "date": "2012",
+    "cover": "Acousters-DarrereLaPorta-2012.jpg",
+    "thumbnail": "Acousters-DarrereLaPorta-2012.jpg"
+  },
+  {
+    "id": "albertpalomar-noestemsols-cdeec5",
+    "artist": "Albert Palomar",
+    "title": "No estem sols",
+    "date": "2012",
+    "cover": "AlbertPalomar-NoEstemSols.jpg",
+    "thumbnail": "AlbertPalomar-NoEstemSols.jpg"
+  },
+  {
+    "id": "tributdesorraifullesamiquelmartiipol-82fd82",
+    "artist": "Àlex Carmona i Maria Dolça Manubens",
+    "title": "Tribut de sorra i fulles a Miquel Martí i Pol",
+    "date": "2012",
+    "cover": "TributDeSorraIFullesAMiquelMartiIPol.jpg",
+    "thumbnail": "TributDeSorraIFullesAMiquelMartiIPol.jpg"
+  },
+  {
+    "id": "amelie-eselmoment-d5b930",
+    "artist": "Amelie",
+    "title": "És el moment",
+    "date": "2012",
+    "cover": "Amelie-EsElMoment.jpg",
+    "thumbnail": "Amelie-EsElMoment.jpg"
+  },
+  {
+    "id": "aspencat-inedit-c1ad58",
+    "artist": "Aspencat",
+    "title": "Inèdit",
+    "date": "2012",
+    "cover": "Aspencat-Inedit.jpg",
+    "thumbnail": "Aspencat-Inedit.jpg"
+  },
+  {
+    "id": "atzembla-elteuviatge-9a5e2d",
+    "artist": "Atzembla",
+    "title": "El teu viatge",
+    "date": "2012",
+    "cover": "Atzembla-ElTeuViatge.jpg",
+    "thumbnail": "Atzembla-ElTeuViatge.jpg"
+  },
+  {
+    "id": "cronics-l-irresolublecasdel-assassisurrealista-2012-9461a3",
+    "artist": "Crònics",
+    "title": "L'irresoluble cas de l'assassí surrealista",
+    "date": "2012",
+    "cover": "Cronics-L'IrresolubleCasDeL'AssassiSurrealista-2012.jpg",
+    "thumbnail": "Cronics-L'IrresolubleCasDeL'AssassiSurrealista-2012.jpg"
+  },
+  {
+    "id": "damiaolivella-unnousentit-cc1c26",
+    "artist": "Damià Olivella",
+    "title": "Un nou sentit",
+    "date": "2012",
+    "cover": "DamiaOlivella-UnNouSentit.jpg",
+    "thumbnail": "DamiaOlivella-UnNouSentit.jpg"
+  },
+  {
+    "id": "deskarats-festival-e43497",
+    "artist": "Deskarats",
+    "title": "Festival",
+    "date": "2012",
+    "cover": "Deskarats-Festival.jpg",
+    "thumbnail": "Deskarats-Festival.jpg"
+  },
+  {
+    "id": "eli-paperboy-reedmeetsthepepperpots-timeandplace-ep-2012-cb7e1c",
+    "artist": "Eli 'Paperboy' Reed meets The Pepper Pots",
+    "title": "Time and place",
+    "date": "2012",
+    "cover": "Eli'Paperboy'ReedMeetsThePepperPots-TimeAndPlace-EP-2012.jpg",
+    "thumbnail": "Eli'Paperboy'ReedMeetsThePepperPots-TimeAndPlace-EP-2012.jpg"
+  },
+  {
+    "id": "enatizo-malnacido-c3c8d6",
+    "artist": "Enatizo",
+    "title": "Malnacido",
+    "date": "2012",
+    "cover": "Enatizo-Malnacido.jpg",
+    "thumbnail": "Enatizo-Malnacido.jpg"
+  },
+  {
+    "id": "font-7-0b24c6",
+    "artist": "Font",
+    "title": "7",
+    "date": "2012",
+    "cover": "Font-7.jpg",
+    "thumbnail": "Font-7.jpg"
+  },
+  {
+    "id": "hexamine-redwallsblackdoor-2012-e4ceaf",
+    "artist": "Hexamine",
+    "title": "RedWalls,BlackDoor",
+    "date": "2012",
+    "cover": "Hexamine-RedWallsBlackDoor-2012.jpg",
+    "thumbnail": "Hexamine-RedWallsBlackDoor-2012.jpg"
+  },
+  {
+    "id": "ivettenadal-mestresamics-2012-78da08",
+    "artist": "Ivette Nadal",
+    "title": "Mestres i amics",
+    "date": "2012",
+    "cover": "IvetteNadal-MestresAmics-2012.jpg",
+    "thumbnail": "IvetteNadal-MestresAmics-2012.jpg"
+  },
+  {
+    "id": "jade-reevolucion-45545e",
+    "artist": "Jade",
+    "title": "Reevolución",
+    "date": "2012",
+    "cover": "Jade-Reevolucion.jpg",
+    "thumbnail": "Jade-Reevolucion.jpg"
+  },
+  {
+    "id": "jcmc-notemireslaportada-2012-487a12",
+    "artist": "JCMC",
+    "title": "No te mires la portada",
+    "date": "2012",
+    "cover": "JCMC-NoTeMiresLaPortada-2012.jpg",
+    "thumbnail": "JCMC-NoTeMiresLaPortada-2012.jpg"
+  },
+  {
+    "id": "karbunko-ensenandolosdientes-2012-abbc12",
+    "artist": "Karbunko",
+    "title": "Enseñando los dientes",
+    "date": "2012",
+    "cover": "Karbunko-EnsenandoLosDientes-2012.jpg",
+    "thumbnail": "Karbunko-EnsenandoLosDientes-2012.jpg"
+  },
+  {
+    "id": "lasenyoretadescalca-descalcos-e2885e",
+    "artist": "La senyoreta descalça",
+    "title": "Descalços",
+    "date": "2012",
+    "cover": "LaSenyoretaDescalca-Descalcos.jpg",
+    "thumbnail": "LaSenyoretaDescalca-Descalcos.jpg"
+  },
+  {
+    "id": "marabella-abans-3059f1",
+    "artist": "Mar Abella",
+    "title": "Abans, Un cop més",
+    "date": "2012",
+    "cover": "MarAbella-Abans.jpg",
+    "thumbnail": "MarAbella-Abans.jpg"
+  },
+  {
+    "id": "menaixatrua-guiadepetitssenyals-651f01",
+    "artist": "Menaix a truà",
+    "title": "Guia de petits senyals",
+    "date": "2012",
+    "cover": "MenaixATrua-GuiaDePetitsSenyals.jpg",
+    "thumbnail": "MenaixATrua-GuiaDePetitsSenyals.jpg"
+  },
+  {
+    "id": "miquelabras-equilibrisimpossibles-767072",
+    "artist": "Miquel Abras",
+    "title": "Equilibris impossibles",
+    "date": "2012",
+    "cover": "MiquelAbras-EquilibrisImpossibles.jpg",
+    "thumbnail": "MiquelAbras-EquilibrisImpossibles.jpg"
+  },
+  {
+    "id": "orxatasoundsystem-3-0-73feec",
+    "artist": "Orxata Sound System",
+    "title": "3.0",
+    "date": "2012",
+    "cover": "OrxataSoundSystem-3.0.jpg",
+    "thumbnail": "OrxataSoundSystem-3.0.jpg"
+  },
+  {
+    "id": "orxatasoundsystem-3-0mixtape-2012-bef6e5",
+    "artist": "Orxata Sound System",
+    "title": "3.0 Mixtape",
+    "date": "2012",
+    "cover": "OrxataSoundSystem-3.0Mixtape-2012.jpg",
+    "thumbnail": "OrxataSoundSystem-3.0Mixtape-2012.jpg"
+  },
+  {
+    "id": "polcroketa-thehouseoflove-829c9c",
+    "artist": "Pol Croketa",
+    "title": "The house of love",
+    "date": "2012",
+    "cover": "PolCroketa-TheHouseOfLove.jpg",
+    "thumbnail": "PolCroketa-TheHouseOfLove.jpg"
+  },
+  {
+    "id": "redsouls-tressomnisdespresdecreuret-ep-2012-6ea731",
+    "artist": "Red Souls",
+    "title": "Tres somnis després de creure't",
+    "date": "2012",
+    "cover": "RedSouls-TresSomnisDespresDeCreuret-EP-2012.jpg",
+    "thumbnail": "RedSouls-TresSomnisDespresDeCreuret-EP-2012.jpg"
+  },
+  {
+    "id": "therisas-elmillordelsmoments-9559a9",
+    "artist": "The Risas",
+    "title": "El millor dels moments",
+    "date": "2012",
+    "cover": "TheRisas-ElMillorDelsMoments.jpg",
+    "thumbnail": "TheRisas-ElMillorDelsMoments.jpg"
+  },
+  {
+    "id": "tremendamente-alpunto-2012-acb5ac",
+    "artist": "Tremendamente",
+    "title": "Al punto",
+    "date": "2012",
+    "cover": "Tremendamente-AlPunto-2012.jpg",
+    "thumbnail": "Tremendamente-AlPunto-2012.jpg"
+  },
+  {
+    "id": "xenon-milhistories-2011-07-01-album-bac69d",
+    "artist": "Xenon",
+    "title": "Mil Històries",
+    "date": "2011-07-01",
+    "cover": "Xenon-MilHistories-2011-07-01-Album.jpg",
+    "thumbnail": "Xenon-MilHistories-2011-07-01-Album.jpg"
+  },
+  {
+    "id": "smoupoc-2011-02-22-album-c1ab9e",
+    "artist": "Smou Poc",
+    "title": "Smou Poc",
+    "date": "2011-02-22",
+    "cover": "SmouPoc-2011-02-22-Album.jpg",
+    "thumbnail": "SmouPoc-2011-02-22-Album.jpg"
+  },
+  {
+    "id": "amelie-somiantdesperts-0554c9",
+    "artist": "Amelie",
+    "title": "Somiant desperts",
+    "date": "2011",
+    "cover": "Amelie-SomiantDesperts.jpg",
+    "thumbnail": "Amelie-SomiantDesperts.jpg"
+  },
+  {
+    "id": "amicsdelbosc-fluctuacionsdelapostolflam-62af39",
+    "artist": "Amics del bosc",
+    "title": "Fluctuacions de l'Apòstol/Flam",
+    "date": "2011",
+    "cover": "AmicsDelBosc-FluctuacionsDeLApostolFlam.jpg",
+    "thumbnail": "AmicsDelBosc-FluctuacionsDeLApostolFlam.jpg"
+  },
+  {
+    "id": "aspencatnaixenprimaveres-4f8b25",
+    "artist": "Aspencat",
+    "title": "Naixen primaveres",
+    "date": "2011",
+    "cover": "AspencatNaixenPrimaveres.jpg",
+    "thumbnail": "AspencatNaixenPrimaveres.jpg"
+  },
+  {
+    "id": "atversaris-asstrio-perprincipiselegants-1e1465",
+    "artist": "At Versaris & Asstrio",
+    "title": "Per principis elegants",
+    "date": "2011",
+    "cover": "AtVersaris&AssTrio-PerPrincipisElegants.jpg",
+    "thumbnail": "AtVersaris&AssTrio-PerPrincipisElegants.jpg"
+  },
+  {
+    "id": "boogiedreams-teledirigits-1a719e",
+    "artist": "Boogie Dreams",
+    "title": "Teledirigits",
+    "date": "2011",
+    "cover": "BoogieDreams-Teledirigits.jpg",
+    "thumbnail": "BoogieDreams-Teledirigits.jpg"
+  },
+  {
+    "id": "crisjuanico-duespedres-bc7127",
+    "artist": "Cris Juanico",
+    "title": "Dues pedres",
+    "date": "2011",
+    "cover": "CrisJuanico-DuesPedres.jpg",
+    "thumbnail": "CrisJuanico-DuesPedres.jpg"
+  },
+  {
+    "id": "edtulipa-popterapia-57e594",
+    "artist": "Ed Tulipa",
+    "title": "Popteràpia",
+    "date": "2011",
+    "cover": "EdTulipa-Popterapia.jpg",
+    "thumbnail": "EdTulipa-Popterapia.jpg"
+  },
+  {
+    "id": "eina-lestatilarevolucio-a4a7d1",
+    "artist": "Eina",
+    "title": "L'estat i la revolució",
+    "date": "2011",
+    "cover": "Eina-LEstatILaRevolucio.jpg",
+    "thumbnail": "Eina-LEstatILaRevolucio.jpg"
+  },
+  {
+    "id": "elbeldaielconjuntbadabadoc-vitaminasol2011single-920140",
+    "artist": "El Belda I El Conjunt Badabadoc",
+    "title": "Vitamina Sol",
+    "date": "2011",
+    "cover": "ElBeldaIElConjuntBadabadoc-VitaminaSol2011single.jpg",
+    "thumbnail": "ElBeldaIElConjuntBadabadoc-VitaminaSol2011single.jpg"
+  },
+  {
+    "id": "faerica-morfeuijulieta-c915ec",
+    "artist": "Faèrica",
+    "title": "Morfeu i Julieta",
+    "date": "2011",
+    "cover": "Faerica-MorfeuIJulieta.jpg",
+    "thumbnail": "Faerica-MorfeuIJulieta.jpg"
+  },
+  {
+    "id": "fosibarry-lahostia-2011-3d84c4",
+    "artist": "Fosi Barry",
+    "title": "La Hòstia",
+    "date": "2011",
+    "cover": "FosiBarry-LaHostia-2011.jpg",
+    "thumbnail": "FosiBarry-LaHostia-2011.jpg"
+  },
+  {
+    "id": "hightimes-quenoacabimai-2011-c2a25f",
+    "artist": "High Times",
+    "title": "Que no acabi mai!",
+    "date": "2011",
+    "cover": "HighTimes-QueNoAcabiMai-2011.jpg",
+    "thumbnail": "HighTimes-QueNoAcabiMai-2011.jpg"
+  },
+  {
+    "id": "kodul-empremta-ecb98e",
+    "artist": "Kòdul",
+    "title": "Empremta",
+    "date": "2011",
+    "cover": "Kodul-Empremta.jpg",
+    "thumbnail": "Kodul-Empremta.jpg"
+  },
+  {
+    "id": "raiz-elladodelosrebeldes-08e14c",
+    "artist": "La Raíz",
+    "title": "El lado de los rebeldes",
+    "date": "2011",
+    "cover": "Raiz-ElLadoDeLosRebeldes.jpg",
+    "thumbnail": "Raiz-ElLadoDeLosRebeldes.jpg"
+  },
+  {
+    "id": "maltrago-cogiendocolor-117a98",
+    "artist": "Mal Trago",
+    "title": "Cogiendo color",
+    "date": "2011",
+    "cover": "MalTrago-CogiendoColor.jpg",
+    "thumbnail": "MalTrago-CogiendoColor.jpg"
+  },
+  {
+    "id": "mariasalgado-abrazo-abraco-4a55fd",
+    "artist": "María Salgado",
+    "title": "Abrazo-Abraço",
+    "date": "2011",
+    "cover": "MariaSalgado-Abrazo-Abraco.jpg",
+    "thumbnail": "MariaSalgado-Abrazo-Abraco.jpg"
+  },
+  {
+    "id": "mine-lesmaresmesmaleides-97a96c",
+    "artist": "Mine!",
+    "title": "Les maresmes maleïdes",
+    "date": "2011",
+    "cover": "Mine-LesMaresmesMaleides.jpg",
+    "thumbnail": "Mine-LesMaresmesMaleides.jpg"
+  },
+  {
+    "id": "misterjones-pensamientoyaccion-297de8",
+    "artist": "Mister Jones",
+    "title": "Pensamiento y acción",
+    "date": "2011",
+    "cover": "MisterJones-PensamientoYAccion.jpg",
+    "thumbnail": "MisterJones-PensamientoYAccion.jpg"
+  },
+  {
+    "id": "natxotarres-thewireless-liveinauditori-bb372e",
+    "artist": "Natxo Tarrés & The Wireless",
+    "title": "Marley 30 anys. Live in Auditori",
+    "date": "2011",
+    "cover": "NatxoTarres&TheWireless-LiveInAuditori.jpg",
+    "thumbnail": "NatxoTarres&TheWireless-LiveInAuditori.jpg"
+  },
+  {
+    "id": "orxatasoundsystem-2-0-f155f6",
+    "artist": "Orxata Sound System",
+    "title": "2.0",
+    "date": "2011",
+    "cover": "OrxataSoundSystem-2.0.jpg",
+    "thumbnail": "OrxataSoundSystem-2.0.jpg"
+  },
+  {
+    "id": "pantanito-asesdelarumba-ep-2011-a9692a",
+    "artist": "Pantanito",
+    "title": "Ases de la rumba",
+    "date": "2011",
+    "cover": "Pantanito-AsesDeLaRumba-EP-2011.jpg",
+    "thumbnail": "Pantanito-AsesDeLaRumba-EP-2011.jpg"
+  },
+  {
+    "id": "paualabajos-unaamableunatristaunapetitapatria-91d649",
+    "artist": "Pau Alabajos",
+    "title": "Una amable, una trista, una petita patria",
+    "date": "2011",
+    "cover": "PauAlabajos-UnaAmableUnaTristaUnaPetitaPatria.jpg",
+    "thumbnail": "PauAlabajos-UnaAmableUnaTristaUnaPetitaPatria.jpg"
+  },
+  {
+    "id": "paulfuster-repte-2011-d8365e",
+    "artist": "Paul Fuster",
+    "title": "Repte",
+    "date": "2011",
+    "cover": "PaulFuster-Repte-2011.jpg",
+    "thumbnail": "PaulFuster-Repte-2011.jpg"
+  },
+  {
+    "id": "polcroketa-polplay-adffb4",
+    "artist": "Pol Croketa",
+    "title": "Pol Play",
+    "date": "2011",
+    "cover": "PolCroketa-PolPlay.jpg",
+    "thumbnail": "PolCroketa-PolPlay.jpg"
+  },
+  {
+    "id": "rocco-2011-4d6599",
+    "artist": "Rocco",
+    "title": "",
+    "date": "2011",
+    "cover": "Rocco-2011.jpg",
+    "thumbnail": "Rocco-2011.jpg"
+  },
+  {
+    "id": "trianguloestereo-invisible-bc836b",
+    "artist": "Triangulo Estereo",
+    "title": "Invisible",
+    "date": "2011",
+    "cover": "TrianguloEstereo-Invisible.jpg",
+    "thumbnail": "TrianguloEstereo-Invisible.jpg"
+  },
+  {
+    "id": "tributaantoniafont-alegriarevisitat-43cc3c",
+    "artist": "Tribut a Antonia Font",
+    "title": "Alegria Revisitat",
+    "date": "2011",
+    "cover": "TributAAntoniaFont-AlegriaRevisitat.jpg",
+    "thumbnail": "TributAAntoniaFont-AlegriaRevisitat.jpg"
+  },
+  {
+    "id": "ancientambientflute-albertggalbany-1c9838",
+    "artist": "Albert G. Galbany",
+    "title": "Ancient Ambient Flute",
+    "date": "2010",
+    "cover": "AncientAmbientFlute&AlbertGGalbany.jpg",
+    "thumbnail": "AncientAmbientFlute&AlbertGGalbany.jpg"
+  },
+  {
+    "id": "bandal-o-s-unsitiobajoelsol-ca0f57",
+    "artist": "BandaL.O.S",
+    "title": "Un sitio bajo el sol",
+    "date": "2010",
+    "cover": "Bandal.O.S-UnSitioBajoElSol.jpg",
+    "thumbnail": "Bandal.O.S-UnSitioBajoElSol.jpg"
+  },
+  {
+    "id": "jordiguardans-tescricdesdegranada-94f535",
+    "artist": "Canten Jordi Guardans",
+    "title": "T'escric des de Granada",
+    "date": "2010",
+    "cover": "JordiGuardans-TEscricDesDeGranada.jpg",
+    "thumbnail": "JordiGuardans-TEscricDesDeGranada.jpg"
+  },
+  {
+    "id": "chivochivato-dejarselapiel-2010-e74786",
+    "artist": "Chivo Chivato",
+    "title": "Dejarse la piel",
+    "date": "2010",
+    "cover": "ChivoChivato-DejarseLaPiel-2010.jpg",
+    "thumbnail": "ChivoChivato-DejarseLaPiel-2010.jpg"
+  },
+  {
+    "id": "ciudadneon-horizontealreves-2010-b20835",
+    "artist": "Ciudad Neón",
+    "title": "Horizonte al revés",
+    "date": "2010",
+    "cover": "CiudadNeon-HorizonteAlReves-2010.jpg",
+    "thumbnail": "CiudadNeon-HorizonteAlReves-2010.jpg"
+  },
+  {
+    "id": "costa59-unmardeconfetti-25e00c",
+    "artist": "Costa 59",
+    "title": "Un mar de confetti",
+    "date": "2010",
+    "cover": "Costa59-UnMarDeConfetti.jpg",
+    "thumbnail": "Costa59-UnMarDeConfetti.jpg"
+  },
+  {
+    "id": "crisjuanico-pedresqueratllen-29e4ad",
+    "artist": "Cris Juanico",
+    "title": "Pedres que ratllen",
+    "date": "2010",
+    "cover": "CrisJuanico-PedresQueRatllen.jpg",
+    "thumbnail": "CrisJuanico-PedresQueRatllen.jpg"
+  },
+  {
+    "id": "daniflaco-secretosdesumario-9079a3",
+    "artist": "Dani Flaco",
+    "title": "Secretos de sumario",
+    "date": "2010",
+    "cover": "DaniFlaco-SecretosDeSumario.jpg",
+    "thumbnail": "DaniFlaco-SecretosDeSumario.jpg"
+  },
+  {
+    "id": "dekrepits-semblaqueploura-dad5f0",
+    "artist": "Dekrèpits",
+    "title": "Sembla que plourà",
+    "date": "2010",
+    "cover": "Dekrepits-SemblaQuePloura.jpg",
+    "thumbnail": "Dekrepits-SemblaQuePloura.jpg"
+  },
+  {
+    "id": "elbeldaielconjuntbadabadoc-paispetit2010single-833f2a",
+    "artist": "El Belda I El Conjunt Badabadoc",
+    "title": "País Petit",
+    "date": "2010",
+    "cover": "ElBeldaIElConjuntBadabadoc-PaisPetit2010single.jpg",
+    "thumbnail": "ElBeldaIElConjuntBadabadoc-PaisPetit2010single.jpg"
+  },
+  {
+    "id": "gloriaterricabras-esperant-te-4048d3",
+    "artist": "Glòria Terricabras",
+    "title": "Esperant-te",
+    "date": "2010",
+    "cover": "GloriaTerricabras-Esperant-te.jpg",
+    "thumbnail": "GloriaTerricabras-Esperant-te.jpg"
+  },
+  {
+    "id": "gossos-dia1-5318aa",
+    "artist": "Gossos",
+    "title": "Dia 1",
+    "date": "2010",
+    "cover": "Gossos-Dia1.jpg",
+    "thumbnail": "Gossos-Dia1.jpg"
+  },
+  {
+    "id": "ivettenadal-alesquenadunelefant-b2339c",
+    "artist": "Ivette Nadal",
+    "title": "A l'esquena d'un elefant",
+    "date": "2010",
+    "cover": "IvetteNadal-ALEsquenaDUnElefant.jpg",
+    "thumbnail": "IvetteNadal-ALEsquenaDUnElefant.jpg"
+  },
+  {
+    "id": "jorcx-enfienresum2000-09-6e28f1",
+    "artist": "Jorcx",
+    "title": "En fi... En resum 2000-09",
+    "date": "2010",
+    "cover": "Jorcx-EnFiEnResum2000-09.jpg",
+    "thumbnail": "Jorcx-EnFiEnResum2000-09.jpg"
+  },
+  {
+    "id": "kibo-racons-d8ebd5",
+    "artist": "Kibo",
+    "title": "Racons",
+    "date": "2010",
+    "cover": "Kibo-Racons.jpg",
+    "thumbnail": "Kibo-Racons.jpg"
+  },
+  {
+    "id": "laiaia-elmeuvaixell-349c25",
+    "artist": "La Iaia",
+    "title": "El meu vaixell",
+    "date": "2010",
+    "cover": "LaIaia-ElMeuVaixell.jpg",
+    "thumbnail": "LaIaia-ElMeuVaixell.jpg"
+  },
+  {
+    "id": "losguardiansdelpont-rockferatu-af123d",
+    "artist": "Los Guardians Del Pont (LGP)",
+    "title": "Rockferatu",
+    "date": "2010",
+    "cover": "LosGuardiansDelPont-Rockferatu.jpg",
+    "thumbnail": "LosGuardiansDelPont-Rockferatu.jpg"
+  },
+  {
+    "id": "mine-unbrindispelnenandroide-84f401",
+    "artist": "Mine!",
+    "title": "Un brindis pel nen androide",
+    "date": "2010",
+    "cover": "Mine-UnBrindisPelNenAndroide.jpg",
+    "thumbnail": "Mine-UnBrindisPelNenAndroide.jpg"
+  },
+  {
+    "id": "miquelabras-tempsdezel-386f2d",
+    "artist": "Miquel Abras",
+    "title": "Temps de zel",
+    "date": "2010",
+    "cover": "MiquelAbras-TempsDeZel.jpg",
+    "thumbnail": "MiquelAbras-TempsDeZel.jpg"
+  },
+  {
+    "id": "morodo-rebelaction-a5bf37",
+    "artist": "Morodo",
+    "title": "Rebel action",
+    "date": "2010",
+    "cover": "Morodo-RebelAction.jpg",
+    "thumbnail": "Morodo-RebelAction.jpg"
+  },
+  {
+    "id": "moussedearana-faisanesperdicesycabezasdejabalis-a1f6dd",
+    "artist": "Mousse de araña",
+    "title": "Faisanes, perdices y cabezas de jabalís",
+    "date": "2010",
+    "cover": "MousseDeArana-FaisanesPerdicesYCabezasDeJabalis.jpg",
+    "thumbnail": "MousseDeArana-FaisanesPerdicesYCabezasDeJabalis.jpg"
+  },
+  {
+    "id": "oriolfoll-foc-7bb90a",
+    "artist": "Oriol Foll",
+    "title": "Foc",
+    "date": "2010",
+    "cover": "OriolFoll-Foc.jpg",
+    "thumbnail": "OriolFoll-Foc.jpg"
+  },
+  {
+    "id": "orxatasoundsystem-2-0beta2-7ccfd4",
+    "artist": "Orxata Sound System",
+    "title": "2.0 Beta 2",
+    "date": "2010",
+    "cover": "OrxataSoundSystem-2.0Beta2.jpg",
+    "thumbnail": "OrxataSoundSystem-2.0Beta2.jpg"
+  },
+  {
+    "id": "plouen-ancoratge-0f4181",
+    "artist": "Plouen",
+    "title": "Ancoratge",
+    "date": "2010",
+    "cover": "Plouen-Ancoratge.jpg",
+    "thumbnail": "Plouen-Ancoratge.jpg"
+  },
+  {
+    "id": "psicophonics20101228ep-df1f4c",
+    "artist": "Psicophonics",
+    "title": "#",
+    "date": "2010",
+    "cover": "Psicophonics20101228EP.jpg",
+    "thumbnail": "Psicophonics20101228EP.jpg"
+  },
+  {
+    "id": "raim-laverema-2010-554d40",
+    "artist": "Raïm",
+    "title": "La verema",
+    "date": "2010",
+    "cover": "Raim-LaVerema-2010.jpg",
+    "thumbnail": "Raim-LaVerema-2010.jpg"
+  },
+  {
+    "id": "recklessside-helliscoming-2010-9c039c",
+    "artist": "Reckless Side",
+    "title": "Hell is coming",
+    "date": "2010",
+    "cover": "RecklessSide-HellIsComing-2010.jpg",
+    "thumbnail": "RecklessSide-HellIsComing-2010.jpg"
+  },
+  {
+    "id": "ruido-tentaciones-ep-2010-0b0237",
+    "artist": "Ruido!",
+    "title": "Tentaciones",
+    "date": "2010",
+    "cover": "Ruido-Tentaciones-EP-2010.jpg",
+    "thumbnail": "Ruido-Tentaciones-EP-2010.jpg"
+  },
+  {
+    "id": "submaripop-tributcatalaathebeatles-2010-58542f",
+    "artist": "Submarí Pop",
+    "title": "Tribut Català a The Beatles",
+    "date": "2010",
+    "cover": "SubmariPop(TributCatalaATheBeatles)-2010.jpg",
+    "thumbnail": "SubmariPop(TributCatalaATheBeatles)-2010.jpg"
+  },
+  {
+    "id": "alineabovethesea-2009-ep-abb5bf",
+    "artist": "A line above the sea",
+    "title": "",
+    "date": "2009",
+    "cover": "ALineAboveTheSea-2009-EP.jpg",
+    "thumbnail": "ALineAboveTheSea-2009-EP.jpg"
+  },
+  {
+    "id": "aspencat-obrilallauna-a5da95",
+    "artist": "Aspencat",
+    "title": "Obri la llauna",
+    "date": "2009",
+    "cover": "Aspencat-ObriLaLlauna.jpg",
+    "thumbnail": "Aspencat-ObriLaLlauna.jpg"
+  },
+  {
+    "id": "compartirdonagustet-marquet-c37ba6",
+    "artist": "Compartir Dóna Gustet",
+    "title": "Marquet",
+    "date": "2009",
+    "cover": "CompartirDonaGustet-Marquet.jpg",
+    "thumbnail": "CompartirDonaGustet-Marquet.jpg"
+  },
+  {
+    "id": "vingava-671c84",
+    "artist": "Compartir Dóna Gustet, Orxata Sound System, Experimental Smòuquers of Carxofa",
+    "title": "Vinga va!",
+    "date": "2009",
+    "cover": "VingaVa.jpg",
+    "thumbnail": "VingaVa.jpg"
+  },
+  {
+    "id": "corzanius-sabesquiensoy-2009-3daf33",
+    "artist": "Corzanius",
+    "title": "¿Sabes quién soy?",
+    "date": "2009",
+    "cover": "Corzanius-SabesQuienSoy-2009.jpg",
+    "thumbnail": "Corzanius-SabesQuienSoy-2009.jpg"
+  },
+  {
+    "id": "damiaolivella-ara-62aeea",
+    "artist": "Damià Olivella",
+    "title": "Ara",
+    "date": "2009",
+    "cover": "DamiaOlivella-Ara.jpg",
+    "thumbnail": "DamiaOlivella-Ara.jpg"
+  },
+  {
+    "id": "dijouspaella-vol-2-2495b3",
+    "artist": "Dijous Paella",
+    "title": "Vol. II",
+    "date": "2009",
+    "cover": "DijousPaella-Vol.2.jpg",
+    "thumbnail": "DijousPaella-Vol.2.jpg"
+  },
+  {
+    "id": "doctorcalambre-demomentomusica-d47737",
+    "artist": "Doctor Calambre",
+    "title": "De momento música...",
+    "date": "2009",
+    "cover": "DoctorCalambre-DeMomentoMusica.jpg",
+    "thumbnail": "DoctorCalambre-DeMomentoMusica.jpg"
+  },
+  {
+    "id": "efedefunk-todaunavida-2009-d58330",
+    "artist": "Efedefunk",
+    "title": "Toda una vida",
+    "date": "2009",
+    "cover": "Efedefunk-TodaUnaVida-2009.jpg",
+    "thumbnail": "Efedefunk-TodaUnaVida-2009.jpg"
+  },
+  {
+    "id": "joanjobosk-eneltempledelvent-67487e",
+    "artist": "Joanjo Bosk",
+    "title": "En el temple del vent",
+    "date": "2009",
+    "cover": "JoanjoBosk-EnElTempleDelVent.jpg",
+    "thumbnail": "JoanjoBosk-EnElTempleDelVent.jpg"
+  },
+  {
+    "id": "miyagui-980-1030-63b25e",
+    "artist": "Miyagui",
+    "title": "980/1030",
+    "date": "2009",
+    "cover": "Miyagui-980-1030.jpg",
+    "thumbnail": "Miyagui-980-1030.jpg"
+  },
+  {
+    "id": "orxatasoundsystem-2-0beta1-7b1c60",
+    "artist": "Orxata Sound System",
+    "title": "2.0 Beta 1",
+    "date": "2009",
+    "cover": "OrxataSoundSystem-2.0Beta1.jpg",
+    "thumbnail": "OrxataSoundSystem-2.0Beta1.jpg"
+  },
+  {
+    "id": "polonia-eldisc-2777f2",
+    "artist": "Polònia",
+    "title": "El disc",
+    "date": "2009",
+    "cover": "Polonia-ElDisc.jpg",
+    "thumbnail": "Polonia-ElDisc.jpg"
+  },
+  {
+    "id": "projectebu-vol-1-2009-b2a0ee",
+    "artist": "Projecte Bu",
+    "title": "Vol.1",
+    "date": "2009",
+    "cover": "ProjecteBu-Vol.1-2009.jpg",
+    "thumbnail": "ProjecteBu-Vol.1-2009.jpg"
+  },
+  {
+    "id": "quansomrius-elmillordelnadal-2009-c2fa49",
+    "artist": "Quan Somrius",
+    "title": "El millor del Nadal",
+    "date": "2009",
+    "cover": "QuanSomrius-ElMillorDelNadal-2009.jpg",
+    "thumbnail": "QuanSomrius-ElMillorDelNadal-2009.jpg"
+  },
+  {
+    "id": "ricardcanalsilabandadelscantautats-cosesquepassen-2009-12d1af",
+    "artist": "Ricard Canals i La Banda Dels Cantautats",
+    "title": "Coses que passen",
+    "date": "2009",
+    "cover": "RicardCanalsILaBandaDelsCantautats-CosesQuePassen-2009.jpg",
+    "thumbnail": "RicardCanalsILaBandaDelsCantautats-CosesQuePassen-2009.jpg"
+  },
+  {
+    "id": "tremendamente-sonarbiendespierto-54e22b",
+    "artist": "Tremendamente",
+    "title": "Soñar bien despierto",
+    "date": "2009",
+    "cover": "Tremendamente-SonarBienDespierto.jpg",
+    "thumbnail": "Tremendamente-SonarBienDespierto.jpg"
+  },
+  {
+    "id": "entredos-tranquilsdaltsarbre-2008-721bf8",
+    "artist": "Entre Dos",
+    "title": "Tranquils dalt s'arbre",
+    "date": "2008-11-19",
+    "cover": "EntreDos-TranquilsDaltSArbre-2008.jpg",
+    "thumbnail": "EntreDos-TranquilsDaltSArbre-2008.jpg"
+  },
+  {
+    "id": "clepton-consumeix-te-2008-d9725a",
+    "artist": "Clepton",
+    "title": "Consumeix-te",
+    "date": "2008",
+    "cover": "Clepton-Consumeix-te-2008.jpg",
+    "thumbnail": "Clepton-Consumeix-te-2008.jpg"
+  },
+  {
+    "id": "crisjuanico-totdemi-f46d9c",
+    "artist": "Cris Juanico",
+    "title": "Tot de mi",
+    "date": "2008",
+    "cover": "CrisJuanico-TotDeMi.jpg",
+    "thumbnail": "CrisJuanico-TotDeMi.jpg"
+  },
+  {
+    "id": "curneliusanonymous-you-llneverseethetruthonyourtelevision-2008-album-19dda7",
+    "artist": "Curnelius Anonymous",
+    "title": "You'll Never See The Truth On Your Television",
+    "date": "2008",
+    "cover": "CurneliusAnonymous-You'llNeverSeeTheTruthOnYourTelevision-2008-Album.jpg",
+    "thumbnail": "CurneliusAnonymous-You'llNeverSeeTheTruthOnYourTelevision-2008-Album.jpg"
+  },
+  {
+    "id": "dekrepits-elmongiraalreves-2008-d7db41",
+    "artist": "Dekrèpits",
+    "title": "El món gira al revés",
+    "date": "2008",
+    "cover": "Dekrepits-ElMonGiraAlReves-2008.jpg",
+    "thumbnail": "Dekrepits-ElMonGiraAlReves-2008.jpg"
+  },
+  {
+    "id": "eina-l-artdelaguerra-2008-2b164b",
+    "artist": "Eina",
+    "title": "L'art de la guerra",
+    "date": "2008",
+    "cover": "Eina-L'ArtdeLaGuerra-2008.jpg",
+    "thumbnail": "Eina-L'ArtdeLaGuerra-2008.jpg"
+  },
+  {
+    "id": "espart-treballdecamp-0e2daf",
+    "artist": "Espart",
+    "title": "Treball de camp",
+    "date": "2008",
+    "cover": "Espart-TreballDeCamp.jpg",
+    "thumbnail": "Espart-TreballDeCamp.jpg"
+  },
+  {
+    "id": "estanislauverdet-lallhoestotpelsanglesos-5b50a3",
+    "artist": "Estanislau Verdet",
+    "title": "L'all ho és tot pels anglesos",
+    "date": "2008",
+    "cover": "EstanislauVerdet-LAllHoEsTotPelsAnglesos.jpg",
+    "thumbnail": "EstanislauVerdet-LAllHoEsTotPelsAnglesos.jpg"
+  },
+  {
+    "id": "gossos-alauditori-15anys-2008-bd0e06",
+    "artist": "Gossos",
+    "title": "A l'Auditori - 15 anys",
+    "date": "2008",
+    "cover": "Gossos-ALAuditori-15Anys-2008.jpg",
+    "thumbnail": "Gossos-ALAuditori-15Anys-2008.jpg"
+  },
+  {
+    "id": "ivettenadal-guerresdolcissimes-e0729c",
+    "artist": "Ivette Nadal",
+    "title": "Guerres dolcíssimes",
+    "date": "2008",
+    "cover": "IvetteNadal-GuerresDolcissimes.jpg",
+    "thumbnail": "IvetteNadal-GuerresDolcissimes.jpg"
+  },
+  {
+    "id": "josepthio-elsteuscels-2008-21a14e",
+    "artist": "Josep Thió",
+    "title": "Els teus cels",
+    "date": "2008",
+    "cover": "JosepThio-ElsTeusCels-2008.jpg",
+    "thumbnail": "JosepThio-ElsTeusCels-2008.jpg"
+  },
+  {
+    "id": "lecroupier-mehandichoque-b5e657",
+    "artist": "Le Croupier",
+    "title": "Me han dicho que...",
+    "date": "2008",
+    "cover": "LeCroupier-MeHanDichoQue.jpg",
+    "thumbnail": "LeCroupier-MeHanDichoQue.jpg"
+  },
+  {
+    "id": "menaixatrua-comelvent-071f6e",
+    "artist": "Menaix a truà",
+    "title": "Com el vent",
+    "date": "2008",
+    "cover": "MenaixATrua-ComElVent.jpg",
+    "thumbnail": "MenaixATrua-ComElVent.jpg"
+  },
+  {
+    "id": "miquelabras-m-agradasentirelquetusents-2008-b57826",
+    "artist": "Miquel Abras",
+    "title": "M'agrada sentir el que tu sents",
+    "date": "2008",
+    "cover": "MiquelAbras-M'agradaSentirElQueTuSents-2008.jpg",
+    "thumbnail": "MiquelAbras-M'agradaSentirElQueTuSents-2008.jpg"
+  },
+  {
+    "id": "pastoretsrock-2de10ambfaixa-d5a0d2",
+    "artist": "Pastorets Rock",
+    "title": "2 de 10 amb faixa",
+    "date": "2008",
+    "cover": "PastoretsRock-2De10AmbFaixa.jpg",
+    "thumbnail": "PastoretsRock-2De10AmbFaixa.jpg"
+  },
+  {
+    "id": "paualabajos-teoriadelcaos-a69183",
+    "artist": "Pau Alabajos",
+    "title": "Teoria del caos",
+    "date": "2008",
+    "cover": "PauAlabajos-TeoriaDelCaos.jpg",
+    "thumbnail": "PauAlabajos-TeoriaDelCaos.jpg"
+  },
+  {
+    "id": "plouencatximbes-telescopi-3967b4",
+    "artist": "Plouen Catximbes",
+    "title": "Telescopi",
+    "date": "2008",
+    "cover": "PlouenCatximbes-Telescopi.jpg",
+    "thumbnail": "PlouenCatximbes-Telescopi.jpg"
+  },
+  {
+    "id": "poetristes-onzenadalsiuncapdany-a95b3b",
+    "artist": "Poetristes",
+    "title": "Onze Nadals i un cap d'any",
+    "date": "2008",
+    "cover": "Poetristes-OnzeNadalsIUnCapDAny.jpg",
+    "thumbnail": "Poetristes-OnzeNadalsIUnCapDAny.jpg"
+  },
+  {
+    "id": "ramonsaulo-somaixi-194847",
+    "artist": "Ramon Sauló",
+    "title": "Som així...",
+    "date": "2008",
+    "cover": "RamonSaulo-SomAixi.jpg",
+    "thumbnail": "RamonSaulo-SomAixi.jpg"
+  },
+  {
+    "id": "rauxa-terapiadegrup-2008-b82d5c",
+    "artist": "Rauxa",
+    "title": "Teràpia de grup",
+    "date": "2008",
+    "cover": "Rauxa-TerapiaDeGrup-2008.jpg",
+    "thumbnail": "Rauxa-TerapiaDeGrup-2008.jpg"
+  },
+  {
+    "id": "sivic-musicaperafomentarelcivisme-2008-ca3e13",
+    "artist": "Sívic",
+    "title": "Música per a fomentar el civisme",
+    "date": "2008",
+    "cover": "Sivic-MusicaPerAFomentarElCivisme-2008.jpg",
+    "thumbnail": "Sivic-MusicaPerAFomentarElCivisme-2008.jpg"
+  },
+  {
+    "id": "thedirtyclub-roots-2008-991fe4",
+    "artist": "The dirty club",
+    "title": "Roots",
+    "date": "2008",
+    "cover": "TheDirtyClub-Roots-2008.jpg",
+    "thumbnail": "TheDirtyClub-Roots-2008.jpg"
+  },
+  {
+    "id": "altrescanconsdenadal4-8966d1",
+    "artist": "Altres cançons de Nadal 4",
+    "title": "",
+    "date": "2007",
+    "cover": "AltresCanconsDeNadal4.jpg",
+    "thumbnail": "AltresCanconsDeNadal4.jpg"
+  },
+  {
+    "id": "damienzorn-bestiasensecor-2007-aea243",
+    "artist": "Damien Zorn",
+    "title": "Bèstia sense cor",
+    "date": "2007",
+    "cover": "DamienZorn-BestiaSenseCor-2007.jpg",
+    "thumbnail": "DamienZorn-BestiaSenseCor-2007.jpg"
+  },
+  {
+    "id": "dekrepits-tornenelstemps-86462d",
+    "artist": "Dekrèpits",
+    "title": "Tornen els temps",
+    "date": "2007",
+    "cover": "Dekrepits-TornenElsTemps.jpg",
+    "thumbnail": "Dekrepits-TornenElsTemps.jpg"
+  },
+  {
+    "id": "frenetic-361-4c25b6",
+    "artist": "Frenètic",
+    "title": "361º",
+    "date": "2007",
+    "cover": "Frenetic-361.jpg",
+    "thumbnail": "Frenetic-361.jpg"
+  },
+  {
+    "id": "hemisfericentre-unlloc-2007-14959b",
+    "artist": "Hemisferi Centre",
+    "title": "Un lloc",
+    "date": "2007",
+    "cover": "HemisferiCentre-UnLloc-2007.jpg",
+    "thumbnail": "HemisferiCentre-UnLloc-2007.jpg"
+  },
+  {
+    "id": "orxatasoundsystem-1-0-c1d972",
+    "artist": "Orxata Sound System",
+    "title": "1.0",
+    "date": "2007",
+    "cover": "OrxataSoundSystem-1.0.jpg",
+    "thumbnail": "OrxataSoundSystem-1.0.jpg"
+  },
+  {
+    "id": "tremendamente-abretumente-2007-082e8a",
+    "artist": "Tremendamente",
+    "title": "Abre tu mente...",
+    "date": "2007",
+    "cover": "Tremendamente-AbreTuMente-2007.jpg",
+    "thumbnail": "Tremendamente-AbreTuMente-2007.jpg"
+  },
+  {
+    "id": "tupolev-2007-0de73b",
+    "artist": "Tupolev",
+    "title": "Tupolev",
+    "date": "2007",
+    "cover": "Tupolev-2007.jpg",
+    "thumbnail": "Tupolev-2007.jpg"
+  },
+  {
+    "id": "crisjuanico-ojo-tdm-volamasalluna-d768f7",
+    "artist": "Cris Juanico & Original Jazz Orquestra & Taller de Músics",
+    "title": "Vola'm a sa Lluna",
+    "date": "2006",
+    "cover": "CrisJuanico&OJO&TDM-VolamASaLluna.jpg",
+    "thumbnail": "CrisJuanico&OJO&TDM-VolamASaLluna.jpg"
+  },
+  {
+    "id": "plouencatximbes-plouencatximbes-975764",
+    "artist": "Plouen Catximbes",
+    "title": "Plouen Catximbes",
+    "date": "2006",
+    "cover": "PlouenCatximbes-PlouenCatximbes.jpg",
+    "thumbnail": "PlouenCatximbes-PlouenCatximbes.jpg"
+  },
+  {
+    "id": "grip-2005-e729f3",
+    "artist": "Grip",
+    "title": "",
+    "date": "2005",
+    "cover": "Grip-2005.jpg",
+    "thumbnail": "Grip-2005.jpg"
+  },
+  {
+    "id": "orxatasoundsystem-orxata-5507ac",
+    "artist": "Orxata Sound System",
+    "title": "Orxata",
+    "date": "2005",
+    "cover": "OrxataSoundSystem-Orxata.jpg",
+    "thumbnail": "OrxataSoundSystem-Orxata.jpg"
+  }
+]

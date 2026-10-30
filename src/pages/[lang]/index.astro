@@ -1,0 +1,146 @@
+---
+import Layout from '../../layouts/SiteLayout.astro';
+import credits from '../../data/credits.json';
+
+export function getStaticPaths() {
+  return ['ca', 'es', 'en'].map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as 'ca' | 'es' | 'en';
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
+const route = (path: string) => `${base}${path}`;
+
+const t = {
+  ca: { nav: ['Estudi', 'Equip', 'Contacte', 'Crèdits'], kicker: 'Estudi de masterització d’àudio', intro: 'Juanjo Muñoz · Manresa', provider: 'Proveïdor Oficial', equipment: 'Equipament tècnic', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Crèdits', creditsIntro: 'Alguns treballs masteritzats per Juanjo Muñoz a CatMastering', search: 'Cerca artista o títol', contact: 'CatMastering', location: 'Manresa (Barcelona, Espanya)', count: 'treballs', open: 'Obre la portada de', close: 'Tanca', previous: 'Fotografia anterior', next: 'Fotografia següent', pause: 'Pausa les fotografies', play: 'Reprèn les fotografies', list: 'Mostra els treballs en llista', grid: 'Mostra els treballs en quadrícula', add: 'Afegir un treball' },
+  es: { nav: ['Estudio', 'Equipo', 'Contacto', 'Créditos'], kicker: 'Estudio de masterización de audio', intro: 'Juanjo Muñoz · Manresa', provider: 'Proveedor Oficial', equipment: 'Equipamiento técnico', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Créditos', creditsIntro: 'Algunos trabajos masterizados por Juanjo Muñoz en CatMastering', search: 'Buscar artista o título', contact: 'CatMastering', location: 'Manresa (Barcelona, España)', count: 'trabajos', open: 'Abrir portada de', close: 'Cerrar', previous: 'Fotografía anterior', next: 'Fotografía siguiente', pause: 'Pausar fotografías', play: 'Reanudar fotografías', list: 'Mostrar los trabajos en lista', grid: 'Mostrar los trabajos en cuadrícula', add: 'Añadir un trabajo' },
+  en: { nav: ['Studio', 'Equipment', 'Contact', 'Credits'], kicker: 'Audio mastering studio', intro: 'Juanjo Muñoz · Manresa', provider: 'Official Provider', equipment: 'Technical equipment', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Credits', creditsIntro: 'Some work mastered by Juanjo Muñoz at CatMastering', search: 'Search artist or title', contact: 'CatMastering', location: 'Manresa (Barcelona, Spain)', count: 'works', open: 'Open cover for', close: 'Close', previous: 'Previous photograph', next: 'Next photograph', pause: 'Pause photographs', play: 'Resume photographs', list: 'Show credits as a list', grid: 'Show credits as a grid', add: 'Add a credit' },
+}[lang];
+
+const langNames = { ca: 'Català', es: 'Español', en: 'English' };
+const pageTitle = `CatMastering — ${t.kicker}`;
+const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering04.jpg', 'CatMastering05.jpg', 'CatMastering06.jpg', 'CatMastering08.jpg', 'CatMastering11.jpg', 'CatMastering12.jpg'];
+---
+
+<Layout lang={lang} title={pageTitle} description={t.kicker}>
+  <header class="site-header">
+    <a class="brand" href={route(`${lang}/`)} aria-label="CatMastering"><img src={route('images/brand/CatMastering.svg')} alt="CatMastering" /></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#estudi">{t.nav[0]}</a><a href="#equip">{t.nav[1]}</a><a href="#contacte">{t.nav[2]}</a><a href="#credits">{t.nav[3]}</a></nav>
+    <div class="header-end">
+      <nav class="social-header" aria-label="Social media"><a href="https://www.facebook.com/CatMastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Facebook-White.svg')} alt="Facebook" /></a><a href="https://twitter.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Twitter-White.svg')} alt="Twitter" /></a><a href="https://instagram.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Instagram-White.svg')} alt="Instagram" /></a></nav>
+      <nav class="languages" aria-label="Language">{Object.keys(langNames).map((key) => <a href={route(`${key}/`)} lang={key} aria-current={key === lang ? 'page' : undefined}>{key.toUpperCase()}</a>)}</nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="videoPresentacio" aria-label={t.kicker}>
+      <video id="intro-video" controls loop muted playsinline preload="metadata" poster={route('images/studio/CatMastering02.jpg')}>
+        <source src={route('videos/Catmastering.mp4')} type="video/mp4" />
+      </video>
+    </section>
+
+    <section id="fotos" aria-label={t.kicker}>
+      {studioPhotos.map((photo, index) => <img class={`slideshow-image${index === 0 ? ' active' : ''}`} src={route(`images/studio/${photo}`)} alt="CatMastering, estudi de masterització" aria-hidden={index !== 0} loading={index === 0 ? 'eager' : 'lazy'} />)}
+    </section>
+    <div id="controlFotos" aria-label="Photo slideshow controls">
+      <button type="button" id="controlAnterior" aria-label={t.previous}>‹</button>
+      <button type="button" id="controlPausa" aria-label={t.pause}>Ⅱ</button>
+      <button type="button" id="controlPlay" aria-label={t.play} hidden>▶</button>
+      <button type="button" id="controlSeguent" aria-label={t.next}>›</button>
+    </div>
+
+    <article id="estudi" class="content-section">
+      <h1>CatMastering</h1>
+      <hr />
+      <h3>{t.kicker}</h3>
+      <div class="brand-logos"><a href="http://catmastering.cat" target="_blank" rel="noreferrer"><img src={route('images/brand/CatM.svg')} alt="CatMastering" /></a><a href="https://www.apple.com/apple-music/apple-digital-masters/" target="_blank" rel="noreferrer"><img src={route('images/brand/AppleDigitalMasters.svg')} alt="Apple Digital Masters" /></a></div>
+      <p><a href="http://catmastering.cat" target="_blank" rel="noreferrer">CatMastering</a> | <a href="https://www.apple.com/apple-music/apple-digital-masters/" target="_blank" rel="noreferrer">Apple Digital Masters</a> | {t.provider}</p>
+      <p class="studio-intro">{t.intro}</p>
+    </article>
+
+    <article id="equip" class="content-section">
+      <h2>{t.equipment}</h2>
+      <hr />
+      <h3>{t.equipmentText}</h3>
+    </article>
+
+    <article id="contacte" class="content-section">
+      <h2>{t.contact}</h2>
+      <hr />
+      <h3>Juanjo Muñoz</h3>
+      <div class="contact-layout">
+        <img class="contact-photo" src={route('images/studio/CatMastering09.jpg')} alt="CatMastering, Juanjo Muñoz" loading="lazy" />
+        <div class="contact-details">
+          <p><a href="mailto:juanjo@catmastering.cat">juanjo@catmastering.cat</a></p>
+          <p><a href="mailto:catmastering@gmail.com">catmastering@gmail.com</a></p>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=Manresa%2C+Barcelona" target="_blank" rel="noreferrer">{t.location}</a></p>
+          <div class="social-contact"><a href="https://www.facebook.com/CatMastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Facebook-Black.svg')} alt="Facebook" /></a><a href="https://twitter.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Twitter-Black.svg')} alt="Twitter" /></a><a href="https://instagram.com/catmastering" target="_blank" rel="noreferrer"><img src={route('images/brand/Instagram-Black.svg')} alt="Instagram" /></a></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="credits" class="content-section">
+      <h2>{t.credits}</h2>
+      <hr />
+      <div class="credits-subhead">
+        <button id="view-toggle" type="button" data-list-label={t.list} data-grid-label={t.grid} aria-label={t.list} title={t.list}>☷</button>
+        <h3>{t.creditsIntro}</h3>
+      </div>
+      <div class="credit-tools"><label for="credit-search">{t.search}</label><input id="credit-search" type="search" placeholder={t.search} /><span id="result-count" aria-live="polite">{credits.length} {t.count}</span></div>
+      <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(credit.cover)}`)} data-alt={`${credit.artist}${credit.title ? ` — ${credit.title}` : ''}`} aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(credit.thumbnail)}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
+      <p class="add-credit-wrap"><a class="add-credit" href="https://github.com/jordinebot/catmastering/issues/new?template=add-credit.yml">{t.add} ↗</a></p>
+    </article>
+  </main>
+
+  <footer>© CatMastering | Juanjo Muñoz</footer>
+  <dialog id="lightbox" aria-label="Cover image"><button class="dialog-close" type="button" aria-label={t.close}>×</button><img id="lightbox-image" alt="" /></dialog>
+
+  <script>
+    const search = document.querySelector<HTMLInputElement>('#credit-search');
+    const cards = [...document.querySelectorAll<HTMLElement>('.credit')];
+    const count = document.querySelector<HTMLElement>('#result-count');
+    if (search && count) search.addEventListener('input', () => {
+      const query = search.value.trim().toLocaleLowerCase();
+      let visible = 0;
+      for (const card of cards) { const show = (card.dataset.search ?? '').includes(query); card.hidden = !show; if (show) visible++; }
+      count.textContent = `${visible} ${document.documentElement.lang === 'ca' ? 'treballs' : document.documentElement.lang === 'es' ? 'trabajos' : 'works'}`;
+    });
+
+    const dialog = document.querySelector<HTMLDialogElement>('#lightbox')!;
+    const lightboxImage = document.querySelector<HTMLImageElement>('#lightbox-image')!;
+    document.querySelectorAll<HTMLButtonElement>('.cover-button').forEach((button) => button.addEventListener('click', () => { lightboxImage.src = button.dataset.full ?? ''; lightboxImage.alt = button.dataset.alt ?? ''; dialog.showModal(); }));
+    document.querySelector<HTMLButtonElement>('.dialog-close')!.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+
+    const gallery = document.querySelector<HTMLElement>('#fotos')!;
+    const slides = [...gallery.querySelectorAll<HTMLImageElement>('.slideshow-image')];
+    const pauseButton = document.querySelector<HTMLButtonElement>('#controlPausa')!;
+    const playButton = document.querySelector<HTMLButtonElement>('#controlPlay')!;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let currentSlide = 0;
+    let timer: number | undefined;
+    let playing = !reducedMotion;
+    const showSlide = (index: number) => {
+      currentSlide = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => { slide.classList.toggle('active', i === currentSlide); slide.setAttribute('aria-hidden', String(i !== currentSlide)); });
+    };
+    const pause = () => { playing = false; window.clearInterval(timer); pauseButton.hidden = true; playButton.hidden = false; };
+    const play = () => { playing = true; window.clearInterval(timer); timer = window.setInterval(() => showSlide(currentSlide + 1), 5000); pauseButton.hidden = false; playButton.hidden = true; };
+    document.querySelector<HTMLButtonElement>('#controlAnterior')!.addEventListener('click', () => { showSlide(currentSlide - 1); pause(); });
+    document.querySelector<HTMLButtonElement>('#controlSeguent')!.addEventListener('click', () => { showSlide(currentSlide + 1); pause(); });
+    pauseButton.addEventListener('click', pause); playButton.addEventListener('click', play);
+    gallery.addEventListener('click', () => playing ? pause() : play());
+    document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
+    if (playing) play();
+
+    document.querySelector<HTMLButtonElement>('#view-toggle')!.addEventListener('click', (event) => {
+      const button = event.currentTarget as HTMLButtonElement;
+      const listView = document.querySelector('#credit-grid')!.classList.toggle('list-view');
+      button.setAttribute('aria-label', listView ? button.dataset.gridLabel ?? '' : button.dataset.listLabel ?? '');
+      button.title = listView ? button.dataset.gridLabel ?? '' : button.dataset.listLabel ?? '';
+    });
+
+    const video = document.querySelector<HTMLVideoElement>('#intro-video');
+    if (!reducedMotion) video?.play().catch(() => {});
+  </script>
+</Layout>

@@ -1,0 +1,47 @@
+name: Afegir un treball
+description: Envia les dades d'un nou treball masteritzat per afegir-lo al catàleg.
+title: "Nou treball: "
+labels: [new-credit]
+body:
+  - type: markdown
+    attributes:
+      value: "Omple les dades tal com han d'aparèixer al web. La publicació queda pendent de revisió."
+  - type: input
+    id: artist
+    attributes:
+      label: Artista
+      description: Nom de l'artista o grup.
+      placeholder: "Exemple: Nom de l'artista"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Títol
+      description: Títol del disc, EP o single.
+      placeholder: "Exemple: Títol del treball"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Data de publicació
+      description: "Escriu AAAA-MM-DD si saps el dia exacte; si no, posa només AAAA."
+      placeholder: "2026-10-29 o 2026"
+    validations:
+      required: true
+  - type: upload
+    id: cover
+    attributes:
+      label: Portada
+      description: "Adjunta una imatge quadrada JPG, PNG o WebP. Màxim 10 MB."
+    validations:
+      required: true
+      accept: ".jpg,.jpeg,.png,.webp"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (opcional)
+      description: Informació útil només per a la revisió. No es mostrarà al web.
+    validations:
+      required: false

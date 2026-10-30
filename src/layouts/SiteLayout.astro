@@ -1,0 +1,28 @@
+---
+import '../styles/site.css';
+const { lang, title, description } = Astro.props;
+const origin = import.meta.env.SITE_DOMAIN === 'true' ? 'https://catmastering.cat' : 'https://jordinebot.github.io/catmastering';
+const canonical = `${origin}/${lang}/`;
+const assetBase = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const locales = ['ca', 'es', 'en'];
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {locales.map((locale) => <link rel="alternate" hreflang={locale} href={`${origin}/${locale}/`} />)}
+    <link rel="alternate" hreflang="x-default" href={`${origin}/`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${origin}/images/studio/CatMastering02.jpg`} />
+    <link rel="icon" href={`${assetBase}favicon.ico`} />
+    <link rel="apple-touch-icon" href={`${assetBase}apple-touch-icon.png`} />
+  </head>
+  <body id="top"><slot /></body>
+</html>

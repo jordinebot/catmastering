@@ -1,0 +1,5 @@
+---
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const origin = import.meta.env.SITE_DOMAIN === 'true' ? 'https://catmastering.cat' : 'https://jordinebot.github.io/catmastering';
+---
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>CatMastering</title><meta name="description" content="Estudi de masterització d’àudio a Manresa."><link rel="canonical" href={`${origin}/ca/`}><meta http-equiv="refresh" content={`0; url=${base}ca/`}><meta name="robots" content="noindex"></head><body><main><h1>CatMastering</h1><p>Tria l’idioma / Elige idioma / Choose a language</p><nav><a href={`${base}ca/`}>Català</a> · <a href={`${base}es/`}>Español</a> · <a href={`${base}en/`}>English</a></nav><p>Si no et redirigeix automàticament, tria un idioma.</p></main></body></html>
