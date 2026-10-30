@@ -41,19 +41,19 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
 
     <section id="fotos" aria-label={t.kicker}>
       {studioPhotos.map((photo, index) => <img class={`slideshow-image${index === 0 ? ' active' : ''}`} src={route(`images/studio/${photo}`)} alt="CatMastering, estudi de masterització" aria-hidden={index !== 0} loading={index === 0 ? 'eager' : 'lazy'} />)}
+      <div id="controlFotos" aria-label="Photo slideshow controls">
+        <button type="button" id="controlAnterior" aria-label={t.previous}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"/></svg></button>
+        <button type="button" id="controlPausa" aria-label={t.pause}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg></button>
+        <button type="button" id="controlPlay" aria-label={t.play} hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 10 6-10 6z"/></svg></button>
+        <button type="button" id="controlSeguent" aria-label={t.next}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg></button>
+      </div>
     </section>
-    <div id="controlFotos" aria-label="Photo slideshow controls">
-      <button type="button" id="controlAnterior" aria-label={t.previous}>‹</button>
-      <button type="button" id="controlPausa" aria-label={t.pause}>Ⅱ</button>
-      <button type="button" id="controlPlay" aria-label={t.play} hidden>▶</button>
-      <button type="button" id="controlSeguent" aria-label={t.next}>›</button>
-    </div>
 
     <article id="estudi" class="content-section">
       <h1>CatMastering</h1>
       <hr />
       <h3>{t.kicker}</h3>
-      <div class="brand-logos"><a href="http://catmastering.cat" target="_blank" rel="noreferrer"><img src={route('images/brand/CatM.svg')} alt="CatMastering" /></a><a href="https://www.apple.com/apple-music/apple-digital-masters/" target="_blank" rel="noreferrer"><img src={route('images/brand/AppleDigitalMasters.svg')} alt="Apple Digital Masters" /></a></div>
+      <div class="brand-logos"><a class="brand-logo-cat" href="http://catmastering.cat" target="_blank" rel="noreferrer"><img src={route('images/brand/CatM.svg')} alt="CatMastering" /></a><a class="brand-logo-adm" href="https://www.apple.com/apple-music/apple-digital-masters/" target="_blank" rel="noreferrer"><img src={route('images/brand/AppleDigitalMasters.svg')} alt="Apple Digital Masters" /></a></div>
       <p><a href="http://catmastering.cat" target="_blank" rel="noreferrer">CatMastering</a> | <a href="https://www.apple.com/apple-music/apple-digital-masters/" target="_blank" rel="noreferrer">Apple Digital Masters</a> | {t.provider}</p>
       <p class="studio-intro">{t.intro}</p>
     </article>
@@ -116,10 +116,9 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
     const slides = [...gallery.querySelectorAll<HTMLImageElement>('.slideshow-image')];
     const pauseButton = document.querySelector<HTMLButtonElement>('#controlPausa')!;
     const playButton = document.querySelector<HTMLButtonElement>('#controlPlay')!;
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let currentSlide = 0;
     let timer: number | undefined;
-    let playing = !reducedMotion;
+    let playing = true;
     const showSlide = (index: number) => {
       currentSlide = (index + slides.length) % slides.length;
       slides.forEach((slide, i) => { slide.classList.toggle('active', i === currentSlide); slide.setAttribute('aria-hidden', String(i !== currentSlide)); });
@@ -128,7 +127,8 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
     const play = () => { playing = true; window.clearInterval(timer); timer = window.setInterval(() => showSlide(currentSlide + 1), 5000); pauseButton.hidden = false; playButton.hidden = true; };
     document.querySelector<HTMLButtonElement>('#controlAnterior')!.addEventListener('click', () => { showSlide(currentSlide - 1); pause(); });
     document.querySelector<HTMLButtonElement>('#controlSeguent')!.addEventListener('click', () => { showSlide(currentSlide + 1); pause(); });
-    pauseButton.addEventListener('click', pause); playButton.addEventListener('click', play);
+    pauseButton.addEventListener('click', pause); playButton.addEventListener('click', () => { showSlide(currentSlide + 1); play(); });
+    document.querySelector<HTMLDivElement>('#controlFotos')!.addEventListener('click', (event) => event.stopPropagation());
     gallery.addEventListener('click', () => playing ? pause() : play());
     document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
     if (playing) play();
@@ -141,6 +141,7 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
     });
 
     const video = document.querySelector<HTMLVideoElement>('#intro-video');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!reducedMotion) video?.play().catch(() => {});
   </script>
 </Layout>
