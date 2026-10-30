@@ -33,10 +33,10 @@ button,input{font:inherit}
 #controlFotos #controlPlay svg{fill:currentColor;stroke:none}
 #controlFotos button[hidden]{display:none}
 .content-section{padding:3em 0 0;scroll-margin-top:90px}
-h1,h2{min-height:1.2em;margin:0;padding:.2em .35em .25em;border-radius:4px 4px 0 0;background:var(--soft);color:var(--ink);font-size:clamp(1.5rem,3.2vw,2rem);font-weight:550;line-height:1.25}
+h1,h2{min-height:0;margin:0;padding:.34em .5em .38em;border-radius:7px 7px 0 0;background:#f0f1f2;color:var(--ink);font-size:clamp(1.5rem,3.2vw,2rem);font-weight:600;letter-spacing:-.025em;line-height:1.2}
 h1{font-size:clamp(1.7rem,4vw,2.35rem)}
-h3{margin:0 0 .8em;padding:.35em .6em;border-radius:0 0 4px 4px;background:#f5f5f5;color:#666;font-size:1rem;font-weight:350;line-height:1.4}
-hr{height:1px;margin:2px 0 0;border:0;background:linear-gradient(90deg,#eee,#cfcfcf,#eee)}
+h3{margin:0 0 1.2em;padding:.42em .7em .48em;border-radius:0 0 7px 7px;background:#f7f7f7;color:#777;font-size:.95rem;font-weight:400;line-height:1.5}
+hr{display:none}
 .content-section p{margin:.6em auto}
 .brand-logos{display:flex;align-items:center;justify-content:center;gap:18px;height:58px;margin:28px auto 7px}
 .brand-logos a{display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden}
