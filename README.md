@@ -23,4 +23,4 @@ Juanjo pot enviar propostes a través de [Afegir un treball](https://github.com/
 
 ## Desplegament
 
-La workflow `Deploy CatMastering` construeix i publica `dist/` a GitHub Pages en cada canvi de `main`. A **Settings → Pages**, selecciona GitHub Actions. Per defecte el build està preparat per a `jordinebot.github.io/catmastering`; per activar `catmastering.cat` cal confirmar el domini, configurar la variable `SITE_DOMAIN=true`, afegir `public/CNAME` i completar manualment els passos del domini descrits a la guia de manteniment. No s'han canviat DNS.
+La workflow `Deploy CatMastering` construeix el lloc per a l'arrel de `https://catmastering.cat/` i publica `dist/` a GitHub Pages en cada canvi de `main`. A **Settings → Pages**, selecciona GitHub Actions i configura `catmastering.cat` com a domini personalitzat. Cal apuntar-ne els DNS a GitHub Pages abans de publicar-lo; aquesta configuració encara no s'ha fet.
