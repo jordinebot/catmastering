@@ -3,6 +3,11 @@ import path from 'node:path';
 import { z } from 'zod';
 const credits = JSON.parse(fs.readFileSync('src/data/credits.json', 'utf8'));
 const errors = [];
+const assetFilename = (filename) => {
+  const extension = path.extname(filename);
+  const stem = path.basename(filename, extension).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z0-9._-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+  return `${stem}${extension.toLowerCase()}`;
+};
 const isValidDate = (value) => {
   if (value === '' || /^\d{4}$/.test(value)) return true;
   if (/^\d{4}-(?:0[1-9]|1[0-2])$/.test(value)) return true;
@@ -35,7 +40,7 @@ for (const [index, credit] of credits.entries()) {
   if (!credit.artist.trim()) errors.push(`Row ${index + 1}: artist is empty`);
   if (credit.date !== '' && !/^\d{4}(?:-\d{2})?(?:-\d{2})?$/.test(credit.date)) errors.push(`Row ${index + 1}: invalid date "${credit.date}"`);
   if (!credit.cover || path.basename(credit.cover) !== credit.cover) errors.push(`Row ${index + 1}: unsafe cover path`);
-  for (const file of [`public/images/covers/${credit.cover}`, `public/images/thumbs/${credit.thumbnail}`]) if (!fs.existsSync(file)) errors.push(`Missing file: ${file}`);
+  for (const file of [`public/images/covers/${assetFilename(credit.cover)}`, `public/images/thumbs/${assetFilename(credit.thumbnail)}`]) if (!fs.existsSync(file)) errors.push(`Missing file: ${file}`);
 }
 for (const photo of Array.from({ length: 13 }, (_, i) => `public/images/studio/CatMastering${String(i + 1).padStart(2, '0')}.jpg`)) if (!fs.existsSync(photo)) errors.push(`Missing studio photo: ${photo}`);
 if (!fs.existsSync('public/videos/Catmastering.mp4')) errors.push('Missing legacy studio video.');

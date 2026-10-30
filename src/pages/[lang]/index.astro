@@ -10,11 +10,16 @@ const lang = Astro.params.lang as 'ca' | 'es' | 'en';
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
 const route = (path: string) => `${base}${path}`;
+const assetFilename = (filename: string) => {
+  const extension = filename.slice(filename.lastIndexOf('.'));
+  const stem = filename.slice(0, -extension.length).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z0-9._-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+  return `${stem}${extension.toLowerCase()}`;
+};
 
 const t = {
-  ca: { nav: ['Estudi', 'Equip', 'Contacte', 'Crèdits'], kicker: 'Estudi de masterització d’àudio', intro: 'Juanjo Muñoz · Manresa', provider: 'Proveïdor Oficial', equipment: 'Equipament tècnic', equipmentTagline: 'Treballem amb les millors marques', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Crèdits', creditsIntro: 'Alguns treballs masteritzats per Juanjo Muñoz a CatMastering', search: 'Cerca artista o títol', contact: 'Contacte', location: 'Manresa (Barcelona, Espanya)', count: 'treballs', open: 'Obre la portada de', close: 'Tanca', previous: 'Fotografia anterior', next: 'Fotografia següent', pause: 'Pausa les fotografies', play: 'Reprèn les fotografies', list: 'Mostra els treballs en llista', grid: 'Mostra els treballs en quadrícula', add: 'Afegir un treball' },
-  es: { nav: ['Estudio', 'Equipo', 'Contacto', 'Créditos'], kicker: 'Estudio de masterización de audio', intro: 'Juanjo Muñoz · Manresa', provider: 'Proveedor Oficial', equipment: 'Equipamiento técnico', equipmentTagline: 'Trabajamos con las mejores marcas', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Créditos', creditsIntro: 'Algunos trabajos masterizados por Juanjo Muñoz en CatMastering', search: 'Buscar artista o título', contact: 'Contacto', location: 'Manresa (Barcelona, España)', count: 'trabajos', open: 'Abrir portada de', close: 'Cerrar', previous: 'Fotografía anterior', next: 'Fotografía siguiente', pause: 'Pausar fotografías', play: 'Reanudar fotografías', list: 'Mostrar los trabajos en lista', grid: 'Mostrar los trabajos en cuadrícula', add: 'Añadir un trabajo' },
-  en: { nav: ['Studio', 'Equipment', 'Contact', 'Credits'], kicker: 'Audio mastering studio', intro: 'Juanjo Muñoz · Manresa', provider: 'Official Provider', equipment: 'Technical equipment', equipmentTagline: 'We work with the best brands', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Credits', creditsIntro: 'Some work mastered by Juanjo Muñoz at CatMastering', search: 'Search artist or title', contact: 'Contact', location: 'Manresa (Barcelona, Spain)', count: 'works', open: 'Open cover for', close: 'Close', previous: 'Previous photograph', next: 'Next photograph', pause: 'Pause photographs', play: 'Resume photographs', list: 'Show credits as a list', grid: 'Show credits as a grid', add: 'Add a credit' },
+  ca: { nav: ['Estudi', 'Equip', 'Contacte', 'Crèdits'], kicker: 'Estudi de masterització d’àudio', intro: 'Juanjo Muñoz · Manresa', provider: 'Proveïdor Oficial', equipment: 'Equipament tècnic', equipmentTagline: 'Treballem amb les millors marques', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Crèdits', creditsIntro: 'Alguns treballs masteritzats per Juanjo Muñoz a CatMastering', search: 'Cerca artista o títol', clearSearch: 'Esborra la cerca', contact: 'Contacte', location: 'Manresa (Barcelona, Espanya)', count: 'treballs', open: 'Obre la portada de', close: 'Tanca', previous: 'Fotografia anterior', next: 'Fotografia següent', pause: 'Pausa les fotografies', play: 'Reprèn les fotografies', list: 'Mostra els treballs en llista', grid: 'Mostra els treballs en quadrícula', add: 'Afegir un treball' },
+  es: { nav: ['Estudio', 'Equipo', 'Contacto', 'Créditos'], kicker: 'Estudio de masterización de audio', intro: 'Juanjo Muñoz · Manresa', provider: 'Proveedor Oficial', equipment: 'Equipamiento técnico', equipmentTagline: 'Trabajamos con las mejores marcas', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Créditos', creditsIntro: 'Algunos trabajos masterizados por Juanjo Muñoz en CatMastering', search: 'Buscar artista o título', clearSearch: 'Borrar búsqueda', contact: 'Contacto', location: 'Manresa (Barcelona, España)', count: 'trabajos', open: 'Abrir portada de', close: 'Cerrar', previous: 'Fotografía anterior', next: 'Fotografía siguiente', pause: 'Pausar fotografías', play: 'Reanudar fotografías', list: 'Mostrar los trabajos en lista', grid: 'Mostrar los trabajos en cuadrícula', add: 'Añadir un trabajo' },
+  en: { nav: ['Studio', 'Equipment', 'Contact', 'Credits'], kicker: 'Audio mastering studio', intro: 'Juanjo Muñoz · Manresa', provider: 'Official Provider', equipment: 'Technical equipment', equipmentTagline: 'We work with the best brands', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Credits', creditsIntro: 'Some work mastered by Juanjo Muñoz at CatMastering', search: 'Search artist or title', clearSearch: 'Clear search', contact: 'Contact', location: 'Manresa (Barcelona, Spain)', count: 'works', open: 'Open cover for', close: 'Close', previous: 'Previous photograph', next: 'Next photograph', pause: 'Pause photographs', play: 'Resume photographs', list: 'Show credits as a list', grid: 'Show credits as a grid', add: 'Add a credit' },
 }[lang];
 
 const langNames = { ca: 'Català', es: 'Español', en: 'English' };
@@ -95,6 +100,7 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
         <div class="credit-search-field">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m15.5 15.5 4.2 4.2"/></svg>
           <input id="credit-search" type="search" placeholder={t.search} />
+          <button id="clear-search" type="button" aria-label={t.clearSearch} title={t.clearSearch} hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>
         </div>
         <span id="result-count" aria-live="polite">{credits.length} {t.count}</span>
         <button id="view-toggle" type="button" data-list-label={t.list} data-grid-label={t.grid} aria-label={t.list} title={t.list}>
@@ -102,7 +108,7 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
           <svg class="icon-grid" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>
         </button>
       </div>
-      <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(credit.cover)}`)} data-alt={`${credit.artist}${credit.title ? ` — ${credit.title}` : ''}`} aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(credit.thumbnail)}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
+      <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(assetFilename(credit.cover))}`)} data-alt={`${credit.artist}${credit.title ? ` — ${credit.title}` : ''}`} aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(assetFilename(credit.thumbnail))}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
       <p class="add-credit-wrap"><a class="add-credit" href="https://github.com/jordinebot/catmastering/issues/new?template=add-credit.yml">{t.add} ↗</a></p>
     </article>
   </main>
@@ -114,12 +120,17 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
     const search = document.querySelector<HTMLInputElement>('#credit-search');
     const cards = [...document.querySelectorAll<HTMLElement>('.credit')];
     const count = document.querySelector<HTMLElement>('#result-count');
-    if (search && count) search.addEventListener('input', () => {
-      const query = search.value.trim().toLocaleLowerCase();
-      let visible = 0;
-      for (const card of cards) { const show = (card.dataset.search ?? '').includes(query); card.hidden = !show; if (show) visible++; }
-      count.textContent = `${visible} ${document.documentElement.lang === 'ca' ? 'treballs' : document.documentElement.lang === 'es' ? 'trabajos' : 'works'}`;
-    });
+    const clearSearch = document.querySelector<HTMLButtonElement>('#clear-search');
+    if (search && count && clearSearch) {
+      search.addEventListener('input', () => {
+        const query = search.value.trim().toLocaleLowerCase();
+        let visible = 0;
+        for (const card of cards) { const show = (card.dataset.search ?? '').includes(query); card.hidden = !show; if (show) visible++; }
+        count.textContent = `${visible} ${document.documentElement.lang === 'ca' ? 'treballs' : document.documentElement.lang === 'es' ? 'trabajos' : 'works'}`;
+        clearSearch.hidden = !search.value;
+      });
+      clearSearch.addEventListener('click', () => { search.value = ''; search.dispatchEvent(new Event('input', { bubbles: true })); search.focus(); });
+    }
 
     const dialog = document.querySelector<HTMLDialogElement>('#lightbox')!;
     const lightboxImage = document.querySelector<HTMLImageElement>('#lightbox-image')!;

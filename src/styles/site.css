@@ -60,6 +60,11 @@ hr{display:none}
 .credit-tools input{width:100%;min-width:0;border:0;border-radius:0;padding:7px 2px;background:transparent;color:#444;font-size:.9rem}
 .credit-tools input:focus{outline:none}
 .credit-tools input::placeholder{color:#929292}
+.credit-tools input::-webkit-search-cancel-button{display:none}
+#clear-search{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border:0;border-radius:50%;background:transparent;color:#888;cursor:pointer;transition:background .18s ease,color .18s ease,transform .18s ease}
+#clear-search:hover{background:rgba(0,0,0,.08);color:#333;transform:scale(1.06)}
+#clear-search svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+#clear-search[hidden]{display:none}
 .credit-tools span{flex:0 0 auto;color:#888;font-size:.78rem;white-space:nowrap}
 #view-toggle{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border:1px solid rgba(0,0,0,.06);border-radius:50%;background:rgba(0,0,0,.035);color:#666;cursor:pointer;transition:background .18s ease,color .18s ease,transform .18s ease}
 #view-toggle:hover{background:rgba(0,0,0,.1);color:#333;transform:scale(1.05)}
