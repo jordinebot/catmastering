@@ -15,7 +15,7 @@ El cos de l'issue és entrada no fiable. El workflow no l'executa: només analit
 
 ## Publicació, URLs i domini
 
-GitHub Pages publica només `dist/` mitjançant **Settings → Pages → Build and deployment → GitHub Actions**. Les fusions a `main` executen la publicació; les issues per si soles mai no publiquen. El workflow construeix per a l'arrel de `https://catmastering.cat/` (`SITE_DOMAIN=true`) i publica el fitxer `public/CNAME`. A **Settings → Pages**, selecciona GitHub Actions i configura `catmastering.cat` com a domini personalitzat. Els DNS del domini encara s'han d'apuntar a GitHub Pages abans de publicar-lo.
+GitHub Pages publica només `dist/` mitjançant **Settings → Pages → Build and deployment → GitHub Actions**. Les fusions a `main` executen la publicació; les issues per si soles mai no publiquen. Mentre el domini personalitzat no estigui configurat, el workflow construeix per a `https://jordinebot.github.io/catmastering/` (`SITE_DOMAIN=false`). Per migrar a `catmastering.cat`, configura `SITE_DOMAIN=true`, afegeix `public/CNAME` amb el domini, configura'l a Pages i apunta-hi els DNS.
 
 Les pàgines `catmastering_ca.html`, `catmastering_es.html` i `catmastering_en.html` són pàgines de compatibilitat amb meta refresh i enllaç de reserva. GitHub Pages no emet 301 per a aquestes rutes. Si el DNS/CDN futur admet regles, es poden substituir per redireccions reals.
 
