@@ -15,6 +15,7 @@ const assetFilename = (filename: string) => {
   const stem = filename.slice(0, -extension.length).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z0-9._-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
   return `${stem}${extension.toLowerCase()}`;
 };
+const thumbnailFilename = (filename: string) => `${assetFilename(filename).replace(/\.[^.]+$/, '')}.webp`;
 
 const t = {
   ca: { nav: ['Estudi', 'Equip', 'Contacte', 'Crèdits'], kicker: 'Estudi de masterització d’àudio', intro: 'Juanjo Muñoz · Manresa', provider: 'Proveïdor Oficial', equipment: 'Equipament tècnic', equipmentTagline: 'Treballem amb les millors marques', equipmentText: 'ATC, Manley, Sontec, Dangerous Music, Maselec, etc', credits: 'Crèdits', creditsIntro: 'Alguns treballs masteritzats per Juanjo Muñoz a CatMastering', search: 'Cerca artista o títol', clearSearch: 'Esborra la cerca', contact: 'Contacte', location: 'Manresa (Barcelona, Espanya)', count: 'treballs', open: 'Obre la portada de', close: 'Tanca', previous: 'Fotografia anterior', next: 'Fotografia següent', pause: 'Pausa les fotografies', play: 'Reprèn les fotografies', list: 'Mostra els treballs en llista', grid: 'Mostra els treballs en quadrícula', add: 'Afegir un treball' },
@@ -39,7 +40,7 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
 
   <main>
     <section id="videoPresentacio" aria-label={t.kicker}>
-      <video id="intro-video" controls loop muted playsinline preload="metadata" poster={route('images/studio/CatMastering02.jpg')}>
+      <video id="intro-video" controls loop muted playsinline preload="metadata" width="1280" height="720" poster={route('images/studio/CatMastering02.jpg')}>
         <source src={route('videos/Catmastering.mp4')} type="video/mp4" />
       </video>
     </section>
@@ -108,7 +109,7 @@ const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering0
           <svg class="icon-grid" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>
         </button>
       </div>
-      <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(assetFilename(credit.cover))}`)} data-thumb={route(`images/thumbs/${encodeURIComponent(assetFilename(credit.thumbnail))}`)} data-open-label={`${t.open} ${credit.artist}`} data-close-label={`${t.close} ${credit.artist}`} aria-expanded="false" aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(assetFilename(credit.thumbnail))}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
+      <div class="credit-grid" id="credit-grid">{credits.map((credit) => <figure class="credit" data-search={`${credit.artist} ${credit.title} ${credit.date}`.toLocaleLowerCase()}><button class="cover-button" type="button" data-full={route(`images/covers/${encodeURIComponent(assetFilename(credit.cover))}`)} data-thumb={route(`images/thumbs/${encodeURIComponent(thumbnailFilename(credit.thumbnail))}`)} data-open-label={`${t.open} ${credit.artist}`} data-close-label={`${t.close} ${credit.artist}`} aria-expanded="false" aria-label={`${t.open} ${credit.artist}`}><img src={route(`images/thumbs/${encodeURIComponent(thumbnailFilename(credit.thumbnail))}`)} alt="" width="400" height="400" loading="lazy" decoding="async" /></button><figcaption><span class="artist">{credit.artist}</span>{credit.title && <span class="album">{credit.title}</span>}{credit.date && <time>{credit.date}</time>}</figcaption></figure>)}</div>
     </article>
   </main>
 

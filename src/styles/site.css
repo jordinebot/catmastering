@@ -20,7 +20,7 @@ button,input{font:inherit}
 .languages{gap:7px;font-size:11px}
 .languages a[aria-current=page]{color:#d4b9ac}
 #videoPresentacio{margin:22px auto 0;overflow:hidden;border-radius:3px}
-#videoPresentacio video{display:block;width:100%;height:auto;background:#000}
+#videoPresentacio video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
 #fotos{position:relative;width:100%;margin:26px auto 0;overflow:hidden;border-radius:3px;line-height:0}
 .slideshow-image{position:absolute;top:0;left:0;z-index:0;display:block;width:100%;height:auto;opacity:0;transition:opacity .75s ease}
 .slideshow-image:first-child{position:relative}
