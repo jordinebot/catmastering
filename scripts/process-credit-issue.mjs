@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import sharp from 'sharp';
 
@@ -137,4 +138,5 @@ async function main() {
     throw error;
   }
 }
-if (process.env.GITHUB_EVENT_PATH) main().catch((error) => { console.error(error.message); process.exitCode = 1; });
+const isDirectExecution = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isDirectExecution && process.env.GITHUB_EVENT_PATH) main().catch((error) => { console.error(error.message); process.exitCode = 1; });
