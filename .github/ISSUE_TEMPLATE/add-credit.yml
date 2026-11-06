@@ -1,6 +1,6 @@
 name: Afegir un treball
 description: Envia les dades d'un nou treball masteritzat per afegir-lo al catàleg.
-title: "Nou treball: "
+title: "Artista - Disc - Data"
 labels: [new-credit]
 body:
   - type: markdown
