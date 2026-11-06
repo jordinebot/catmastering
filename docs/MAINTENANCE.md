@@ -8,7 +8,7 @@ El cos de l'issue és entrada no fiable. El workflow no l'executa: només analit
 
 ## Permisos i accions
 
-- A **Settings → Actions → General**, permet que Actions creï i aprovi pull requests si es vol el flux automàtic. El token `GITHUB_TOKEN` no inicia altres workflows quan crea una PR; per això el workflow d'entrada executa comprovacions abans de crear-la. Revisa de nou els checks abans de fusionar.
+- A **Settings → Actions → General**, permet que Actions creï i aprovi pull requests si es vol el flux automàtic. El token `GITHUB_TOKEN` no inicia altres workflows quan crea una PR; per això el workflow d'entrada executa comprovacions abans de crear-la. Les PR obertes per altres vies passen les comprovacions del workflow de publicació, que només desplega quan el canvi arriba a `main`.
 - Protegeix `main`, exigeix revisió humana i impedeix push directe. Mantén els permisos dels workflows mínims.
 - El `CREDIT_AUTHORIZED_USERS` s'ha de configurar abans d'activar el formulari. Sense aquesta variable, ningú està autoritzat.
 - Les accions externes estan fixades a versions declarades als workflows; actualitza-les conscientment.
@@ -21,7 +21,7 @@ Les pàgines `catmastering_ca.html`, `catmastering_es.html` i `catmastering_en.h
 
 ## Canvis de dades i recuperació
 
-`src/data/credits.json` és el catàleg públic i les imatges són a `public/images/`. No editis `legacy/`: és l'instantani d'origen. L'auditoria valida files i assets abans de build. Revisa les PRs amb `npm run check`, `npm test` i `npm run build`. Les dades d'origen i l'historial es poden recuperar des de `legacy/` i el commit inicial `057eb60`.
+`src/data/credits.json` és el catàleg públic i les imatges són a `public/images/`. No editis `legacy/`: és l'instantani d'origen. El workflow únic valida les PRs i els canvis a `main` amb `npm run check`, `npm test` i `npm run build`; només desplega canvis de `main`. L'entrada automàtica d'issues també executa les tres comprovacions abans d'obrir la PR, perquè les PR creades amb `GITHUB_TOKEN` no activen altres workflows. Les dades d'origen i l'historial es poden recuperar des de `legacy/` i el commit inicial `057eb60`.
 
 ## Costos i límits
 
