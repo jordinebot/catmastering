@@ -19,8 +19,4 @@ Hi ha pàgines estàtiques `/ca/`, `/es/` i `/en/`. L'arrel `/` selecciona el ca
 
 ## Afegir treballs
 
-Juanjo pot enviar propostes a través de [Afegir un treball](https://github.com/jordinebot/catmastering/issues/new?template=add-credit.yml). El workflow valida i prepara una PR; el mantenidor la revisa i fusiona. Guia: [docs/JUANJO.md](docs/JUANJO.md). Configuració i incidències: [docs/MAINTENANCE.md](docs/MAINTENANCE.md).
-
-## Desplegament
-
-La workflow `Deploy CatMastering` publica a `https://catmastering.cat/` en cada canvi de `main` (`SITE_DOMAIN=true` i `public/CNAME`). A **Settings → Pages**, selecciona GitHub Actions i configura el domini personalitzat `catmastering.cat`; consulta els passos de DNS a la guia de manteniment.
+Es poden enviar propostes a través de [Afegir un treball](https://github.com/jordinebot/catmastering/issues/new?template=add-credit.yml). El workflow valida i prepara una PR; el mantenidor la revisa i fusiona. Guia: [docs/JUANJO.md](docs/JUANJO.md). Configuració i incidències: [docs/MAINTENANCE.md](docs/MAINTENANCE.md).
