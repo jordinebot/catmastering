@@ -24,11 +24,15 @@ const t = {
 }[lang];
 
 const langNames = { ca: 'Català', es: 'Español', en: 'English' };
-const pageTitle = `CatMastering — ${t.kicker}`;
+const seo = {
+  ca: { title: 'CatMastering — Estudi de masterització a Manresa', description: 'Estudi professional de masterització d’àudio a Manresa. Juanjo Muñoz dona el toc final als teus discos amb experiència i equipament d’alta gamma.' },
+  es: { title: 'CatMastering — Estudio de mastering en Manresa', description: 'Estudio profesional de masterización de audio en Manresa. Juanjo Muñoz da el toque final a tus discos con experiencia y equipo de alta gama.' },
+  en: { title: 'CatMastering — Audio mastering studio in Manresa', description: 'Professional audio mastering studio in Manresa, Spain. Juanjo Muñoz gives your records their final polish with expert ears and high-end equipment.' },
+}[lang];
 const studioPhotos = ['CatMastering13.jpg', 'CatMastering03.jpg', 'CatMastering04.jpg', 'CatMastering05.jpg', 'CatMastering06.jpg', 'CatMastering08.jpg', 'CatMastering11.jpg', 'CatMastering12.jpg'];
 ---
 
-<Layout lang={lang} title={pageTitle} description={t.kicker}>
+<Layout lang={lang} title={seo.title} description={seo.description}>
   <header class="site-header">
     <a class="brand" href={route(`${lang}/`)} aria-label="CatMastering"><img src={route('images/brand/CatMastering.svg')} alt="CatMastering" /></a>
     <nav class="main-nav" aria-label="Main navigation"><a href="#estudi">{t.nav[0]}</a><a href="#equip">{t.nav[1]}</a><a href="#contacte">{t.nav[2]}</a><a href="#credits">{t.nav[3]}</a></nav>
