@@ -1,11 +1,11 @@
 name: Afegir un treball
 description: Envia les dades d'un nou treball masteritzat per afegir-lo al catàleg.
-title: "Artista - Disc - Data"
+title: ""
 labels: [new-credit]
 body:
   - type: markdown
     attributes:
-      value: "Omple les dades tal com han d'aparèixer al web. La publicació queda pendent de revisió."
+      value: "Aquest títol és només orientatiu i no es publica al web. Omple els camps de sota amb les dades tal com han d’aparèixer al web."
   - type: input
     id: artist
     attributes:
