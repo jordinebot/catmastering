@@ -1,6 +1,6 @@
 name: Afegir un treball
 description: Envia les dades d'un nou treball masteritzat per afegir-lo al catàleg.
-title: ""
+title: "Nou treball"
 labels: [new-credit]
 body:
   - type: markdown
