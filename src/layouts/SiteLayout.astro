@@ -21,13 +21,14 @@ const locales = ['ca', 'es', 'en'];
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={`${origin}/images/studio/CatMastering13.jpg`} />
+    <meta property="og:site_name" content="CatMastering" />
+    <meta property="og:image" content={`${origin}/images/brand/og-image.jpg`} />
     <meta property="og:locale" content={lang === 'ca' ? 'ca_ES' : lang === 'es' ? 'es_ES' : 'en_GB'} />
     {locales.filter((locale) => locale !== lang).map((locale) => <meta property="og:locale:alternate" content={locale === 'ca' ? 'ca_ES' : locale === 'es' ? 'es_ES' : 'en_GB'} />)}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`${origin}/images/studio/CatMastering13.jpg`} />
+    <meta name="twitter:image" content={`${origin}/images/brand/og-image.jpg`} />
     <link rel="icon" href={`${assetBase}favicon.ico`} />
     <link rel="apple-touch-icon" href={`${assetBase}apple-touch-icon.png`} />
   </head>
